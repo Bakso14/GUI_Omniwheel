@@ -74,12 +74,12 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
             this.sp_textbox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -482,25 +482,24 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Motor";
             // 
-            // button12
+            // button16
             // 
-            this.button12.Location = new System.Drawing.Point(6, 59);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(61, 35);
-            this.button12.TabIndex = 32;
-            this.button12.Text = "V10";
-            this.button12.UseVisualStyleBackColor = true;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
+            this.button16.Location = new System.Drawing.Point(201, 59);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(59, 35);
+            this.button16.TabIndex = 37;
+            this.button16.Text = "button16";
+            this.button16.UseVisualStyleBackColor = true;
             // 
-            // button13
+            // button17
             // 
-            this.button13.Location = new System.Drawing.Point(73, 59);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(59, 35);
-            this.button13.TabIndex = 33;
-            this.button13.Text = "StopAll";
-            this.button13.UseVisualStyleBackColor = true;
-            this.button13.Click += new System.EventHandler(this.button13_Click);
+            this.button17.Location = new System.Drawing.Point(201, 19);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(59, 34);
+            this.button17.TabIndex = 36;
+            this.button17.Text = "PIDM3";
+            this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
             // button14
             // 
@@ -522,24 +521,25 @@
             this.button15.UseVisualStyleBackColor = true;
             this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
-            // button16
+            // button13
             // 
-            this.button16.Location = new System.Drawing.Point(201, 59);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(59, 35);
-            this.button16.TabIndex = 37;
-            this.button16.Text = "button16";
-            this.button16.UseVisualStyleBackColor = true;
+            this.button13.Location = new System.Drawing.Point(73, 59);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(59, 35);
+            this.button13.TabIndex = 33;
+            this.button13.Text = "StopAll";
+            this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
-            // button17
+            // button12
             // 
-            this.button17.Location = new System.Drawing.Point(201, 19);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(59, 34);
-            this.button17.TabIndex = 36;
-            this.button17.Text = "PIDM3";
-            this.button17.UseVisualStyleBackColor = true;
-            this.button17.Click += new System.EventHandler(this.button17_Click);
+            this.button12.Location = new System.Drawing.Point(6, 59);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(61, 35);
+            this.button12.TabIndex = 32;
+            this.button12.Text = "V10";
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // sp_textbox
             // 
@@ -663,7 +663,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox3);
             this.Name = "Form1";
-            this.Text = "C# COM PORT SERIAL";
+            this.Text = "Omniwheel Education Platform";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

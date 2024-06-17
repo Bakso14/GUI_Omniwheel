@@ -1,0 +1,10 @@
+D:\Github\GUI_Omniwheel\bin\Debug\GUI_Omniwheel.exe.config
+D:\Github\GUI_Omniwheel\bin\Debug\GUI_Omniwheel.exe
+D:\Github\GUI_Omniwheel\bin\Debug\GUI_Omniwheel.pdb
+D:\Github\GUI_Omniwheel\obj\Debug\GUI_Omniwheel.csproj.AssemblyReference.cache
+D:\Github\GUI_Omniwheel\obj\Debug\Penelitian_Push_Up_Counter.Form1.resources
+D:\Github\GUI_Omniwheel\obj\Debug\GUI_Omniwheel.Properties.Resources.resources
+D:\Github\GUI_Omniwheel\obj\Debug\GUI_Omniwheel.csproj.GenerateResource.cache
+D:\Github\GUI_Omniwheel\obj\Debug\GUI_Omniwheel.csproj.CoreCompileInputs.cache
+D:\Github\GUI_Omniwheel\obj\Debug\GUI_Omniwheel.exe
+D:\Github\GUI_Omniwheel\obj\Debug\GUI_Omniwheel.pdb
