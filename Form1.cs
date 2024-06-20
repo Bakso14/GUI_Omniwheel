@@ -23,12 +23,12 @@ namespace Penelitian_Push_Up_Counter
         int j = 0;
         int k = 0;
         string kecepatan_setpoint = "0";
-        string kp;
-        string ki;
-        string kd;
-        string setpoint;
-        string kode;
-        string dir;
+        string kp = "0";
+        string ki = "0";
+        string kd = "0";
+        string setpoint = "0" ;
+        string kode = "0";
+        string dir = "0";
 
         public Form1()
         {
@@ -345,11 +345,13 @@ namespace Penelitian_Push_Up_Counter
             if (serialPort1.IsOpen)
             {
                 setpoint = sp_textbox.Text;
+                dir = dir_textbox.Text;
                 kp = kp_textbox.Text;
                 ki = ki_textbox.Text;
                 kd = kd_textbox.Text;
                 kode = "94";
                 serialPort1.Write(kode + "," + setpoint + "," + dir + "," + kp + "," + ki + "," + kd);
+                //serialPort1.Write("94,1,1,1,1,1");
             }
         }
 
@@ -364,6 +366,7 @@ namespace Penelitian_Push_Up_Counter
                 kd = kd_textbox.Text;
                 kode = "7";
                 serialPort1.Write(kode + "," + setpoint + "," + dir + "," + kp + "," + ki + "," + kd);
+                //serialPort1.Write("94,1,1,1,1,1");
             }
         }
 
@@ -377,6 +380,7 @@ namespace Penelitian_Push_Up_Counter
                 kd = kd_textbox.Text;
                 kode = "10";
                 serialPort1.Write(kode + "," + setpoint + "," + dir + "," + kp + "," + ki + "," + kd);
+                //serialPort1.Write("94,1,1,1,1,1");
             }
         }
     }

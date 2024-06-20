@@ -547,6 +547,7 @@
             this.sp_textbox.Name = "sp_textbox";
             this.sp_textbox.Size = new System.Drawing.Size(40, 20);
             this.sp_textbox.TabIndex = 33;
+            this.sp_textbox.Text = "0";
             // 
             // label3
             // 
@@ -573,6 +574,7 @@
             this.kp_textbox.Name = "kp_textbox";
             this.kp_textbox.Size = new System.Drawing.Size(40, 20);
             this.kp_textbox.TabIndex = 35;
+            this.kp_textbox.Text = "0";
             // 
             // label5
             // 
@@ -589,6 +591,7 @@
             this.ki_textbox.Name = "ki_textbox";
             this.ki_textbox.Size = new System.Drawing.Size(40, 20);
             this.ki_textbox.TabIndex = 37;
+            this.ki_textbox.Text = "0";
             // 
             // label8
             // 
@@ -605,6 +608,7 @@
             this.kd_textbox.Name = "kd_textbox";
             this.kd_textbox.Size = new System.Drawing.Size(40, 20);
             this.kd_textbox.TabIndex = 39;
+            this.kd_textbox.Text = "0";
             // 
             // label9
             // 
@@ -621,6 +625,7 @@
             this.dir_textbox.Name = "dir_textbox";
             this.dir_textbox.Size = new System.Drawing.Size(40, 20);
             this.dir_textbox.TabIndex = 41;
+            this.dir_textbox.Text = "0";
             // 
             // Form1
             // 
