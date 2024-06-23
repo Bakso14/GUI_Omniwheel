@@ -29,6 +29,7 @@ namespace Penelitian_Push_Up_Counter
         string setpoint = "0" ;
         string kode = "0";
         string dir = "0";
+        string function_code = "0";
 
         public Form1()
         {
@@ -303,9 +304,10 @@ namespace Penelitian_Push_Up_Counter
         private void button2_Click(object sender, EventArgs e)
         {
             kecepatan_setpoint = "20";
+            function_code = "2";
             if (serialPort1.IsOpen)
             {
-                serialPort1.Write("0,0,0,"+kecepatan_setpoint+"," + kecepatan_setpoint + "," + kecepatan_setpoint);
+                serialPort1.Write(function_code + ",0,0,0,"+ kecepatan_setpoint + "," + kecepatan_setpoint + "," + kecepatan_setpoint);
             }
         }
 
@@ -314,7 +316,7 @@ namespace Penelitian_Push_Up_Counter
             kecepatan_setpoint = "10";
             if (serialPort1.IsOpen)
             {
-                serialPort1.Write("0,0,0," + kecepatan_setpoint + "," + kecepatan_setpoint + "," + kecepatan_setpoint);
+                serialPort1.Write(function_code + ",0,0,0," + kecepatan_setpoint + "," + kecepatan_setpoint + "," + kecepatan_setpoint);
             }
         }
 
@@ -323,15 +325,16 @@ namespace Penelitian_Push_Up_Counter
             kecepatan_setpoint = "20";
             if (serialPort1.IsOpen)
             {
-                serialPort1.Write("1,1,1," + kecepatan_setpoint + "," + kecepatan_setpoint + "," + kecepatan_setpoint);
+                serialPort1.Write(function_code + ",1,1,1," + kecepatan_setpoint + "," + kecepatan_setpoint + "," + kecepatan_setpoint);
             }
         }
 
         private void button13_Click(object sender, EventArgs e)
         {
+            kecepatan_setpoint = "0";
             if (serialPort1.IsOpen)
             {
-                serialPort1.Write("0,0,0,0,0,0");
+                serialPort1.Write(function_code + ",0,0,0," + kecepatan_setpoint + "," + kecepatan_setpoint + "," + kecepatan_setpoint);
             }
         }
 
@@ -350,8 +353,9 @@ namespace Penelitian_Push_Up_Counter
                 ki = ki_textbox.Text;
                 kd = kd_textbox.Text;
                 kode = "94";
-                serialPort1.Write(kode + "," + setpoint + "," + dir + "," + kp + "," + ki + "," + kd);
-                //serialPort1.Write("94,1,1,1,1,1");
+                function_code = "0";
+                serialPort1.Write(function_code + "," + kode + "," + setpoint + "," + dir + "," + kp + "," + ki + "," + kd);
+                
             }
         }
 
@@ -365,8 +369,8 @@ namespace Penelitian_Push_Up_Counter
                 ki = ki_textbox.Text;
                 kd = kd_textbox.Text;
                 kode = "7";
-                serialPort1.Write(kode + "," + setpoint + "," + dir + "," + kp + "," + ki + "," + kd);
-                //serialPort1.Write("94,1,1,1,1,1");
+                function_code = "0";
+                serialPort1.Write(function_code + "," + kode + "," + setpoint + "," + dir + "," + kp + "," + ki + "," + kd);
             }
         }
 
@@ -379,9 +383,49 @@ namespace Penelitian_Push_Up_Counter
                 ki = ki_textbox.Text;
                 kd = kd_textbox.Text;
                 kode = "10";
-                serialPort1.Write(kode + "," + setpoint + "," + dir + "," + kp + "," + ki + "," + kd);
-                //serialPort1.Write("94,1,1,1,1,1");
+                function_code = "0";
+                serialPort1.Write(function_code + "," + kode + "," + setpoint + "," + dir + "," + kp + "," + ki + "," + kd);
             }
+        }
+
+        private void groupBox4_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            if (serialPort1.IsOpen)
+            {
+                kode = "94";
+                function_code = "1";
+                serialPort1.Write(function_code + "," + kode + "," + Speed1.Text + "," + Dir1.Text + "," + TimerM1.Text + ",0,0");
+            }
+        }
+
+        private void button16_Click_1(object sender, EventArgs e)
+        {
+            if (serialPort1.IsOpen)
+            {
+                kode = "7";
+                function_code = "1";
+                serialPort1.Write(function_code + "," + kode + "," + Speed2.Text + "," + Dir2.Text + "," + TimerM2.Text + ",0,0");
+            }
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            if (serialPort1.IsOpen)
+            {
+                kode = "10";
+                function_code = "1";
+                serialPort1.Write(function_code + "," + kode + "," + Speed3.Text + "," + Dir3.Text + "," + TimerM3.Text + ",0,0");
+            }
+        }
+
+        private void groupBox4_Enter_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
