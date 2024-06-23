@@ -98,10 +98,27 @@ namespace Penelitian_Push_Up_Counter
         {
             string[] pisah_data = dataIN.Split(';');
 
-            button5.Text = pisah_data[0];
-            button6.Text = pisah_data[1];
-            button7.Text = pisah_data[2];
+            try
+            {
+                button5.Text = pisah_data[0];
+                button6.Text = pisah_data[1];
+                button7.Text = pisah_data[2];
+                if (checkBox3.Checked)
+                {
+                    i++;
+                    this.chart1.Series["Series1"].Points.AddXY(i, pisah_data[0]);
+                    j++;
+                    this.chart2.Series["Series1"].Points.AddXY(j, pisah_data[1]);
+                    k++;
+                    this.chart3.Series["Series1"].Points.AddXY(j, pisah_data[2]);
 
+                }
+            }
+            catch (Exception err)
+            {
+
+                MessageBox.Show(err.Message, "Error String Input Tidak Sesuai:\n" + "\"" + dataIN + "\"", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
             if (checkBox1.Checked)
             {
@@ -113,16 +130,7 @@ namespace Penelitian_Push_Up_Counter
                 tBoxDataIn.AppendText(dataIN+"\n");
                 
             }
-            if (checkBox3.Checked)
-            {
-                i++;
-                this.chart1.Series["Series1"].Points.AddXY(i, pisah_data[0]);
-                j++;
-                this.chart2.Series["Series1"].Points.AddXY(j, pisah_data[1]);
-                k++;
-                this.chart3.Series["Series1"].Points.AddXY(j, pisah_data[2]);
-
-            }
+            
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
