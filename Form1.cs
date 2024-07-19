@@ -113,6 +113,21 @@ namespace Penelitian_Push_Up_Counter
                     this.chart3.Series["Series1"].Points.AddXY(j, pisah_data[2]);
 
                 }
+                else if (G1.Checked)
+                {
+                    i++;
+                    this.chart1.Series["Series1"].Points.AddXY(i, pisah_data[0]);
+                }
+                else if (G2.Checked)
+                {
+                    j++;
+                    this.chart2.Series["Series1"].Points.AddXY(j, pisah_data[1]);
+                }
+                else if (G3.Checked)
+                {
+                    k++;
+                    this.chart3.Series["Series1"].Points.AddXY(j, pisah_data[2]);
+                }
             }
             catch (Exception err)
             {
@@ -165,6 +180,15 @@ namespace Penelitian_Push_Up_Counter
             {
                 tBoxDataIn.Text = "";
             }
+
+            chart1.Series["Series1"].Points.Clear();
+            i = 0;
+
+            chart2.Series["Series1"].Points.Clear();
+            j = 0;
+
+            chart3.Series["Series1"].Points.Clear();
+            k = 0;
         }
 
         

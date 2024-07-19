@@ -74,22 +74,22 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.SendM1 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.sp_textbox = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.kp_textbox = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.ki_textbox = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.kd_textbox = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.dir_textbox = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.button17 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.ki_textbox = new System.Windows.Forms.TextBox();
+            this.button15 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.sp_textbox = new System.Windows.Forms.TextBox();
+            this.kp_textbox = new System.Windows.Forms.TextBox();
+            this.SendM1 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.Dir1 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -114,6 +114,9 @@
             this.label18 = new System.Windows.Forms.Label();
             this.Speed3 = new System.Windows.Forms.TextBox();
             this.AllMotor = new System.Windows.Forms.GroupBox();
+            this.G1 = new System.Windows.Forms.CheckBox();
+            this.G2 = new System.Windows.Forms.CheckBox();
+            this.G3 = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
@@ -320,9 +323,9 @@
             // 
             // exportToTxtButton
             // 
-            this.exportToTxtButton.Location = new System.Drawing.Point(143, 345);
+            this.exportToTxtButton.Location = new System.Drawing.Point(174, 345);
             this.exportToTxtButton.Name = "exportToTxtButton";
-            this.exportToTxtButton.Size = new System.Drawing.Size(75, 35);
+            this.exportToTxtButton.Size = new System.Drawing.Size(44, 35);
             this.exportToTxtButton.TabIndex = 13;
             this.exportToTxtButton.Text = "Save";
             this.exportToTxtButton.UseVisualStyleBackColor = true;
@@ -421,9 +424,9 @@
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(143, 386);
+            this.button9.Location = new System.Drawing.Point(174, 386);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(75, 35);
+            this.button9.Size = new System.Drawing.Size(44, 35);
             this.button9.TabIndex = 27;
             this.button9.Text = "Save";
             this.button9.UseVisualStyleBackColor = true;
@@ -431,9 +434,9 @@
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(143, 427);
+            this.button10.Location = new System.Drawing.Point(173, 427);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(75, 35);
+            this.button10.Size = new System.Drawing.Size(45, 35);
             this.button10.TabIndex = 28;
             this.button10.Text = "Save";
             this.button10.UseVisualStyleBackColor = true;
@@ -516,118 +519,6 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "PID Controller";
             // 
-            // SendM1
-            // 
-            this.SendM1.Location = new System.Drawing.Point(69, 24);
-            this.SendM1.Name = "SendM1";
-            this.SendM1.Size = new System.Drawing.Size(46, 35);
-            this.SendM1.TabIndex = 37;
-            this.SendM1.Text = "Send";
-            this.SendM1.UseVisualStyleBackColor = true;
-            this.SendM1.Click += new System.EventHandler(this.button16_Click);
-            // 
-            // button17
-            // 
-            this.button17.Location = new System.Drawing.Point(139, 100);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(59, 34);
-            this.button17.TabIndex = 36;
-            this.button17.Text = "PIDM3";
-            this.button17.UseVisualStyleBackColor = true;
-            this.button17.Click += new System.EventHandler(this.button17_Click);
-            // 
-            // button14
-            // 
-            this.button14.Location = new System.Drawing.Point(138, 59);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(59, 35);
-            this.button14.TabIndex = 35;
-            this.button14.Text = "PIDM2";
-            this.button14.UseVisualStyleBackColor = true;
-            this.button14.Click += new System.EventHandler(this.button14_Click);
-            // 
-            // button15
-            // 
-            this.button15.Location = new System.Drawing.Point(138, 19);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(59, 34);
-            this.button15.TabIndex = 34;
-            this.button15.Text = "PIDM1";
-            this.button15.UseVisualStyleBackColor = true;
-            this.button15.Click += new System.EventHandler(this.button15_Click);
-            // 
-            // button13
-            // 
-            this.button13.Location = new System.Drawing.Point(59, 22);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(59, 35);
-            this.button13.TabIndex = 33;
-            this.button13.Text = "StopAll";
-            this.button13.UseVisualStyleBackColor = true;
-            this.button13.Click += new System.EventHandler(this.button13_Click);
-            // 
-            // button12
-            // 
-            this.button12.Location = new System.Drawing.Point(13, 63);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(40, 35);
-            this.button12.TabIndex = 32;
-            this.button12.Text = "V10";
-            this.button12.UseVisualStyleBackColor = true;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
-            // 
-            // sp_textbox
-            // 
-            this.sp_textbox.Location = new System.Drawing.Point(11, 35);
-            this.sp_textbox.Name = "sp_textbox";
-            this.sp_textbox.Size = new System.Drawing.Size(40, 20);
-            this.sp_textbox.TabIndex = 33;
-            this.sp_textbox.Text = "0";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 19);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(21, 13);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "SP";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(76, 19);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(21, 13);
-            this.label4.TabIndex = 34;
-            this.label4.Text = "KP";
-            // 
-            // kp_textbox
-            // 
-            this.kp_textbox.Location = new System.Drawing.Point(75, 35);
-            this.kp_textbox.Name = "kp_textbox";
-            this.kp_textbox.Size = new System.Drawing.Size(40, 20);
-            this.kp_textbox.TabIndex = 35;
-            this.kp_textbox.Text = "0";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(76, 59);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(17, 13);
-            this.label5.TabIndex = 36;
-            this.label5.Text = "KI";
-            // 
-            // ki_textbox
-            // 
-            this.ki_textbox.Location = new System.Drawing.Point(75, 75);
-            this.ki_textbox.Name = "ki_textbox";
-            this.ki_textbox.Size = new System.Drawing.Size(40, 20);
-            this.ki_textbox.TabIndex = 37;
-            this.ki_textbox.Text = "0";
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -661,6 +552,118 @@
             this.dir_textbox.Size = new System.Drawing.Size(40, 20);
             this.dir_textbox.TabIndex = 41;
             this.dir_textbox.Text = "0";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(76, 59);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(17, 13);
+            this.label5.TabIndex = 36;
+            this.label5.Text = "KI";
+            // 
+            // button17
+            // 
+            this.button17.Location = new System.Drawing.Point(139, 100);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(59, 34);
+            this.button17.TabIndex = 36;
+            this.button17.Text = "PIDM3";
+            this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
+            // 
+            // button14
+            // 
+            this.button14.Location = new System.Drawing.Point(138, 59);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(59, 35);
+            this.button14.TabIndex = 35;
+            this.button14.Text = "PIDM2";
+            this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
+            // 
+            // ki_textbox
+            // 
+            this.ki_textbox.Location = new System.Drawing.Point(75, 75);
+            this.ki_textbox.Name = "ki_textbox";
+            this.ki_textbox.Size = new System.Drawing.Size(40, 20);
+            this.ki_textbox.TabIndex = 37;
+            this.ki_textbox.Text = "0";
+            // 
+            // button15
+            // 
+            this.button15.Location = new System.Drawing.Point(138, 19);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(59, 34);
+            this.button15.TabIndex = 34;
+            this.button15.Text = "PIDM1";
+            this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(12, 19);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(21, 13);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "SP";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(76, 19);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(21, 13);
+            this.label4.TabIndex = 34;
+            this.label4.Text = "KP";
+            // 
+            // sp_textbox
+            // 
+            this.sp_textbox.Location = new System.Drawing.Point(11, 35);
+            this.sp_textbox.Name = "sp_textbox";
+            this.sp_textbox.Size = new System.Drawing.Size(40, 20);
+            this.sp_textbox.TabIndex = 33;
+            this.sp_textbox.Text = "0";
+            // 
+            // kp_textbox
+            // 
+            this.kp_textbox.Location = new System.Drawing.Point(75, 35);
+            this.kp_textbox.Name = "kp_textbox";
+            this.kp_textbox.Size = new System.Drawing.Size(40, 20);
+            this.kp_textbox.TabIndex = 35;
+            this.kp_textbox.Text = "0";
+            // 
+            // SendM1
+            // 
+            this.SendM1.Location = new System.Drawing.Point(69, 24);
+            this.SendM1.Name = "SendM1";
+            this.SendM1.Size = new System.Drawing.Size(46, 35);
+            this.SendM1.TabIndex = 37;
+            this.SendM1.Text = "Send";
+            this.SendM1.UseVisualStyleBackColor = true;
+            this.SendM1.Click += new System.EventHandler(this.button16_Click);
+            // 
+            // button13
+            // 
+            this.button13.Location = new System.Drawing.Point(59, 22);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(59, 35);
+            this.button13.TabIndex = 33;
+            this.button13.Text = "StopAll";
+            this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
+            // 
+            // button12
+            // 
+            this.button12.Location = new System.Drawing.Point(13, 63);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(40, 35);
+            this.button12.TabIndex = 32;
+            this.button12.Text = "V10";
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // label10
             // 
@@ -898,11 +901,41 @@
             this.AllMotor.Text = "AllMotor";
             this.AllMotor.Enter += new System.EventHandler(this.groupBox4_Enter_1);
             // 
+            // G1
+            // 
+            this.G1.AutoSize = true;
+            this.G1.Location = new System.Drawing.Point(153, 356);
+            this.G1.Name = "G1";
+            this.G1.Size = new System.Drawing.Size(15, 14);
+            this.G1.TabIndex = 52;
+            this.G1.UseVisualStyleBackColor = true;
+            // 
+            // G2
+            // 
+            this.G2.AutoSize = true;
+            this.G2.Location = new System.Drawing.Point(153, 397);
+            this.G2.Name = "G2";
+            this.G2.Size = new System.Drawing.Size(15, 14);
+            this.G2.TabIndex = 53;
+            this.G2.UseVisualStyleBackColor = true;
+            // 
+            // G3
+            // 
+            this.G3.AutoSize = true;
+            this.G3.Location = new System.Drawing.Point(153, 438);
+            this.G3.Name = "G3";
+            this.G3.Size = new System.Drawing.Size(15, 14);
+            this.G3.TabIndex = 54;
+            this.G3.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1433, 984);
+            this.Controls.Add(this.G3);
+            this.Controls.Add(this.G2);
+            this.Controls.Add(this.G1);
             this.Controls.Add(this.AllMotor);
             this.Controls.Add(this.Motor3);
             this.Controls.Add(this.Motor2);
@@ -1033,6 +1066,9 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.TextBox Speed3;
         private System.Windows.Forms.GroupBox AllMotor;
+        private System.Windows.Forms.CheckBox G1;
+        private System.Windows.Forms.CheckBox G2;
+        private System.Windows.Forms.CheckBox G3;
     }
 }
 
