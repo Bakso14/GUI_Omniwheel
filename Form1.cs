@@ -346,6 +346,7 @@ namespace Penelitian_Push_Up_Counter
         private void button12_Click(object sender, EventArgs e)
         {
             kecepatan_setpoint = "10";
+            function_code = "2";
             if (serialPort1.IsOpen)
             {
                 serialPort1.Write(function_code + ",0,0,0," + kecepatan_setpoint + "," + kecepatan_setpoint + "," + kecepatan_setpoint);
@@ -364,6 +365,7 @@ namespace Penelitian_Push_Up_Counter
         private void button13_Click(object sender, EventArgs e)
         {
             kecepatan_setpoint = "0";
+            function_code = "2";
             if (serialPort1.IsOpen)
             {
                 serialPort1.Write(function_code + ",0,0,0," + kecepatan_setpoint + "," + kecepatan_setpoint + "," + kecepatan_setpoint);
