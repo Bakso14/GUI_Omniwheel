@@ -339,7 +339,7 @@ namespace Penelitian_Push_Up_Counter
             function_code = "2";
             if (serialPort1.IsOpen)
             {
-                serialPort1.Write(function_code + ",0,0,0,"+ kecepatan_setpoint + "," + kecepatan_setpoint + "," + kecepatan_setpoint);
+                serialPort1.Write(function_code + ",0,0,0,"+ kecepatan_setpoint + "," + kecepatan_setpoint + "," + kecepatan_setpoint + ",0,0,0");
             }
         }
 
@@ -349,16 +349,17 @@ namespace Penelitian_Push_Up_Counter
             function_code = "2";
             if (serialPort1.IsOpen)
             {
-                serialPort1.Write(function_code + ",0,0,0," + kecepatan_setpoint + "," + kecepatan_setpoint + "," + kecepatan_setpoint);
+                serialPort1.Write(function_code + ",0,0,0," + kecepatan_setpoint + "," + kecepatan_setpoint + "," + kecepatan_setpoint + ",0,0,0");
             }
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
             kecepatan_setpoint = "20";
+            function_code = "2";
             if (serialPort1.IsOpen)
             {
-                serialPort1.Write(function_code + ",1,1,1," + kecepatan_setpoint + "," + kecepatan_setpoint + "," + kecepatan_setpoint);
+                serialPort1.Write(function_code + ",1,1,1," + kecepatan_setpoint + "," + kecepatan_setpoint + "," + kecepatan_setpoint + ",0,0,0");
             }
         }
 
@@ -368,7 +369,7 @@ namespace Penelitian_Push_Up_Counter
             function_code = "2";
             if (serialPort1.IsOpen)
             {
-                serialPort1.Write(function_code + ",0,0,0," + kecepatan_setpoint + "," + kecepatan_setpoint + "," + kecepatan_setpoint);
+                serialPort1.Write(function_code + ",0,0,0," + kecepatan_setpoint + "," + kecepatan_setpoint + "," + kecepatan_setpoint + ",0,0,0");
             }
         }
 
@@ -388,7 +389,7 @@ namespace Penelitian_Push_Up_Counter
                 kd = kd_textbox.Text;
                 kode = "94";
                 function_code = "0";
-                serialPort1.Write(function_code + "," + kode + "," + setpoint + "," + dir + "," + kp + "," + ki + "," + kd);
+                serialPort1.Write(function_code + "," + kode + "," + setpoint + "," + dir + "," + kp + "," + ki + "," + kd + ",0,0,0");
                 
             }
         }
@@ -404,7 +405,7 @@ namespace Penelitian_Push_Up_Counter
                 kd = kd_textbox.Text;
                 kode = "7";
                 function_code = "0";
-                serialPort1.Write(function_code + "," + kode + "," + setpoint + "," + dir + "," + kp + "," + ki + "," + kd);
+                serialPort1.Write(function_code + "," + kode + "," + setpoint + "," + dir + "," + kp + "," + ki + "," + kd + ",0,0,0");
             }
         }
 
@@ -418,7 +419,7 @@ namespace Penelitian_Push_Up_Counter
                 kd = kd_textbox.Text;
                 kode = "10";
                 function_code = "0";
-                serialPort1.Write(function_code + "," + kode + "," + setpoint + "," + dir + "," + kp + "," + ki + "," + kd);
+                serialPort1.Write(function_code + "," + kode + "," + setpoint + "," + dir + "," + kp + "," + ki + "," + kd + ",0,0,0");
             }
         }
 
@@ -433,7 +434,7 @@ namespace Penelitian_Push_Up_Counter
             {
                 kode = "94";
                 function_code = "1";
-                serialPort1.Write(function_code + "," + kode + "," + Speed1.Text + "," + Dir1.Text + "," + TimerM1.Text + ",0,0");
+                serialPort1.Write(function_code + "," + kode + "," + Speed1.Text + "," + Dir1.Text + "," + TimerM1.Text + ",0,0" + ",0,0,0");
             }
         }
 
@@ -443,7 +444,7 @@ namespace Penelitian_Push_Up_Counter
             {
                 kode = "7";
                 function_code = "1";
-                serialPort1.Write(function_code + "," + kode + "," + Speed2.Text + "," + Dir2.Text + "," + TimerM2.Text + ",0,0");
+                serialPort1.Write(function_code + "," + kode + "," + Speed2.Text + "," + Dir2.Text + "," + TimerM2.Text + ",0,0" + ",0,0,0");
             }
         }
 
@@ -453,13 +454,22 @@ namespace Penelitian_Push_Up_Counter
             {
                 kode = "10";
                 function_code = "1";
-                serialPort1.Write(function_code + "," + kode + "," + Speed3.Text + "," + Dir3.Text + "," + TimerM3.Text + ",0,0");
+                serialPort1.Write(function_code + "," + kode + "," + Speed3.Text + "," + Dir3.Text + "," + TimerM3.Text + ",0,0" + ",0,0,0");
             }
         }
 
         private void groupBox4_Enter_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            if (serialPort1.IsOpen)
+            {
+                function_code = "3";
+                serialPort1.Write(function_code + "," + Dir1.Text + "," + Speed1.Text + "," + TimerM1.Text + "," + Dir2.Text + "," + Speed2.Text + "," + TimerM2.Text + "," + Dir3.Text + "," + Speed3.Text + "," + TimerM3.Text);
+            }
         }
     }
 }

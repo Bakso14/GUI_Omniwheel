@@ -117,6 +117,7 @@
             this.G1 = new System.Windows.Forms.CheckBox();
             this.G2 = new System.Windows.Forms.CheckBox();
             this.G3 = new System.Windows.Forms.CheckBox();
+            this.button19 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
@@ -889,13 +890,14 @@
             // 
             // AllMotor
             // 
+            this.AllMotor.Controls.Add(this.button19);
             this.AllMotor.Controls.Add(this.button2);
             this.AllMotor.Controls.Add(this.button13);
             this.AllMotor.Controls.Add(this.button12);
             this.AllMotor.Controls.Add(this.button11);
             this.AllMotor.Location = new System.Drawing.Point(180, 787);
             this.AllMotor.Name = "AllMotor";
-            this.AllMotor.Size = new System.Drawing.Size(124, 107);
+            this.AllMotor.Size = new System.Drawing.Size(124, 146);
             this.AllMotor.TabIndex = 51;
             this.AllMotor.TabStop = false;
             this.AllMotor.Text = "AllMotor";
@@ -927,6 +929,16 @@
             this.G3.Size = new System.Drawing.Size(15, 14);
             this.G3.TabIndex = 54;
             this.G3.UseVisualStyleBackColor = true;
+            // 
+            // button19
+            // 
+            this.button19.Location = new System.Drawing.Point(13, 102);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(102, 35);
+            this.button19.TabIndex = 34;
+            this.button19.Text = "SendAll";
+            this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.button19_Click);
             // 
             // Form1
             // 
@@ -1069,6 +1081,7 @@
         private System.Windows.Forms.CheckBox G1;
         private System.Windows.Forms.CheckBox G2;
         private System.Windows.Forms.CheckBox G3;
+        private System.Windows.Forms.Button button19;
     }
 }
 
