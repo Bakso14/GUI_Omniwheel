@@ -98,20 +98,25 @@ namespace Penelitian_Push_Up_Counter
         {
             string[] pisah_data = dataIN.Split(';');
 
+            textBox1.Text = pisah_data[0];
+            textBox2.Text = pisah_data[1];
+            textBox3.Text = pisah_data[2];
+            textBox4.Text = pisah_data[3];
+
             try
             {
-                button5.Text = pisah_data[0];
-
                 if (checkBox3.Checked)
                 {
                     i++;
-                    this.chart1.Series["Series1"].Points.AddXY(i, pisah_data[0]);
+                    this.chart1.Series[1].Points.AddXY(i, pisah_data[2]);
+                    this.chart1.Series[0].Points.AddXY(i, pisah_data[3]);
 
                 }
                 else if (G1.Checked)
                 {
                     i++;
-                    this.chart1.Series["Series1"].Points.AddXY(i, pisah_data[0]);
+                    this.chart1.Series[1].Points.AddXY(i, pisah_data[2]);
+                    this.chart1.Series[0].Points.AddXY(i, pisah_data[3]);
                 }
             }
             catch (Exception err)
@@ -186,6 +191,7 @@ namespace Penelitian_Push_Up_Counter
                 // Get chart data from the chart control.
                 Chart chart = chart1; // Replace "yourChartControl" with your chart control's name
                 Series series = chart.Series[0]; // Assuming you have only one series
+                Series series_set_point = chart.Series[1];
 
                 // Create a StreamWriter to write data to the text file.
                 using (StreamWriter sw = new StreamWriter(filePath))
@@ -195,7 +201,14 @@ namespace Penelitian_Push_Up_Counter
 
                     foreach (var point in series.Points)
                     {
-                        sw.WriteLine($"{point.XValue}\t{point.YValues[0]}");
+                        foreach(var point_setpoint in series_set_point.Points)
+                        {
+                            if(point.XValue == point_setpoint.XValue)
+                            {
+                                sw.WriteLine($"{point.XValue}\t{point.YValues[0]}\t{point_setpoint.YValues[0]}");
+                            }
+                        }
+                        
                     }
                 }
 
@@ -224,11 +237,6 @@ namespace Penelitian_Push_Up_Counter
 
         }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-            button5.Text = "15";
-        }
-
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
@@ -243,15 +251,17 @@ namespace Penelitian_Push_Up_Counter
         {
             if (serialPort1.IsOpen)
             {
-                setpoint = sp_textbox.Text;
                 kp = kp_textbox.Text;
                 ki = ki_textbox.Text;
                 kd = kd_textbox.Text;
-                kode = "94";
-                function_code = "0";
-                serialPort1.Write(function_code + "," + kode + "," + setpoint + "," + dir + "," + kp + "," + ki + "," + kd + ",0,0,0");
+                serialPort1.Write(kp + "," + ki + "," + kd + ",0,0,0");
                 
             }
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
