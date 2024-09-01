@@ -29,12 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
@@ -61,74 +55,24 @@
             this.exportToTxtButton = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.chart3 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
             this.kd_textbox = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.dir_textbox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
             this.ki_textbox = new System.Windows.Forms.TextBox();
             this.button15 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.sp_textbox = new System.Windows.Forms.TextBox();
             this.kp_textbox = new System.Windows.Forms.TextBox();
-            this.SendM1 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
-            this.Dir1 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.Speed1 = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.TimerM1 = new System.Windows.Forms.TextBox();
-            this.Motor1 = new System.Windows.Forms.GroupBox();
-            this.Motor2 = new System.Windows.Forms.GroupBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.button16 = new System.Windows.Forms.Button();
-            this.label14 = new System.Windows.Forms.Label();
-            this.Dir2 = new System.Windows.Forms.TextBox();
-            this.TimerM2 = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.Speed2 = new System.Windows.Forms.TextBox();
-            this.Motor3 = new System.Windows.Forms.GroupBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.button18 = new System.Windows.Forms.Button();
-            this.label17 = new System.Windows.Forms.Label();
-            this.Dir3 = new System.Windows.Forms.TextBox();
-            this.TimerM3 = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.Speed3 = new System.Windows.Forms.TextBox();
-            this.AllMotor = new System.Windows.Forms.GroupBox();
             this.G1 = new System.Windows.Forms.CheckBox();
-            this.G2 = new System.Windows.Forms.CheckBox();
-            this.G3 = new System.Windows.Forms.CheckBox();
-            this.button19 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox3.SuspendLayout();
-            this.Motor1.SuspendLayout();
-            this.Motor2.SuspendLayout();
-            this.Motor3.SuspendLayout();
-            this.AllMotor.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -173,7 +117,7 @@
             this.cBoxBaudrate.Name = "cBoxBaudrate";
             this.cBoxBaudrate.Size = new System.Drawing.Size(121, 21);
             this.cBoxBaudrate.TabIndex = 6;
-            this.cBoxBaudrate.Text = "115200";
+            this.cBoxBaudrate.Text = "9600";
             // 
             // cBoxCOMPORT
             // 
@@ -306,18 +250,18 @@
             // 
             this.chart1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(640, 7);
+            chartArea3.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chart1.Legends.Add(legend3);
+            this.chart1.Location = new System.Drawing.Point(345, 160);
             this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(777, 271);
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            this.chart1.Series.Add(series3);
+            this.chart1.Size = new System.Drawing.Size(952, 403);
             this.chart1.TabIndex = 11;
             this.chart1.Text = "chart1";
             this.chart1.Click += new System.EventHandler(this.chart1_Click);
@@ -353,118 +297,17 @@
             this.checkBox3.UseVisualStyleBackColor = true;
             this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
-            // chart2
-            // 
-            this.chart2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea2.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart2.Legends.Add(legend2);
-            this.chart2.Location = new System.Drawing.Point(640, 299);
-            this.chart2.Name = "chart2";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chart2.Series.Add(series2);
-            this.chart2.Size = new System.Drawing.Size(777, 271);
-            this.chart2.TabIndex = 20;
-            this.chart2.Text = "chart2";
-            this.chart2.Click += new System.EventHandler(this.chart2_Click);
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(224, 386);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(80, 35);
-            this.button4.TabIndex = 21;
-            this.button4.Text = "Clear Graph 2";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(345, 588);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(278, 271);
-            this.button7.TabIndex = 25;
-            this.button7.Text = "0";
-            this.button7.UseVisualStyleBackColor = false;
-            // 
-            // chart3
-            // 
-            this.chart3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea3.Name = "ChartArea1";
-            this.chart3.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chart3.Legends.Add(legend3);
-            this.chart3.Location = new System.Drawing.Point(640, 588);
-            this.chart3.Name = "chart3";
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.chart3.Series.Add(series3);
-            this.chart3.Size = new System.Drawing.Size(777, 271);
-            this.chart3.TabIndex = 24;
-            this.chart3.Text = "chart3";
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(224, 427);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(80, 35);
-            this.button8.TabIndex = 26;
-            this.button8.Text = "Clear Graph 3";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
-            // button9
-            // 
-            this.button9.Location = new System.Drawing.Point(174, 386);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(44, 35);
-            this.button9.TabIndex = 27;
-            this.button9.Text = "Save";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
-            // 
-            // button10
-            // 
-            this.button10.Location = new System.Drawing.Point(173, 427);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(45, 35);
-            this.button10.TabIndex = 28;
-            this.button10.Text = "Save";
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1338, 874);
+            this.pictureBox1.Location = new System.Drawing.Point(641, 7);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(79, 89);
+            this.pictureBox1.Size = new System.Drawing.Size(121, 146);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 29;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(345, 299);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(278, 271);
-            this.button6.TabIndex = 23;
-            this.button6.Text = "0";
-            this.button6.UseVisualStyleBackColor = false;
             // 
             // button5
             // 
@@ -472,41 +315,17 @@
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Location = new System.Drawing.Point(345, 7);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(278, 271);
+            this.button5.Size = new System.Drawing.Size(273, 146);
             this.button5.TabIndex = 22;
             this.button5.Text = "0";
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(13, 22);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(40, 35);
-            this.button2.TabIndex = 30;
-            this.button2.Text = "V20";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button11
-            // 
-            this.button11.Location = new System.Drawing.Point(59, 64);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(59, 34);
-            this.button11.TabIndex = 31;
-            this.button11.Text = "ChangeDir";
-            this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
-            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.label8);
             this.groupBox3.Controls.Add(this.kd_textbox);
-            this.groupBox3.Controls.Add(this.label9);
-            this.groupBox3.Controls.Add(this.dir_textbox);
             this.groupBox3.Controls.Add(this.label5);
-            this.groupBox3.Controls.Add(this.button17);
-            this.groupBox3.Controls.Add(this.button14);
             this.groupBox3.Controls.Add(this.ki_textbox);
             this.groupBox3.Controls.Add(this.button15);
             this.groupBox3.Controls.Add(this.label3);
@@ -537,23 +356,6 @@
             this.kd_textbox.TabIndex = 39;
             this.kd_textbox.Text = "0";
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(12, 59);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(20, 13);
-            this.label9.TabIndex = 40;
-            this.label9.Text = "Dir";
-            // 
-            // dir_textbox
-            // 
-            this.dir_textbox.Location = new System.Drawing.Point(11, 75);
-            this.dir_textbox.Name = "dir_textbox";
-            this.dir_textbox.Size = new System.Drawing.Size(40, 20);
-            this.dir_textbox.TabIndex = 41;
-            this.dir_textbox.Text = "0";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -562,26 +364,6 @@
             this.label5.Size = new System.Drawing.Size(17, 13);
             this.label5.TabIndex = 36;
             this.label5.Text = "KI";
-            // 
-            // button17
-            // 
-            this.button17.Location = new System.Drawing.Point(139, 100);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(59, 34);
-            this.button17.TabIndex = 36;
-            this.button17.Text = "PIDM3";
-            this.button17.UseVisualStyleBackColor = true;
-            this.button17.Click += new System.EventHandler(this.button17_Click);
-            // 
-            // button14
-            // 
-            this.button14.Location = new System.Drawing.Point(138, 59);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(59, 35);
-            this.button14.TabIndex = 35;
-            this.button14.Text = "PIDM2";
-            this.button14.UseVisualStyleBackColor = true;
-            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // ki_textbox
             // 
@@ -593,11 +375,11 @@
             // 
             // button15
             // 
-            this.button15.Location = new System.Drawing.Point(138, 19);
+            this.button15.Location = new System.Drawing.Point(158, 61);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(59, 34);
             this.button15.TabIndex = 34;
-            this.button15.Text = "PIDM1";
+            this.button15.Text = "KIRIM";
             this.button15.UseVisualStyleBackColor = true;
             this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
@@ -636,273 +418,6 @@
             this.kp_textbox.TabIndex = 35;
             this.kp_textbox.Text = "0";
             // 
-            // SendM1
-            // 
-            this.SendM1.Location = new System.Drawing.Point(69, 24);
-            this.SendM1.Name = "SendM1";
-            this.SendM1.Size = new System.Drawing.Size(46, 35);
-            this.SendM1.TabIndex = 37;
-            this.SendM1.Text = "Send";
-            this.SendM1.UseVisualStyleBackColor = true;
-            this.SendM1.Click += new System.EventHandler(this.button16_Click);
-            // 
-            // button13
-            // 
-            this.button13.Location = new System.Drawing.Point(59, 22);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(59, 35);
-            this.button13.TabIndex = 33;
-            this.button13.Text = "StopAll";
-            this.button13.UseVisualStyleBackColor = true;
-            this.button13.Click += new System.EventHandler(this.button13_Click);
-            // 
-            // button12
-            // 
-            this.button12.Location = new System.Drawing.Point(13, 63);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(40, 35);
-            this.button12.TabIndex = 32;
-            this.button12.Text = "V10";
-            this.button12.UseVisualStyleBackColor = true;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(14, 16);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(20, 13);
-            this.label10.TabIndex = 42;
-            this.label10.Text = "Dir";
-            // 
-            // Dir1
-            // 
-            this.Dir1.Location = new System.Drawing.Point(13, 32);
-            this.Dir1.Name = "Dir1";
-            this.Dir1.Size = new System.Drawing.Size(40, 20);
-            this.Dir1.TabIndex = 43;
-            this.Dir1.Text = "0";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(14, 55);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(38, 13);
-            this.label11.TabIndex = 44;
-            this.label11.Text = "Speed";
-            // 
-            // Speed1
-            // 
-            this.Speed1.Location = new System.Drawing.Point(13, 71);
-            this.Speed1.Name = "Speed1";
-            this.Speed1.Size = new System.Drawing.Size(40, 20);
-            this.Speed1.TabIndex = 45;
-            this.Speed1.Text = "0";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(14, 94);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(33, 13);
-            this.label12.TabIndex = 46;
-            this.label12.Text = "Timer";
-            // 
-            // TimerM1
-            // 
-            this.TimerM1.Location = new System.Drawing.Point(13, 110);
-            this.TimerM1.Name = "TimerM1";
-            this.TimerM1.Size = new System.Drawing.Size(40, 20);
-            this.TimerM1.TabIndex = 47;
-            this.TimerM1.Text = "0";
-            // 
-            // Motor1
-            // 
-            this.Motor1.Controls.Add(this.label10);
-            this.Motor1.Controls.Add(this.SendM1);
-            this.Motor1.Controls.Add(this.label12);
-            this.Motor1.Controls.Add(this.Dir1);
-            this.Motor1.Controls.Add(this.TimerM1);
-            this.Motor1.Controls.Add(this.label11);
-            this.Motor1.Controls.Add(this.Speed1);
-            this.Motor1.Location = new System.Drawing.Point(35, 635);
-            this.Motor1.Name = "Motor1";
-            this.Motor1.Size = new System.Drawing.Size(124, 146);
-            this.Motor1.TabIndex = 48;
-            this.Motor1.TabStop = false;
-            this.Motor1.Text = "Motor1";
-            this.Motor1.Enter += new System.EventHandler(this.groupBox4_Enter);
-            // 
-            // Motor2
-            // 
-            this.Motor2.Controls.Add(this.label13);
-            this.Motor2.Controls.Add(this.button16);
-            this.Motor2.Controls.Add(this.label14);
-            this.Motor2.Controls.Add(this.Dir2);
-            this.Motor2.Controls.Add(this.TimerM2);
-            this.Motor2.Controls.Add(this.label15);
-            this.Motor2.Controls.Add(this.Speed2);
-            this.Motor2.Location = new System.Drawing.Point(180, 635);
-            this.Motor2.Name = "Motor2";
-            this.Motor2.Size = new System.Drawing.Size(124, 146);
-            this.Motor2.TabIndex = 49;
-            this.Motor2.TabStop = false;
-            this.Motor2.Text = "Motor2";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(14, 16);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(20, 13);
-            this.label13.TabIndex = 42;
-            this.label13.Text = "Dir";
-            // 
-            // button16
-            // 
-            this.button16.Location = new System.Drawing.Point(69, 24);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(46, 35);
-            this.button16.TabIndex = 37;
-            this.button16.Text = "Send";
-            this.button16.UseVisualStyleBackColor = true;
-            this.button16.Click += new System.EventHandler(this.button16_Click_1);
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(14, 94);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(33, 13);
-            this.label14.TabIndex = 46;
-            this.label14.Text = "Timer";
-            // 
-            // Dir2
-            // 
-            this.Dir2.Location = new System.Drawing.Point(13, 32);
-            this.Dir2.Name = "Dir2";
-            this.Dir2.Size = new System.Drawing.Size(40, 20);
-            this.Dir2.TabIndex = 43;
-            this.Dir2.Text = "0";
-            // 
-            // TimerM2
-            // 
-            this.TimerM2.Location = new System.Drawing.Point(13, 110);
-            this.TimerM2.Name = "TimerM2";
-            this.TimerM2.Size = new System.Drawing.Size(40, 20);
-            this.TimerM2.TabIndex = 47;
-            this.TimerM2.Text = "0";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(14, 55);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(38, 13);
-            this.label15.TabIndex = 44;
-            this.label15.Text = "Speed";
-            // 
-            // Speed2
-            // 
-            this.Speed2.Location = new System.Drawing.Point(13, 71);
-            this.Speed2.Name = "Speed2";
-            this.Speed2.Size = new System.Drawing.Size(40, 20);
-            this.Speed2.TabIndex = 45;
-            this.Speed2.Text = "0";
-            // 
-            // Motor3
-            // 
-            this.Motor3.Controls.Add(this.label16);
-            this.Motor3.Controls.Add(this.button18);
-            this.Motor3.Controls.Add(this.label17);
-            this.Motor3.Controls.Add(this.Dir3);
-            this.Motor3.Controls.Add(this.TimerM3);
-            this.Motor3.Controls.Add(this.label18);
-            this.Motor3.Controls.Add(this.Speed3);
-            this.Motor3.Location = new System.Drawing.Point(35, 787);
-            this.Motor3.Name = "Motor3";
-            this.Motor3.Size = new System.Drawing.Size(124, 146);
-            this.Motor3.TabIndex = 50;
-            this.Motor3.TabStop = false;
-            this.Motor3.Text = "Motor3";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(14, 16);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(20, 13);
-            this.label16.TabIndex = 42;
-            this.label16.Text = "Dir";
-            // 
-            // button18
-            // 
-            this.button18.Location = new System.Drawing.Point(69, 24);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(46, 35);
-            this.button18.TabIndex = 37;
-            this.button18.Text = "Send";
-            this.button18.UseVisualStyleBackColor = true;
-            this.button18.Click += new System.EventHandler(this.button18_Click);
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(14, 94);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(33, 13);
-            this.label17.TabIndex = 46;
-            this.label17.Text = "Timer";
-            // 
-            // Dir3
-            // 
-            this.Dir3.Location = new System.Drawing.Point(13, 32);
-            this.Dir3.Name = "Dir3";
-            this.Dir3.Size = new System.Drawing.Size(40, 20);
-            this.Dir3.TabIndex = 43;
-            this.Dir3.Text = "0";
-            // 
-            // TimerM3
-            // 
-            this.TimerM3.Location = new System.Drawing.Point(13, 110);
-            this.TimerM3.Name = "TimerM3";
-            this.TimerM3.Size = new System.Drawing.Size(40, 20);
-            this.TimerM3.TabIndex = 47;
-            this.TimerM3.Text = "0";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(14, 55);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(38, 13);
-            this.label18.TabIndex = 44;
-            this.label18.Text = "Speed";
-            // 
-            // Speed3
-            // 
-            this.Speed3.Location = new System.Drawing.Point(13, 71);
-            this.Speed3.Name = "Speed3";
-            this.Speed3.Size = new System.Drawing.Size(40, 20);
-            this.Speed3.TabIndex = 45;
-            this.Speed3.Text = "0";
-            // 
-            // AllMotor
-            // 
-            this.AllMotor.Controls.Add(this.button19);
-            this.AllMotor.Controls.Add(this.button2);
-            this.AllMotor.Controls.Add(this.button13);
-            this.AllMotor.Controls.Add(this.button12);
-            this.AllMotor.Controls.Add(this.button11);
-            this.AllMotor.Location = new System.Drawing.Point(180, 787);
-            this.AllMotor.Name = "AllMotor";
-            this.AllMotor.Size = new System.Drawing.Size(124, 146);
-            this.AllMotor.TabIndex = 51;
-            this.AllMotor.TabStop = false;
-            this.AllMotor.Text = "AllMotor";
-            this.AllMotor.Enter += new System.EventHandler(this.groupBox4_Enter_1);
-            // 
             // G1
             // 
             this.G1.AutoSize = true;
@@ -912,56 +427,14 @@
             this.G1.TabIndex = 52;
             this.G1.UseVisualStyleBackColor = true;
             // 
-            // G2
-            // 
-            this.G2.AutoSize = true;
-            this.G2.Location = new System.Drawing.Point(153, 397);
-            this.G2.Name = "G2";
-            this.G2.Size = new System.Drawing.Size(15, 14);
-            this.G2.TabIndex = 53;
-            this.G2.UseVisualStyleBackColor = true;
-            // 
-            // G3
-            // 
-            this.G3.AutoSize = true;
-            this.G3.Location = new System.Drawing.Point(153, 438);
-            this.G3.Name = "G3";
-            this.G3.Size = new System.Drawing.Size(15, 14);
-            this.G3.TabIndex = 54;
-            this.G3.UseVisualStyleBackColor = true;
-            // 
-            // button19
-            // 
-            this.button19.Location = new System.Drawing.Point(13, 102);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(102, 35);
-            this.button19.TabIndex = 34;
-            this.button19.Text = "SendAll";
-            this.button19.UseVisualStyleBackColor = true;
-            this.button19.Click += new System.EventHandler(this.button19_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1433, 984);
-            this.Controls.Add(this.G3);
-            this.Controls.Add(this.G2);
+            this.ClientSize = new System.Drawing.Size(1309, 723);
             this.Controls.Add(this.G1);
-            this.Controls.Add(this.AllMotor);
-            this.Controls.Add(this.Motor3);
-            this.Controls.Add(this.Motor2);
-            this.Controls.Add(this.Motor1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.chart3);
-            this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.chart2);
             this.Controls.Add(this.checkBox3);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.exportToTxtButton);
@@ -984,18 +457,9 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            this.Motor1.ResumeLayout(false);
-            this.Motor1.PerformLayout();
-            this.Motor2.ResumeLayout(false);
-            this.Motor2.PerformLayout();
-            this.Motor3.ResumeLayout(false);
-            this.Motor3.PerformLayout();
-            this.AllMotor.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1025,25 +489,10 @@
         private System.Windows.Forms.Button exportToTxtButton;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart3;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button11;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button SendM1;
-        private System.Windows.Forms.Button button17;
         private System.Windows.Forms.TextBox sp_textbox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -1052,36 +501,7 @@
         private System.Windows.Forms.TextBox ki_textbox;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox kd_textbox;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox dir_textbox;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox Dir1;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox Speed1;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox TimerM1;
-        private System.Windows.Forms.GroupBox Motor1;
-        private System.Windows.Forms.GroupBox Motor2;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox Dir2;
-        private System.Windows.Forms.TextBox TimerM2;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox Speed2;
-        private System.Windows.Forms.GroupBox Motor3;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox Dir3;
-        private System.Windows.Forms.TextBox TimerM3;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox Speed3;
-        private System.Windows.Forms.GroupBox AllMotor;
         private System.Windows.Forms.CheckBox G1;
-        private System.Windows.Forms.CheckBox G2;
-        private System.Windows.Forms.CheckBox G3;
-        private System.Windows.Forms.Button button19;
     }
 }
 
