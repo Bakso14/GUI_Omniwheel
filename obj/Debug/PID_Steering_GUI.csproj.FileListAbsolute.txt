@@ -1,0 +1,10 @@
+C:\Users\sayyi\Source\Repos\Bakso14\GUI_Omniwheel\bin\Debug\PID_Steering_GUI.exe.config
+C:\Users\sayyi\Source\Repos\Bakso14\GUI_Omniwheel\bin\Debug\PID_Steering_GUI.exe
+C:\Users\sayyi\Source\Repos\Bakso14\GUI_Omniwheel\bin\Debug\PID_Steering_GUI.pdb
+C:\Users\sayyi\Source\Repos\Bakso14\GUI_Omniwheel\obj\Debug\PID_Steering_GUI.csproj.AssemblyReference.cache
+C:\Users\sayyi\Source\Repos\Bakso14\GUI_Omniwheel\obj\Debug\Penelitian_Push_Up_Counter.Form1.resources
+C:\Users\sayyi\Source\Repos\Bakso14\GUI_Omniwheel\obj\Debug\GUI_Omniwheel.Properties.Resources.resources
+C:\Users\sayyi\Source\Repos\Bakso14\GUI_Omniwheel\obj\Debug\PID_Steering_GUI.csproj.GenerateResource.cache
+C:\Users\sayyi\Source\Repos\Bakso14\GUI_Omniwheel\obj\Debug\PID_Steering_GUI.csproj.CoreCompileInputs.cache
+C:\Users\sayyi\Source\Repos\Bakso14\GUI_Omniwheel\obj\Debug\PID_Steering_GUI.exe
+C:\Users\sayyi\Source\Repos\Bakso14\GUI_Omniwheel\obj\Debug\PID_Steering_GUI.pdb

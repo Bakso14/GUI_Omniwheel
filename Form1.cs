@@ -96,15 +96,17 @@ namespace Penelitian_Push_Up_Counter
 
         private void ShowData(object sender, EventArgs e)
         {
-            string[] pisah_data = dataIN.Split(';');
-
-            textBox1.Text = pisah_data[0];
-            textBox2.Text = pisah_data[1];
-            textBox3.Text = pisah_data[2];
-            textBox4.Text = pisah_data[3];
 
             try
             {
+
+                string[] pisah_data = dataIN.Split(',');
+
+                textBox1.Text = pisah_data[0];
+                textBox2.Text = pisah_data[1];
+                textBox3.Text = pisah_data[2];
+                textBox4.Text = pisah_data[3];
+
                 if (checkBox3.Checked)
                 {
                     i++;
@@ -218,7 +220,8 @@ namespace Penelitian_Push_Up_Counter
 
         private void button3_Click(object sender, EventArgs e)
         {
-            chart1.Series["Series1"].Points.Clear();
+            chart1.Series[0].Points.Clear();
+            chart1.Series[1].Points.Clear();
             i = 0;
         }
 
@@ -251,10 +254,11 @@ namespace Penelitian_Push_Up_Counter
         {
             if (serialPort1.IsOpen)
             {
+                setpoint = textBox5.Text;
                 kp = kp_textbox.Text;
                 ki = ki_textbox.Text;
                 kd = kd_textbox.Text;
-                serialPort1.Write(kp + "," + ki + "," + kd + ",0,0,0");
+                serialPort1.Write(kp + "," + ki + "," + kd + "," + setpoint);
                 
             }
         }
