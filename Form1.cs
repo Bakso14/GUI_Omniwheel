@@ -34,6 +34,7 @@ namespace Penelitian_Push_Up_Counter
         public Form1()
         {
             InitializeComponent();
+
         }
 
         private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
@@ -100,26 +101,16 @@ namespace Penelitian_Push_Up_Counter
             try
             {
 
-                string[] pisah_data = dataIN.Split(',');
-
-                textBox1.Text = pisah_data[0];
-                textBox2.Text = pisah_data[1];
-                textBox3.Text = pisah_data[2];
-                textBox4.Text = pisah_data[3];
+                string[] pisah_data = dataIN.Split(character_split.Text[0]);
 
                 if (checkBox3.Checked)
                 {
                     i++;
-                    this.chart1.Series[1].Points.AddXY(i, pisah_data[2]);
-                    this.chart1.Series[0].Points.AddXY(i, pisah_data[3]);
+                    this.chart1.Series[1].Points.AddXY(i, pisah_data[Convert.ToInt16(index_data1.Text)]);
+                    this.chart1.Series[0].Points.AddXY(i, pisah_data[Convert.ToInt16(index_data2.Text)]);
 
                 }
-                else if (G1.Checked)
-                {
-                    i++;
-                    this.chart1.Series[1].Points.AddXY(i, pisah_data[2]);
-                    this.chart1.Series[0].Points.AddXY(i, pisah_data[3]);
-                }
+
             }
             catch (Exception err)
             {
@@ -166,19 +157,6 @@ namespace Penelitian_Push_Up_Counter
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            if(tBoxDataIn.Text != "")
-            {
-                tBoxDataIn.Text = "";
-            }
-
-            chart1.Series["Series1"].Points.Clear();
-            i = 0;
-
-        }
-
-        
         private void exportToTxtButton_Click(object sender, EventArgs e)
         {
             // Create a SaveFileDialog to choose the export file location.
