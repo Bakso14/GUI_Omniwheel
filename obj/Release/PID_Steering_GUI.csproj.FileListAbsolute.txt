@@ -8,3 +8,13 @@ C:\Users\sayyi\Source\Repos\Bakso14\GUI_Omniwheel\bin\Release\PID_Steering_GUI.e
 C:\Users\sayyi\Source\Repos\Bakso14\GUI_Omniwheel\bin\Release\PID_Steering_GUI.pdb
 C:\Users\sayyi\Source\Repos\Bakso14\GUI_Omniwheel\obj\Release\PID_Steering_GUI.exe
 C:\Users\sayyi\Source\Repos\Bakso14\GUI_Omniwheel\obj\Release\PID_Steering_GUI.pdb
+D:\Github\GUI_Omniwheel\bin\Release\PID_Steering_GUI.exe.config
+D:\Github\GUI_Omniwheel\bin\Release\PID_Steering_GUI.exe
+D:\Github\GUI_Omniwheel\bin\Release\PID_Steering_GUI.pdb
+D:\Github\GUI_Omniwheel\obj\Release\PID_Steering_GUI.csproj.AssemblyReference.cache
+D:\Github\GUI_Omniwheel\obj\Release\Penelitian_Push_Up_Counter.Form1.resources
+D:\Github\GUI_Omniwheel\obj\Release\GUI_Omniwheel.Properties.Resources.resources
+D:\Github\GUI_Omniwheel\obj\Release\PID_Steering_GUI.csproj.GenerateResource.cache
+D:\Github\GUI_Omniwheel\obj\Release\PID_Steering_GUI.csproj.CoreCompileInputs.cache
+D:\Github\GUI_Omniwheel\obj\Release\PID_Steering_GUI.exe
+D:\Github\GUI_Omniwheel\obj\Release\PID_Steering_GUI.pdb

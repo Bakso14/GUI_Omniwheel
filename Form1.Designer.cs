@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -73,12 +73,20 @@
             this.graph_control = new System.Windows.Forms.GroupBox();
             this.label11 = new System.Windows.Forms.Label();
             this.index_data2 = new System.Windows.Forms.TextBox();
+            this.MapUtama = new GMap.NET.WindowsForms.GMapControl();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.Longitude = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
+            this.Latitude = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.graph_control.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -198,7 +206,7 @@
             this.tBoxDataIn.Location = new System.Drawing.Point(32, 264);
             this.tBoxDataIn.Multiline = true;
             this.tBoxDataIn.Name = "tBoxDataIn";
-            this.tBoxDataIn.Size = new System.Drawing.Size(272, 67);
+            this.tBoxDataIn.Size = new System.Drawing.Size(272, 39);
             this.tBoxDataIn.TabIndex = 5;
             this.tBoxDataIn.TextChanged += new System.EventHandler(this.tBoxDataIn_TextChanged);
             // 
@@ -223,7 +231,7 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(35, 345);
+            this.checkBox1.Location = new System.Drawing.Point(35, 309);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(97, 17);
             this.checkBox1.TabIndex = 8;
@@ -234,7 +242,7 @@
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(174, 345);
+            this.checkBox2.Location = new System.Drawing.Point(174, 309);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(102, 17);
             this.checkBox2.TabIndex = 9;
@@ -244,26 +252,24 @@
             // 
             // chart1
             // 
-            this.chart1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(345, 160);
+            this.chart1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            chartArea4.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.chart1.Legends.Add(legend4);
+            this.chart1.Location = new System.Drawing.Point(794, 160);
             this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series1.Legend = "Legend1";
-            series1.Name = "Data1";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series2.Legend = "Legend1";
-            series2.Name = "Data2";
-            this.chart1.Series.Add(series1);
-            this.chart1.Series.Add(series2);
-            this.chart1.Size = new System.Drawing.Size(952, 458);
+            series7.ChartArea = "ChartArea1";
+            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series7.Legend = "Legend1";
+            series7.Name = "Data1";
+            series8.ChartArea = "ChartArea1";
+            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series8.Legend = "Legend1";
+            series8.Name = "Data2";
+            this.chart1.Series.Add(series7);
+            this.chart1.Series.Add(series8);
+            this.chart1.Size = new System.Drawing.Size(503, 242);
             this.chart1.TabIndex = 11;
             this.chart1.Text = "chart1";
             this.chart1.Click += new System.EventHandler(this.chart1_Click);
@@ -312,6 +318,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.textBox5);
             this.groupBox3.Controls.Add(this.label8);
@@ -321,9 +328,9 @@
             this.groupBox3.Controls.Add(this.button15);
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Controls.Add(this.kp_textbox);
-            this.groupBox3.Location = new System.Drawing.Point(35, 379);
+            this.groupBox3.Location = new System.Drawing.Point(794, 19);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(269, 150);
+            this.groupBox3.Size = new System.Drawing.Size(269, 131);
             this.groupBox3.TabIndex = 32;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "PID Controller";
@@ -348,7 +355,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(13, 113);
+            this.label8.Location = new System.Drawing.Point(13, 92);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(22, 13);
             this.label8.TabIndex = 38;
@@ -356,7 +363,7 @@
             // 
             // kd_textbox
             // 
-            this.kd_textbox.Location = new System.Drawing.Point(57, 113);
+            this.kd_textbox.Location = new System.Drawing.Point(57, 92);
             this.kd_textbox.Name = "kd_textbox";
             this.kd_textbox.Size = new System.Drawing.Size(40, 20);
             this.kd_textbox.TabIndex = 39;
@@ -365,7 +372,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(13, 74);
+            this.label5.Location = new System.Drawing.Point(13, 63);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(17, 13);
             this.label5.TabIndex = 36;
@@ -373,7 +380,7 @@
             // 
             // ki_textbox
             // 
-            this.ki_textbox.Location = new System.Drawing.Point(57, 74);
+            this.ki_textbox.Location = new System.Drawing.Point(57, 63);
             this.ki_textbox.Name = "ki_textbox";
             this.ki_textbox.Size = new System.Drawing.Size(40, 20);
             this.ki_textbox.TabIndex = 37;
@@ -476,11 +483,101 @@
             this.index_data2.TabIndex = 47;
             this.index_data2.Text = "0";
             // 
+            // MapUtama
+            // 
+            this.MapUtama.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.MapUtama.Bearing = 0F;
+            this.MapUtama.CanDragMap = true;
+            this.MapUtama.EmptyTileColor = System.Drawing.Color.Navy;
+            this.MapUtama.GrayScaleMode = false;
+            this.MapUtama.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
+            this.MapUtama.LevelsKeepInMemory = 5;
+            this.MapUtama.Location = new System.Drawing.Point(310, 160);
+            this.MapUtama.MarkersEnabled = true;
+            this.MapUtama.MaxZoom = 2;
+            this.MapUtama.MinZoom = 2;
+            this.MapUtama.MouseWheelZoomEnabled = true;
+            this.MapUtama.MouseWheelZoomType = GMap.NET.MouseWheelZoomType.MousePositionAndCenter;
+            this.MapUtama.Name = "MapUtama";
+            this.MapUtama.NegativeMode = false;
+            this.MapUtama.PolygonsEnabled = true;
+            this.MapUtama.RetryLoadTile = 0;
+            this.MapUtama.RoutesEnabled = true;
+            this.MapUtama.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
+            this.MapUtama.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
+            this.MapUtama.ShowTileGridLines = false;
+            this.MapUtama.Size = new System.Drawing.Size(478, 359);
+            this.MapUtama.TabIndex = 47;
+            this.MapUtama.Zoom = 0D;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox4.Controls.Add(this.label14);
+            this.groupBox4.Controls.Add(this.Longitude);
+            this.groupBox4.Controls.Add(this.button1);
+            this.groupBox4.Controls.Add(this.label15);
+            this.groupBox4.Controls.Add(this.Latitude);
+            this.groupBox4.Location = new System.Drawing.Point(503, 19);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(269, 131);
+            this.groupBox4.TabIndex = 42;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Load Map";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(13, 63);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(54, 13);
+            this.label14.TabIndex = 36;
+            this.label14.Text = "Longitude";
+            // 
+            // Longitude
+            // 
+            this.Longitude.Location = new System.Drawing.Point(73, 60);
+            this.Longitude.Name = "Longitude";
+            this.Longitude.Size = new System.Drawing.Size(40, 20);
+            this.Longitude.TabIndex = 37;
+            this.Longitude.Text = "34.0123";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(132, 29);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(121, 57);
+            this.button1.TabIndex = 34;
+            this.button1.Text = "LOAD";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(13, 34);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(45, 13);
+            this.label15.TabIndex = 34;
+            this.label15.Text = "Latitude";
+            // 
+            // Latitude
+            // 
+            this.Latitude.Location = new System.Drawing.Point(73, 31);
+            this.Latitude.Name = "Latitude";
+            this.Latitude.Size = new System.Drawing.Size(40, 20);
+            this.Latitude.TabIndex = 35;
+            this.Latitude.Text = "-7.123";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1309, 627);
+            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.MapUtama);
             this.Controls.Add(this.graph_control);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.chart1);
@@ -506,6 +603,8 @@
             this.groupBox3.PerformLayout();
             this.graph_control.ResumeLayout(false);
             this.graph_control.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -552,6 +651,13 @@
         private System.Windows.Forms.GroupBox graph_control;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox index_data2;
+        private GMap.NET.WindowsForms.GMapControl MapUtama;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox Longitude;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox Latitude;
     }
 }
 

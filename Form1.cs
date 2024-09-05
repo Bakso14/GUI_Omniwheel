@@ -11,6 +11,8 @@ using System.IO.Ports;
 using System.IO;
 using System.Windows.Forms.DataVisualization.Charting;
 using System.Net.Sockets;
+using GMap.NET.MapProviders;
+using GMap.NET;
 
 namespace Penelitian_Push_Up_Counter
 {
@@ -244,6 +246,14 @@ namespace Penelitian_Push_Up_Counter
         private void label9_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MapUtama.MapProvider = GMapProviders.GoogleMap;
+            double lat = Convert.ToDouble(Latitude.Text);
+            double lon = Convert.ToDouble(Longitude.Text);
+            MapUtama.Position = new PointLatLng(lat, lon);
         }
     }
 }
