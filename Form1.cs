@@ -250,10 +250,24 @@ namespace Penelitian_Push_Up_Counter
 
         private void button1_Click(object sender, EventArgs e)
         {
+            MapUtama.DragButton = MouseButtons.Left;
             MapUtama.MapProvider = GMapProviders.GoogleMap;
             double lat = Convert.ToDouble(Latitude.Text);
             double lon = Convert.ToDouble(Longitude.Text);
             MapUtama.Position = new PointLatLng(lat, lon);
+            MapUtama.MinZoom = 1;
+            MapUtama.MaxZoom = 100;
+            MapUtama.Zoom = 15;
+        }
+
+        private void MapUtama_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void MapUtama_MouseClick(object sender, MouseEventArgs e)
+        {
+            e.
         }
     }
 }
