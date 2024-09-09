@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series13 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series14 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -80,6 +80,15 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
             this.Latitude = new System.Windows.Forms.TextBox();
+            this.index_long = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.index_lat = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.gps_serial = new System.Windows.Forms.CheckBox();
+            this.auto_load = new System.Windows.Forms.CheckBox();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.GPS = new System.Windows.Forms.TabPage();
+            this.Grafik = new System.Windows.Forms.TabPage();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
@@ -87,6 +96,9 @@
             this.groupBox3.SuspendLayout();
             this.graph_control.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.tabControl1.SuspendLayout();
+            this.GPS.SuspendLayout();
+            this.Grafik.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -252,24 +264,26 @@
             // 
             // chart1
             // 
-            this.chart1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea7.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea7);
-            legend7.Name = "Legend1";
-            this.chart1.Legends.Add(legend7);
-            this.chart1.Location = new System.Drawing.Point(794, 160);
+            this.chart1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
+            this.chart1.Location = new System.Drawing.Point(0, 0);
             this.chart1.Name = "chart1";
-            series13.ChartArea = "ChartArea1";
-            series13.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series13.Legend = "Legend1";
-            series13.Name = "Data1";
-            series14.ChartArea = "ChartArea1";
-            series14.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series14.Legend = "Legend1";
-            series14.Name = "Data2";
-            this.chart1.Series.Add(series13);
-            this.chart1.Series.Add(series14);
-            this.chart1.Size = new System.Drawing.Size(503, 242);
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series3.Legend = "Legend1";
+            series3.Name = "Data1";
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series4.Legend = "Legend1";
+            series4.Name = "Data2";
+            this.chart1.Series.Add(series3);
+            this.chart1.Series.Add(series4);
+            this.chart1.Size = new System.Drawing.Size(962, 433);
             this.chart1.TabIndex = 11;
             this.chart1.Text = "chart1";
             this.chart1.Click += new System.EventHandler(this.chart1_Click);
@@ -494,7 +508,7 @@
             this.MapUtama.GrayScaleMode = false;
             this.MapUtama.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
             this.MapUtama.LevelsKeepInMemory = 5;
-            this.MapUtama.Location = new System.Drawing.Point(310, 160);
+            this.MapUtama.Location = new System.Drawing.Point(0, 0);
             this.MapUtama.MarkersEnabled = true;
             this.MapUtama.MaxZoom = 2;
             this.MapUtama.MinZoom = 2;
@@ -508,7 +522,7 @@
             this.MapUtama.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
             this.MapUtama.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
             this.MapUtama.ShowTileGridLines = false;
-            this.MapUtama.Size = new System.Drawing.Size(478, 359);
+            this.MapUtama.Size = new System.Drawing.Size(959, 437);
             this.MapUtama.TabIndex = 47;
             this.MapUtama.Zoom = 0D;
             this.MapUtama.Click += new System.EventHandler(this.MapUtama_Click);
@@ -517,8 +531,14 @@
             // groupBox4
             // 
             this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox4.Controls.Add(this.auto_load);
+            this.groupBox4.Controls.Add(this.gps_serial);
+            this.groupBox4.Controls.Add(this.index_long);
+            this.groupBox4.Controls.Add(this.textBox1);
             this.groupBox4.Controls.Add(this.label14);
+            this.groupBox4.Controls.Add(this.index_lat);
             this.groupBox4.Controls.Add(this.Longitude);
+            this.groupBox4.Controls.Add(this.textBox2);
             this.groupBox4.Controls.Add(this.button1);
             this.groupBox4.Controls.Add(this.label15);
             this.groupBox4.Controls.Add(this.Latitude);
@@ -532,7 +552,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(13, 63);
+            this.label14.Location = new System.Drawing.Point(9, 55);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(54, 13);
             this.label14.TabIndex = 36;
@@ -540,15 +560,15 @@
             // 
             // Longitude
             // 
-            this.Longitude.Location = new System.Drawing.Point(73, 60);
+            this.Longitude.Location = new System.Drawing.Point(69, 52);
             this.Longitude.Name = "Longitude";
-            this.Longitude.Size = new System.Drawing.Size(40, 20);
+            this.Longitude.Size = new System.Drawing.Size(58, 20);
             this.Longitude.TabIndex = 37;
             this.Longitude.Text = "112.72720018600343";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(132, 29);
+            this.button1.Location = new System.Drawing.Point(142, 16);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(121, 57);
             this.button1.TabIndex = 34;
@@ -559,7 +579,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(13, 34);
+            this.label15.Location = new System.Drawing.Point(9, 26);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(45, 13);
             this.label15.TabIndex = 34;
@@ -567,22 +587,110 @@
             // 
             // Latitude
             // 
-            this.Latitude.Location = new System.Drawing.Point(73, 31);
+            this.Latitude.Location = new System.Drawing.Point(69, 23);
             this.Latitude.Name = "Latitude";
-            this.Latitude.Size = new System.Drawing.Size(40, 20);
+            this.Latitude.Size = new System.Drawing.Size(58, 20);
             this.Latitude.TabIndex = 35;
             this.Latitude.Text = "-7.313465349245249";
+            // 
+            // index_long
+            // 
+            this.index_long.AutoSize = true;
+            this.index_long.Location = new System.Drawing.Point(9, 103);
+            this.index_long.Name = "index_long";
+            this.index_long.Size = new System.Drawing.Size(60, 13);
+            this.index_long.TabIndex = 50;
+            this.index_long.Text = "Index Long";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(69, 99);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(40, 20);
+            this.textBox1.TabIndex = 51;
+            this.textBox1.Text = "0";
+            // 
+            // index_lat
+            // 
+            this.index_lat.AutoSize = true;
+            this.index_lat.Location = new System.Drawing.Point(9, 80);
+            this.index_lat.Name = "index_lat";
+            this.index_lat.Size = new System.Drawing.Size(51, 13);
+            this.index_lat.TabIndex = 48;
+            this.index_lat.Text = "Index Lat";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(69, 76);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(40, 20);
+            this.textBox2.TabIndex = 49;
+            this.textBox2.Text = "0";
+            // 
+            // gps_serial
+            // 
+            this.gps_serial.AutoSize = true;
+            this.gps_serial.Location = new System.Drawing.Point(147, 97);
+            this.gps_serial.Name = "gps_serial";
+            this.gps_serial.Size = new System.Drawing.Size(100, 17);
+            this.gps_serial.TabIndex = 48;
+            this.gps_serial.Text = "Baca dari Serial";
+            this.gps_serial.UseVisualStyleBackColor = true;
+            // 
+            // auto_load
+            // 
+            this.auto_load.AutoSize = true;
+            this.auto_load.Location = new System.Drawing.Point(147, 77);
+            this.auto_load.Name = "auto_load";
+            this.auto_load.Size = new System.Drawing.Size(75, 17);
+            this.auto_load.TabIndex = 52;
+            this.auto_load.Text = "Auto Load";
+            this.auto_load.UseVisualStyleBackColor = true;
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabControl1.Controls.Add(this.GPS);
+            this.tabControl1.Controls.Add(this.Grafik);
+            this.tabControl1.Location = new System.Drawing.Point(327, 152);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(970, 463);
+            this.tabControl1.TabIndex = 48;
+            // 
+            // GPS
+            // 
+            this.GPS.Controls.Add(this.MapUtama);
+            this.GPS.Location = new System.Drawing.Point(4, 22);
+            this.GPS.Name = "GPS";
+            this.GPS.Padding = new System.Windows.Forms.Padding(3);
+            this.GPS.Size = new System.Drawing.Size(962, 437);
+            this.GPS.TabIndex = 0;
+            this.GPS.Text = "GPS";
+            this.GPS.UseVisualStyleBackColor = true;
+            // 
+            // Grafik
+            // 
+            this.Grafik.Controls.Add(this.chart1);
+            this.Grafik.Location = new System.Drawing.Point(4, 22);
+            this.Grafik.Name = "Grafik";
+            this.Grafik.Padding = new System.Windows.Forms.Padding(3);
+            this.Grafik.Size = new System.Drawing.Size(962, 437);
+            this.Grafik.TabIndex = 1;
+            this.Grafik.Text = "Grafik";
+            this.Grafik.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1309, 627);
+            this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.MapUtama);
             this.Controls.Add(this.graph_control);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.chart1);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label7);
@@ -607,6 +715,9 @@
             this.graph_control.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            this.tabControl1.ResumeLayout(false);
+            this.GPS.ResumeLayout(false);
+            this.Grafik.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -660,6 +771,15 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox Latitude;
+        private System.Windows.Forms.Label index_long;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label index_lat;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.CheckBox gps_serial;
+        private System.Windows.Forms.CheckBox auto_load;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage GPS;
+        private System.Windows.Forms.TabPage Grafik;
     }
 }
 

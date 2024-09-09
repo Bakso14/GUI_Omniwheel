@@ -102,22 +102,40 @@ namespace Penelitian_Push_Up_Counter
 
             try
             {
-
                 string[] pisah_data = dataIN.Split(character_split.Text[0]);
 
                 if (checkBox3.Checked)
                 {
                     i++;
-                    this.chart1.Series[1].Points.AddXY(i, pisah_data[Convert.ToInt16(index_data1.Text)]);
-                    this.chart1.Series[0].Points.AddXY(i, pisah_data[Convert.ToInt16(index_data2.Text)]);
-
+                    this.chart1.Series[0].Points.AddXY(i, pisah_data[Convert.ToInt16(index_data1.Text)]);
+                    this.chart1.Series[1].Points.AddXY(i, pisah_data[Convert.ToInt16(index_data2.Text)]);
                 }
+
+                if (gps_serial.Checked)
+                {
+                    Latitude.Text = pisah_data[Convert.ToInt16(index_lat.Text)];
+                    Longitude.Text = pisah_data[Convert.ToInt16(index_long.Text)];
+                }
+
+
 
             }
             catch (Exception err)
             {
 
                 MessageBox.Show(err.Message, "Error String Input Tidak Sesuai:\n" + "\"" + dataIN + "\"", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            if (auto_load.Checked)
+            {
+                MapUtama.DragButton = MouseButtons.Left;
+                MapUtama.MapProvider = GMapProviders.GoogleMap;
+                double lat = Convert.ToDouble(Latitude.Text);
+                double lon = Convert.ToDouble(Longitude.Text);
+                MapUtama.Position = new PointLatLng(lat, lon);
+                MapUtama.MinZoom = 1;
+                MapUtama.MaxZoom = 100;
+                MapUtama.Zoom = 15;
             }
 
             if (checkBox1.Checked)
@@ -238,7 +256,8 @@ namespace Penelitian_Push_Up_Counter
                 kp = kp_textbox.Text;
                 ki = ki_textbox.Text;
                 kd = kd_textbox.Text;
-                serialPort1.Write(kp + "," + ki + "," + kd + "," + setpoint);
+                //serialPort1.Write(kp + "," + ki + "," + kd + "," + setpoint);
+                serialPort1.Write(setpoint + "," + kp + "," + ki + "," + kd);
                 
             }
         }
@@ -267,7 +286,7 @@ namespace Penelitian_Push_Up_Counter
 
         private void MapUtama_MouseClick(object sender, MouseEventArgs e)
         {
-            e.
+            
         }
     }
 }
