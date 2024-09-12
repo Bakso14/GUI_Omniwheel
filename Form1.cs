@@ -113,10 +113,22 @@ namespace Penelitian_Push_Up_Counter
 
                 if (gps_serial.Checked)
                 {
-                    Latitude.Text = pisah_data[Convert.ToInt16(index_lat.Text)];
-                    Longitude.Text = pisah_data[Convert.ToInt16(index_long.Text)];
+                    Latitude.Text = pisah_data[Convert.ToInt16(index_lat_var.Text)];
+                    Longitude.Text = pisah_data[Convert.ToInt16(index_long_var.Text)];
+                    
                 }
 
+                if (auto_load.Checked)
+                {
+                    MapUtama.DragButton = MouseButtons.Left;
+                    MapUtama.MapProvider = GMapProviders.GoogleMap;
+                    double lat = Convert.ToDouble(Latitude.Text);
+                    double lon = Convert.ToDouble(Longitude.Text);
+                    MapUtama.Position = new PointLatLng(lat, lon);
+                    MapUtama.MinZoom = 1;
+                    MapUtama.MaxZoom = 100;
+                    MapUtama.Zoom = 20;
+                }
 
 
             }
@@ -124,18 +136,6 @@ namespace Penelitian_Push_Up_Counter
             {
 
                 MessageBox.Show(err.Message, "Error String Input Tidak Sesuai:\n" + "\"" + dataIN + "\"", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-
-            if (auto_load.Checked)
-            {
-                MapUtama.DragButton = MouseButtons.Left;
-                MapUtama.MapProvider = GMapProviders.GoogleMap;
-                double lat = Convert.ToDouble(Latitude.Text);
-                double lon = Convert.ToDouble(Longitude.Text);
-                MapUtama.Position = new PointLatLng(lat, lon);
-                MapUtama.MinZoom = 1;
-                MapUtama.MaxZoom = 100;
-                MapUtama.Zoom = 15;
             }
 
             if (checkBox1.Checked)
@@ -276,7 +276,7 @@ namespace Penelitian_Push_Up_Counter
             MapUtama.Position = new PointLatLng(lat, lon);
             MapUtama.MinZoom = 1;
             MapUtama.MaxZoom = 100;
-            MapUtama.Zoom = 15;
+            MapUtama.Zoom = 20;
         }
 
         private void MapUtama_Click(object sender, EventArgs e)
@@ -287,6 +287,21 @@ namespace Penelitian_Push_Up_Counter
         private void MapUtama_MouseClick(object sender, MouseEventArgs e)
         {
             
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (serialPort1.IsOpen)
+            {
+                serialPort1.Write(latitude_goal.Text + "," + longitude_goal + "," + "0,0");
+
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            string[] ports = SerialPort.GetPortNames();
+            cBoxCOMPORT.Items.AddRange(ports);
         }
     }
 }
