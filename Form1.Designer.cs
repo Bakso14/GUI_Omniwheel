@@ -29,12 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button4 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.cBoxBaudrate = new System.Windows.Forms.ComboBox();
@@ -95,7 +96,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
             this.latitude_goal = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
@@ -122,6 +122,16 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Com Port Control";
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(142, 77);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(56, 21);
+            this.button4.TabIndex = 38;
+            this.button4.Text = "Refresh";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label2
             // 
@@ -276,22 +286,22 @@
             this.chart1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea5.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea5);
-            legend5.Name = "Legend1";
-            this.chart1.Legends.Add(legend5);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(0, 0);
             this.chart1.Name = "chart1";
-            series9.ChartArea = "ChartArea1";
-            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series9.Legend = "Legend1";
-            series9.Name = "Data1";
-            series10.ChartArea = "ChartArea1";
-            series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series10.Legend = "Legend1";
-            series10.Name = "Data2";
-            this.chart1.Series.Add(series9);
-            this.chart1.Series.Add(series10);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series1.Legend = "Legend1";
+            series1.Name = "Data1";
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series2.Legend = "Legend1";
+            series2.Name = "Data2";
+            this.chart1.Series.Add(series1);
+            this.chart1.Series.Add(series2);
             this.chart1.Size = new System.Drawing.Size(962, 433);
             this.chart1.TabIndex = 11;
             this.chart1.Text = "chart1";
@@ -720,7 +730,7 @@
             this.longitude_goal.Name = "longitude_goal";
             this.longitude_goal.Size = new System.Drawing.Size(108, 20);
             this.longitude_goal.TabIndex = 37;
-            this.longitude_goal.Text = "0";
+            this.longitude_goal.Text = "112.7555711325154";
             // 
             // button2
             // 
@@ -747,17 +757,7 @@
             this.latitude_goal.Name = "latitude_goal";
             this.latitude_goal.Size = new System.Drawing.Size(108, 20);
             this.latitude_goal.TabIndex = 35;
-            this.latitude_goal.Text = "0";
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(142, 77);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(56, 21);
-            this.button4.TabIndex = 38;
-            this.button4.Text = "Refresh";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.latitude_goal.Text = "-7.368498012597734";
             // 
             // Form1
             // 

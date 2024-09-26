@@ -293,7 +293,7 @@ namespace Penelitian_Push_Up_Counter
         {
             if (serialPort1.IsOpen)
             {
-                serialPort1.Write(latitude_goal.Text + "," + longitude_goal + "," + "0,0");
+                serialPort1.Write(latitude_goal.Text + "," + longitude_goal.Text + "," + "0,0,0");
 
             }
         }
