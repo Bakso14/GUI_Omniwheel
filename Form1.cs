@@ -34,6 +34,7 @@ namespace Penelitian_Push_Up_Counter
         public Form1()
         {
             InitializeComponent();
+            WindowState = FormWindowState.Maximized;
         }
 
         private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
@@ -48,6 +49,8 @@ namespace Penelitian_Push_Up_Counter
 
             checkBox1.Checked = true;
             checkBox2.Checked = false;
+
+            groupBox1.Location = new System.Drawing.Point((Form1.ActiveForm.Width/2) - groupBox1.Width/2, (Form1.ActiveForm.Height/2) - groupBox1.Height);
         }
 
         private void btnOpen_Click(object sender, EventArgs e)
@@ -470,6 +473,41 @@ namespace Penelitian_Push_Up_Counter
                 function_code = "3";
                 serialPort1.Write(function_code + "," + Dir1.Text + "," + Speed1.Text + "," + TimerM1.Text + "," + Dir2.Text + "," + Speed2.Text + "," + TimerM2.Text + "," + Dir3.Text + "," + Speed3.Text + "," + TimerM3.Text);
             }
+        }
+
+        private void btnSendData_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label35_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox8_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label34_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox7_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label36_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox10_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
