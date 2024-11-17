@@ -37,11 +37,6 @@ namespace Penelitian_Push_Up_Counter
             WindowState = FormWindowState.Maximized;
         }
 
-        private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
             string[] ports = SerialPort.GetPortNames();
@@ -50,10 +45,10 @@ namespace Penelitian_Push_Up_Counter
             checkBox1.Checked = true;
             checkBox2.Checked = false;
 
-            groupBox1.Location = new System.Drawing.Point((Form1.ActiveForm.Width/2) - groupBox1.Width/2, (Form1.ActiveForm.Height/2) - groupBox1.Height);
+            groupBox1.Location = new System.Drawing.Point((tabControl1.Width/2) - groupBox1.Width/2, (tabControl1.Height/2) - groupBox1.Height);
         }
 
-        private void btnOpen_Click(object sender, EventArgs e)
+        private void btnOpen_Click_1(object sender, EventArgs e)
         {
             try
             {
@@ -73,7 +68,7 @@ namespace Penelitian_Push_Up_Counter
             }
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
+        private void btnClose_Click_1(object sender, EventArgs e)
         {
             if (serialPort1.IsOpen)
             {
@@ -232,15 +227,6 @@ namespace Penelitian_Push_Up_Counter
             i = 0;
         }
 
-        private void checkBox3_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tBoxDataIn_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void button4_Click(object sender, EventArgs e)
         {
@@ -248,20 +234,6 @@ namespace Penelitian_Push_Up_Counter
             j = 0;
         }
 
-        private void chart1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void chart2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            button5.Text = "15";
-        }
 
         private void button8_Click(object sender, EventArgs e)
         {
@@ -331,11 +303,6 @@ namespace Penelitian_Push_Up_Counter
             }
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             kecepatan_setpoint = "20";
@@ -368,17 +335,7 @@ namespace Penelitian_Push_Up_Counter
 
         private void button13_Click(object sender, EventArgs e)
         {
-            kecepatan_setpoint = "0";
-            function_code = "2";
-            if (serialPort1.IsOpen)
-            {
-                serialPort1.Write(function_code + ",0,0,0," + kecepatan_setpoint + "," + kecepatan_setpoint + "," + kecepatan_setpoint + ",0,0,0");
-            }
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
+            fungsi_semua_motor_berhenti();
         }
 
         private void button15_Click(object sender, EventArgs e)
@@ -426,22 +383,7 @@ namespace Penelitian_Push_Up_Counter
             }
         }
 
-        private void groupBox4_Enter(object sender, EventArgs e)
-        {
-
-        }
-
         private void button16_Click(object sender, EventArgs e)
-        {
-            if (serialPort1.IsOpen)
-            {
-                kode = "94";
-                function_code = "1";
-                serialPort1.Write(function_code + "," + kode + "," + Speed1.Text + "," + Dir1.Text + "," + TimerM1.Text + ",0,0" + ",0,0,0");
-            }
-        }
-
-        private void button16_Click_1(object sender, EventArgs e)
         {
             if (serialPort1.IsOpen)
             {
@@ -461,10 +403,6 @@ namespace Penelitian_Push_Up_Counter
             }
         }
 
-        private void groupBox4_Enter_1(object sender, EventArgs e)
-        {
-
-        }
 
         private void button19_Click(object sender, EventArgs e)
         {
@@ -475,10 +413,6 @@ namespace Penelitian_Push_Up_Counter
             }
         }
 
-        private void btnSendData_Click_1(object sender, EventArgs e)
-        {
-
-        }
 
         private void label35_Click(object sender, EventArgs e)
         {
@@ -506,6 +440,167 @@ namespace Penelitian_Push_Up_Counter
         }
 
         private void textBox10_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SendM1_Click(object sender, EventArgs e)
+        {
+            if (serialPort1.IsOpen)
+            {
+                kode = "94";
+                function_code = "1";
+                serialPort1.Write(function_code + "," + kode + "," + Speed1.Text + "," + Dir1.Text + "," + TimerM1.Text + ",0,0" + ",0,0,0");
+            }
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            fungsi_semua_motor_berhenti();
+        }
+
+        private void fungsi_semua_motor_berhenti()
+        {
+            kecepatan_setpoint = "0";
+            function_code = "2";
+            if (serialPort1.IsOpen)
+            {
+                serialPort1.Write(function_code + ",0,0,0," + kecepatan_setpoint + "," + kecepatan_setpoint + "," + kecepatan_setpoint + ",0,0,0");
+            }
+        }
+
+        private void button26_Click(object sender, EventArgs e)
+        {
+            fungsi_semua_motor_berhenti();
+        }
+
+        private void button25_Click(object sender, EventArgs e)
+        {
+            fungsi_semua_motor_berhenti();
+        }
+
+        private void button23_Click(object sender, EventArgs e)
+        {
+            double[] matrix_kecepatan = { -0.3333, 0.5774, 0.0317, -0.3333, -0.5774, 0.0317, 0.6667, 0, 0.0317 };
+            double V1, V2, V3;
+            V3 = matrix_kecepatan[0] * Convert.ToDouble(Vx.Text) + matrix_kecepatan[1] * Convert.ToDouble(Vy.Text) + matrix_kecepatan[2] * Convert.ToDouble(W.Text);
+            V2 = matrix_kecepatan[3] * Convert.ToDouble(Vx.Text) + matrix_kecepatan[4] * Convert.ToDouble(Vy.Text) + matrix_kecepatan[5] * Convert.ToDouble(W.Text);
+            V1 = matrix_kecepatan[6] * Convert.ToDouble(Vx.Text) + matrix_kecepatan[7] * Convert.ToDouble(Vy.Text) + matrix_kecepatan[8] * Convert.ToDouble(W.Text);
+
+
+            label60.Text = V1.ToString();
+            label61.Text = V2.ToString();
+            label62.Text = V3.ToString();
+
+            int[] arah_motor = { 1, 1, 1 };
+
+            if (V1 < 0)
+            {
+                arah_motor[0] = 0;
+                V1 = Math.Abs(V1);
+            }
+
+            if (V2 < 0)
+            {
+                arah_motor[1] = 0;
+                V2 = Math.Abs(V2);
+            }
+
+            if (V3 < 0)
+            {
+                arah_motor[2] = 0;
+                V3 = Math.Abs(V3);
+            }
+
+            function_code = "3";
+            if (serialPort1.IsOpen)
+            {
+                serialPort1.Write(function_code + "," + arah_motor[0].ToString() + "," + arah_motor[1].ToString() + "," + arah_motor[2].ToString() + "," + V1.ToString() + "," + V2.ToString() + "," + V3.ToString() + "," + Timer_Point_Movement.Text + "," + Timer_Point_Movement.Text + "," + Timer_Point_Movement.Text);
+            }
+        }
+
+        private void Point_Movement_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            function_code = "2";
+            int[] arah_motor = { 1, 1, 1 };
+
+            if (comboBoxM1.Text == "CW")
+            {
+                arah_motor[0] = 0;
+            }else if (comboBoxM1.Text == "CCW")
+            {
+                arah_motor[0] = 1;
+
+            }
+
+            if (comboBoxM2.Text == "CW")
+            {
+                arah_motor[0] = 0;
+            }
+            else if (comboBoxM2.Text == "CCW")
+            {
+                arah_motor[0] = 1;
+
+            }
+
+            if (comboBoxM3.Text == "CW")
+            {
+                arah_motor[0] = 0;
+            }
+            else if (comboBoxM3.Text == "CCW")
+            {
+                arah_motor[0] = 1;
+
+            }
+
+
+            if (serialPort1.IsOpen)
+            {
+                serialPort1.Write(function_code + "," + arah_motor[0].ToString() + "," + arah_motor[1].ToString() + "," + arah_motor[2].ToString() + "," + base_movement_M1.Text + "," + base_movement_M2.Text + "," + base_movement_M3.Text + ",0,0,0");
+            }
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            double[] matrix_kecepatan = { -0.3333, 0.5774, 0.0317, -0.3333, -0.5774, 0.0317, 0.6667, 0, 0.0317 };
+            double V1, V2, V3;
+            V3 = matrix_kecepatan[0] * Convert.ToDouble(Vx_Base.Text) + matrix_kecepatan[1] * Convert.ToDouble(Vy_Base.Text) + matrix_kecepatan[2] * Convert.ToDouble(W_Base.Text);
+            V2 = matrix_kecepatan[3] * Convert.ToDouble(Vx_Base.Text) + matrix_kecepatan[4] * Convert.ToDouble(Vy_Base.Text) + matrix_kecepatan[5] * Convert.ToDouble(W_Base.Text);
+            V1 = matrix_kecepatan[6] * Convert.ToDouble(Vx_Base.Text) + matrix_kecepatan[7] * Convert.ToDouble(Vy_Base.Text) + matrix_kecepatan[8] * Convert.ToDouble(W_Base.Text);
+
+            int[] arah_motor = { 1, 1, 1 };
+
+            if (V1 < 0)
+            {
+                arah_motor[0] = 0;
+                V1 = Math.Abs(V1);
+            }
+
+            if (V2 < 0)
+            {
+                arah_motor[1] = 0;
+                V2 = Math.Abs(V2);
+            }
+
+            if (V3 < 0)
+            {
+                arah_motor[2] = 0;
+                V3 = Math.Abs(V3);
+            }
+
+            function_code = "2";
+            if (serialPort1.IsOpen)
+            {
+                serialPort1.Write(function_code + "," + arah_motor[0].ToString() + "," + arah_motor[1].ToString() + "," + arah_motor[2].ToString() + "," + V1.ToString() + "," + V2.ToString() + "," + V3.ToString() + ",0,0,0");
+            }
+        }
+
+        private void Motor_Velocity_Click(object sender, EventArgs e)
         {
 
         }

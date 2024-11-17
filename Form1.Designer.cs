@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend10 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea11 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend11 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea12 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend12 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.Connection = new System.Windows.Forms.TabPage();
@@ -57,12 +57,6 @@
             this.cBoxBaudrate = new System.Windows.Forms.ComboBox();
             this.cBoxCOMPORT = new System.Windows.Forms.ComboBox();
             this.Motor_Velocity = new System.Windows.Forms.TabPage();
-            this.button7 = new System.Windows.Forms.Button();
-            this.chart3 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.AllMotor = new System.Windows.Forms.GroupBox();
             this.button19 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -119,129 +113,144 @@
             this.exportToTxtButton = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.Base_Movement = new System.Windows.Forms.TabPage();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
+            this.button22 = new System.Windows.Forms.Button();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.W_Base = new System.Windows.Forms.TextBox();
+            this.button21 = new System.Windows.Forms.Button();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.Vy_Base = new System.Windows.Forms.TextBox();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.Vx_Base = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.comboBoxM3 = new System.Windows.Forms.ComboBox();
             this.label21 = new System.Windows.Forms.Label();
-            this.button20 = new System.Windows.Forms.Button();
             this.label23 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.base_movement_M3 = new System.Windows.Forms.TextBox();
+            this.button20 = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.comboBoxM2 = new System.Windows.Forms.ComboBox();
             this.label24 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.base_movement_M2 = new System.Windows.Forms.TextBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.comboBoxM1 = new System.Windows.Forms.ComboBox();
             this.label27 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button21 = new System.Windows.Forms.Button();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button22 = new System.Windows.Forms.Button();
+            this.base_movement_M1 = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
             this.Point_Movement = new System.Windows.Forms.TabPage();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.label36 = new System.Windows.Forms.Label();
+            this.Timer_Point_Movement = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
             this.button23 = new System.Windows.Forms.Button();
             this.label34 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.Vx = new System.Windows.Forms.TextBox();
+            this.W = new System.Windows.Forms.TextBox();
             this.label35 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.label36 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.Vy = new System.Windows.Forms.TextBox();
             this.Simple_Shape_Movement = new System.Windows.Forms.TabPage();
+            this.button25 = new System.Windows.Forms.Button();
+            this.groupBox14 = new System.Windows.Forms.GroupBox();
+            this.label53 = new System.Windows.Forms.Label();
+            this.textBox27 = new System.Windows.Forms.TextBox();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.textBox28 = new System.Windows.Forms.TextBox();
+            this.textBox29 = new System.Windows.Forms.TextBox();
+            this.label56 = new System.Windows.Forms.Label();
+            this.textBox30 = new System.Windows.Forms.TextBox();
+            this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.label49 = new System.Windows.Forms.Label();
+            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.textBox24 = new System.Windows.Forms.TextBox();
+            this.textBox25 = new System.Windows.Forms.TextBox();
+            this.label52 = new System.Windows.Forms.Label();
+            this.textBox26 = new System.Windows.Forms.TextBox();
+            this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.label45 = new System.Windows.Forms.Label();
+            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.label48 = new System.Windows.Forms.Label();
+            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.label41 = new System.Windows.Forms.Label();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.label44 = new System.Windows.Forms.Label();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.label37 = new System.Windows.Forms.Label();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.label40 = new System.Windows.Forms.Label();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.button24 = new System.Windows.Forms.Button();
             this.Second_Order_Movement = new System.Windows.Forms.TabPage();
             this.Free_Shape_Movement = new System.Windows.Forms.TabPage();
-            this.button24 = new System.Windows.Forms.Button();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.label40 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.label37 = new System.Windows.Forms.Label();
-            this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.label44 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.label41 = new System.Windows.Forms.Label();
-            this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.label48 = new System.Windows.Forms.Label();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.label45 = new System.Windows.Forms.Label();
-            this.groupBox12 = new System.Windows.Forms.GroupBox();
-            this.textBox26 = new System.Windows.Forms.TextBox();
-            this.label52 = new System.Windows.Forms.Label();
-            this.textBox25 = new System.Windows.Forms.TextBox();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.label51 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.label49 = new System.Windows.Forms.Label();
-            this.groupBox13 = new System.Windows.Forms.GroupBox();
-            this.textBox30 = new System.Windows.Forms.TextBox();
-            this.label56 = new System.Windows.Forms.Label();
-            this.textBox29 = new System.Windows.Forms.TextBox();
-            this.textBox28 = new System.Windows.Forms.TextBox();
-            this.label55 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
-            this.textBox27 = new System.Windows.Forms.TextBox();
-            this.label53 = new System.Windows.Forms.Label();
-            this.groupBox14 = new System.Windows.Forms.GroupBox();
-            this.button25 = new System.Windows.Forms.Button();
+            this.button26 = new System.Windows.Forms.Button();
+            this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.button7 = new System.Windows.Forms.Button();
+            this.chart3 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.label63 = new System.Windows.Forms.Label();
+            this.label64 = new System.Windows.Forms.Label();
+            this.label65 = new System.Windows.Forms.Label();
+            this.label62 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
+            this.label58 = new System.Windows.Forms.Label();
+            this.label60 = new System.Windows.Forms.Label();
+            this.label57 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.Connection.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.Motor_Velocity.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.AllMotor.SuspendLayout();
             this.Motor3.SuspendLayout();
             this.Motor2.SuspendLayout();
             this.Motor1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.Base_Movement.SuspendLayout();
+            this.groupBox8.SuspendLayout();
+            this.groupBox7.SuspendLayout();
+            this.groupBox6.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
-            this.groupBox6.SuspendLayout();
-            this.groupBox7.SuspendLayout();
-            this.groupBox8.SuspendLayout();
             this.Point_Movement.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.Simple_Shape_Movement.SuspendLayout();
-            this.groupBox10.SuspendLayout();
-            this.groupBox11.SuspendLayout();
-            this.groupBox12.SuspendLayout();
-            this.groupBox13.SuspendLayout();
             this.groupBox14.SuspendLayout();
+            this.groupBox13.SuspendLayout();
+            this.groupBox12.SuspendLayout();
+            this.groupBox11.SuspendLayout();
+            this.groupBox10.SuspendLayout();
+            this.tabControl2.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
             // serialPort1
@@ -263,7 +272,7 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 7);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1409, 965);
+            this.tabControl1.Size = new System.Drawing.Size(588, 965);
             this.tabControl1.TabIndex = 55;
             // 
             // Connection
@@ -272,7 +281,7 @@
             this.Connection.Location = new System.Drawing.Point(4, 22);
             this.Connection.Name = "Connection";
             this.Connection.Padding = new System.Windows.Forms.Padding(3);
-            this.Connection.Size = new System.Drawing.Size(1401, 939);
+            this.Connection.Size = new System.Drawing.Size(885, 939);
             this.Connection.TabIndex = 0;
             this.Connection.Text = "Connection";
             this.Connection.UseVisualStyleBackColor = true;
@@ -294,7 +303,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.cBoxBaudrate);
             this.groupBox1.Controls.Add(this.cBoxCOMPORT);
-            this.groupBox1.Location = new System.Drawing.Point(394, 305);
+            this.groupBox1.Location = new System.Drawing.Point(48, 305);
             this.groupBox1.MaximumSize = new System.Drawing.Size(612, 235);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(612, 235);
@@ -344,6 +353,7 @@
             this.btnSendData.TabIndex = 15;
             this.btnSendData.Text = "Send Data";
             this.btnSendData.UseVisualStyleBackColor = true;
+            this.btnSendData.Click += new System.EventHandler(this.btnSendData_Click);
             // 
             // checkBox1
             // 
@@ -354,6 +364,7 @@
             this.checkBox1.TabIndex = 14;
             this.checkBox1.Text = "Always Update";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // checkBox2
             // 
@@ -364,6 +375,7 @@
             this.checkBox2.TabIndex = 16;
             this.checkBox2.Text = "Add to Old Data";
             this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // progressBar1
             // 
@@ -380,6 +392,7 @@
             this.btnClose.TabIndex = 10;
             this.btnClose.Text = "CLOSE";
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click_1);
             // 
             // btnOpen
             // 
@@ -389,6 +402,7 @@
             this.btnOpen.TabIndex = 9;
             this.btnOpen.Text = "OPEN";
             this.btnOpen.UseVisualStyleBackColor = true;
+            this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click_1);
             // 
             // label2
             // 
@@ -431,125 +445,19 @@
             // 
             // Motor_Velocity
             // 
-            this.Motor_Velocity.Controls.Add(this.button7);
-            this.Motor_Velocity.Controls.Add(this.chart3);
-            this.Motor_Velocity.Controls.Add(this.button6);
-            this.Motor_Velocity.Controls.Add(this.button5);
-            this.Motor_Velocity.Controls.Add(this.chart2);
-            this.Motor_Velocity.Controls.Add(this.chart1);
             this.Motor_Velocity.Controls.Add(this.AllMotor);
             this.Motor_Velocity.Controls.Add(this.Motor3);
             this.Motor_Velocity.Controls.Add(this.Motor2);
             this.Motor_Velocity.Controls.Add(this.Motor1);
             this.Motor_Velocity.Controls.Add(this.groupBox3);
-            this.Motor_Velocity.Controls.Add(this.G3);
-            this.Motor_Velocity.Controls.Add(this.G2);
-            this.Motor_Velocity.Controls.Add(this.G1);
-            this.Motor_Velocity.Controls.Add(this.button10);
-            this.Motor_Velocity.Controls.Add(this.button9);
-            this.Motor_Velocity.Controls.Add(this.button8);
-            this.Motor_Velocity.Controls.Add(this.button4);
-            this.Motor_Velocity.Controls.Add(this.checkBox3);
-            this.Motor_Velocity.Controls.Add(this.button3);
-            this.Motor_Velocity.Controls.Add(this.exportToTxtButton);
-            this.Motor_Velocity.Controls.Add(this.button1);
             this.Motor_Velocity.Location = new System.Drawing.Point(4, 22);
             this.Motor_Velocity.Name = "Motor_Velocity";
             this.Motor_Velocity.Padding = new System.Windows.Forms.Padding(3);
-            this.Motor_Velocity.Size = new System.Drawing.Size(1401, 939);
+            this.Motor_Velocity.Size = new System.Drawing.Size(563, 939);
             this.Motor_Velocity.TabIndex = 1;
             this.Motor_Velocity.Text = "Motor Velocity";
             this.Motor_Velocity.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(309, 599);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(278, 271);
-            this.button7.TabIndex = 76;
-            this.button7.Text = "0";
-            this.button7.UseVisualStyleBackColor = false;
-            // 
-            // chart3
-            // 
-            this.chart3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea4.Name = "ChartArea1";
-            this.chart3.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.chart3.Legends.Add(legend4);
-            this.chart3.Location = new System.Drawing.Point(604, 599);
-            this.chart3.Name = "chart3";
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series4.Legend = "Legend1";
-            series4.Name = "Series1";
-            this.chart3.Series.Add(series4);
-            this.chart3.Size = new System.Drawing.Size(776, 271);
-            this.chart3.TabIndex = 75;
-            this.chart3.Text = "chart3";
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(309, 310);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(278, 271);
-            this.button6.TabIndex = 74;
-            this.button6.Text = "0";
-            this.button6.UseVisualStyleBackColor = false;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(309, 18);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(278, 271);
-            this.button5.TabIndex = 73;
-            this.button5.Text = "0";
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // chart2
-            // 
-            this.chart2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea5.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea5);
-            legend5.Name = "Legend1";
-            this.chart2.Legends.Add(legend5);
-            this.chart2.Location = new System.Drawing.Point(604, 310);
-            this.chart2.Name = "chart2";
-            series5.ChartArea = "ChartArea1";
-            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series5.Legend = "Legend1";
-            series5.Name = "Series1";
-            this.chart2.Series.Add(series5);
-            this.chart2.Size = new System.Drawing.Size(776, 271);
-            this.chart2.TabIndex = 72;
-            this.chart2.Text = "chart2";
-            // 
-            // chart1
-            // 
-            this.chart1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea6.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea6);
-            legend6.Name = "Legend1";
-            this.chart1.Legends.Add(legend6);
-            this.chart1.Location = new System.Drawing.Point(604, 18);
-            this.chart1.Name = "chart1";
-            series6.ChartArea = "ChartArea1";
-            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series6.Legend = "Legend1";
-            series6.Name = "Series1";
-            this.chart1.Series.Add(series6);
-            this.chart1.Size = new System.Drawing.Size(776, 271);
-            this.chart1.TabIndex = 71;
-            this.chart1.Text = "chart1";
+            this.Motor_Velocity.Click += new System.EventHandler(this.Motor_Velocity_Click);
             // 
             // AllMotor
             // 
@@ -573,6 +481,7 @@
             this.button19.TabIndex = 34;
             this.button19.Text = "SendAll";
             this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.button19_Click);
             // 
             // button2
             // 
@@ -582,6 +491,7 @@
             this.button2.TabIndex = 30;
             this.button2.Text = "V20";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button13
             // 
@@ -591,6 +501,7 @@
             this.button13.TabIndex = 33;
             this.button13.Text = "StopAll";
             this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // button12
             // 
@@ -600,6 +511,7 @@
             this.button12.TabIndex = 32;
             this.button12.Text = "V10";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // button11
             // 
@@ -609,6 +521,7 @@
             this.button11.TabIndex = 31;
             this.button11.Text = "ChangeDir";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // Motor3
             // 
@@ -643,6 +556,7 @@
             this.button18.TabIndex = 37;
             this.button18.Text = "Send";
             this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
             // 
             // label17
             // 
@@ -719,6 +633,7 @@
             this.button16.TabIndex = 37;
             this.button16.Text = "Send";
             this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // label14
             // 
@@ -795,6 +710,7 @@
             this.SendM1.TabIndex = 37;
             this.SendM1.Text = "Send";
             this.SendM1.UseVisualStyleBackColor = true;
+            this.SendM1.Click += new System.EventHandler(this.SendM1_Click);
             // 
             // label12
             // 
@@ -911,6 +827,7 @@
             this.button17.TabIndex = 36;
             this.button17.Text = "PIDM3";
             this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
             // button14
             // 
@@ -920,6 +837,7 @@
             this.button14.TabIndex = 35;
             this.button14.Text = "PIDM2";
             this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // ki_textbox
             // 
@@ -937,6 +855,7 @@
             this.button15.TabIndex = 34;
             this.button15.Text = "PIDM1";
             this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // label3
             // 
@@ -975,7 +894,7 @@
             // G3
             // 
             this.G3.AutoSize = true;
-            this.G3.Location = new System.Drawing.Point(152, 109);
+            this.G3.Location = new System.Drawing.Point(10, 250);
             this.G3.Name = "G3";
             this.G3.Size = new System.Drawing.Size(15, 14);
             this.G3.TabIndex = 65;
@@ -984,7 +903,7 @@
             // G2
             // 
             this.G2.AutoSize = true;
-            this.G2.Location = new System.Drawing.Point(152, 68);
+            this.G2.Location = new System.Drawing.Point(10, 209);
             this.G2.Name = "G2";
             this.G2.Size = new System.Drawing.Size(15, 14);
             this.G2.TabIndex = 64;
@@ -993,7 +912,7 @@
             // G1
             // 
             this.G1.AutoSize = true;
-            this.G1.Location = new System.Drawing.Point(152, 27);
+            this.G1.Location = new System.Drawing.Point(10, 168);
             this.G1.Name = "G1";
             this.G1.Size = new System.Drawing.Size(15, 14);
             this.G1.TabIndex = 63;
@@ -1001,44 +920,48 @@
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(172, 98);
+            this.button10.Location = new System.Drawing.Point(30, 239);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(45, 35);
             this.button10.TabIndex = 62;
             this.button10.Text = "Save";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(173, 57);
+            this.button9.Location = new System.Drawing.Point(31, 198);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(44, 35);
             this.button9.TabIndex = 61;
             this.button9.Text = "Save";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(223, 98);
+            this.button8.Location = new System.Drawing.Point(81, 239);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(80, 35);
             this.button8.TabIndex = 60;
             this.button8.Text = "Clear Graph 3";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(223, 57);
+            this.button4.Location = new System.Drawing.Point(81, 198);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(80, 35);
             this.button4.TabIndex = 59;
             this.button4.Text = "Clear Graph 2";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // checkBox3
             // 
             this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(34, 62);
+            this.checkBox3.Location = new System.Drawing.Point(31, 47);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(107, 17);
             this.checkBox3.TabIndex = 58;
@@ -1047,30 +970,33 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(223, 16);
+            this.button3.Location = new System.Drawing.Point(81, 157);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(80, 35);
             this.button3.TabIndex = 57;
             this.button3.Text = "Clear Graph 1";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // exportToTxtButton
             // 
-            this.exportToTxtButton.Location = new System.Drawing.Point(173, 16);
+            this.exportToTxtButton.Location = new System.Drawing.Point(31, 157);
             this.exportToTxtButton.Name = "exportToTxtButton";
             this.exportToTxtButton.Size = new System.Drawing.Size(44, 35);
             this.exportToTxtButton.TabIndex = 56;
             this.exportToTxtButton.Text = "Save";
             this.exportToTxtButton.UseVisualStyleBackColor = true;
+            this.exportToTxtButton.Click += new System.EventHandler(this.exportToTxtButton_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(34, 85);
+            this.button1.Location = new System.Drawing.Point(31, 70);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(102, 48);
             this.button1.TabIndex = 55;
             this.button1.Text = "Clear";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Base_Movement
             // 
@@ -1087,44 +1013,139 @@
             this.Base_Movement.Controls.Add(this.label19);
             this.Base_Movement.Location = new System.Drawing.Point(4, 22);
             this.Base_Movement.Name = "Base_Movement";
-            this.Base_Movement.Size = new System.Drawing.Size(1401, 939);
+            this.Base_Movement.Size = new System.Drawing.Size(563, 939);
             this.Base_Movement.TabIndex = 2;
             this.Base_Movement.Text = "Base Movement";
             this.Base_Movement.UseVisualStyleBackColor = true;
             // 
-            // label19
+            // button22
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(63, 44);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(775, 37);
-            this.label19.TabIndex = 0;
-            this.label19.Text = "Movement Robot Base on Each Motor Linear Velocity";
+            this.button22.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button22.Location = new System.Drawing.Point(70, 578);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(246, 111);
+            this.button22.TabIndex = 76;
+            this.button22.Text = "STOP";
+            this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
             // 
-            // label20
+            // groupBox8
             // 
-            this.label20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(63, 320);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(585, 37);
-            this.label20.TabIndex = 1;
-            this.label20.Text = "Movement Robot Base on Body Velocity";
+            this.groupBox8.Controls.Add(this.label32);
+            this.groupBox8.Controls.Add(this.W_Base);
+            this.groupBox8.Location = new System.Drawing.Point(406, 382);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(124, 81);
+            this.groupBox8.TabIndex = 75;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "Angular Velocity";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(15, 25);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(38, 13);
+            this.label32.TabIndex = 44;
+            this.label32.Text = "Speed";
+            // 
+            // W_Base
+            // 
+            this.W_Base.Location = new System.Drawing.Point(14, 41);
+            this.W_Base.Name = "W_Base";
+            this.W_Base.Size = new System.Drawing.Size(40, 20);
+            this.W_Base.TabIndex = 45;
+            this.W_Base.Text = "0";
+            // 
+            // button21
+            // 
+            this.button21.Location = new System.Drawing.Point(565, 424);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(69, 39);
+            this.button21.TabIndex = 75;
+            this.button21.Text = "Send";
+            this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.label30);
+            this.groupBox7.Controls.Add(this.Vy_Base);
+            this.groupBox7.Location = new System.Drawing.Point(237, 382);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(124, 81);
+            this.groupBox7.TabIndex = 74;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "V on Y Axis";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(25, 25);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(38, 13);
+            this.label30.TabIndex = 44;
+            this.label30.Text = "Speed";
+            // 
+            // Vy_Base
+            // 
+            this.Vy_Base.Location = new System.Drawing.Point(24, 41);
+            this.Vy_Base.Name = "Vy_Base";
+            this.Vy_Base.Size = new System.Drawing.Size(40, 20);
+            this.Vy_Base.TabIndex = 45;
+            this.Vy_Base.Text = "0";
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.label25);
+            this.groupBox6.Controls.Add(this.Vx_Base);
+            this.groupBox6.Location = new System.Drawing.Point(70, 382);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(124, 81);
+            this.groupBox6.TabIndex = 74;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "V on X Axis";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(14, 25);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(38, 13);
+            this.label25.TabIndex = 44;
+            this.label25.Text = "Speed";
+            // 
+            // Vx_Base
+            // 
+            this.Vx_Base.Location = new System.Drawing.Point(13, 41);
+            this.Vx_Base.Name = "Vx_Base";
+            this.Vx_Base.Size = new System.Drawing.Size(40, 20);
+            this.Vx_Base.TabIndex = 45;
+            this.Vx_Base.Text = "0";
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.comboBox3);
+            this.groupBox2.Controls.Add(this.comboBoxM3);
             this.groupBox2.Controls.Add(this.label21);
             this.groupBox2.Controls.Add(this.label23);
-            this.groupBox2.Controls.Add(this.textBox3);
+            this.groupBox2.Controls.Add(this.base_movement_M3);
             this.groupBox2.Location = new System.Drawing.Point(406, 105);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(124, 110);
             this.groupBox2.TabIndex = 72;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Motor3";
+            // 
+            // comboBoxM3
+            // 
+            this.comboBoxM3.FormattingEnabled = true;
+            this.comboBoxM3.Items.AddRange(new object[] {
+            "CW",
+            "CCW"});
+            this.comboBoxM3.Location = new System.Drawing.Point(13, 31);
+            this.comboBoxM3.Name = "comboBoxM3";
+            this.comboBoxM3.Size = new System.Drawing.Size(85, 21);
+            this.comboBoxM3.TabIndex = 75;
             // 
             // label21
             // 
@@ -1135,15 +1156,6 @@
             this.label21.TabIndex = 42;
             this.label21.Text = "Direction";
             // 
-            // button20
-            // 
-            this.button20.Location = new System.Drawing.Point(565, 137);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(69, 39);
-            this.button20.TabIndex = 37;
-            this.button20.Text = "Send";
-            this.button20.UseVisualStyleBackColor = true;
-            // 
             // label23
             // 
             this.label23.AutoSize = true;
@@ -1153,26 +1165,47 @@
             this.label23.TabIndex = 44;
             this.label23.Text = "Speed";
             // 
-            // textBox3
+            // base_movement_M3
             // 
-            this.textBox3.Location = new System.Drawing.Point(13, 71);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(40, 20);
-            this.textBox3.TabIndex = 45;
-            this.textBox3.Text = "0";
+            this.base_movement_M3.Location = new System.Drawing.Point(13, 71);
+            this.base_movement_M3.Name = "base_movement_M3";
+            this.base_movement_M3.Size = new System.Drawing.Size(40, 20);
+            this.base_movement_M3.TabIndex = 45;
+            this.base_movement_M3.Text = "0";
+            // 
+            // button20
+            // 
+            this.button20.Location = new System.Drawing.Point(565, 137);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(69, 39);
+            this.button20.TabIndex = 37;
+            this.button20.Text = "Send";
+            this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.comboBox2);
+            this.groupBox4.Controls.Add(this.comboBoxM2);
             this.groupBox4.Controls.Add(this.label24);
             this.groupBox4.Controls.Add(this.label26);
-            this.groupBox4.Controls.Add(this.textBox6);
+            this.groupBox4.Controls.Add(this.base_movement_M2);
             this.groupBox4.Location = new System.Drawing.Point(237, 105);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(124, 110);
             this.groupBox4.TabIndex = 71;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Motor2";
+            // 
+            // comboBoxM2
+            // 
+            this.comboBoxM2.FormattingEnabled = true;
+            this.comboBoxM2.Items.AddRange(new object[] {
+            "CW",
+            "CCW"});
+            this.comboBoxM2.Location = new System.Drawing.Point(13, 32);
+            this.comboBoxM2.Name = "comboBoxM2";
+            this.comboBoxM2.Size = new System.Drawing.Size(85, 21);
+            this.comboBoxM2.TabIndex = 74;
             // 
             // label24
             // 
@@ -1192,26 +1225,37 @@
             this.label26.TabIndex = 44;
             this.label26.Text = "Speed";
             // 
-            // textBox6
+            // base_movement_M2
             // 
-            this.textBox6.Location = new System.Drawing.Point(13, 71);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(40, 20);
-            this.textBox6.TabIndex = 45;
-            this.textBox6.Text = "0";
+            this.base_movement_M2.Location = new System.Drawing.Point(13, 71);
+            this.base_movement_M2.Name = "base_movement_M2";
+            this.base_movement_M2.Size = new System.Drawing.Size(40, 20);
+            this.base_movement_M2.TabIndex = 45;
+            this.base_movement_M2.Text = "0";
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.comboBox1);
+            this.groupBox5.Controls.Add(this.comboBoxM1);
             this.groupBox5.Controls.Add(this.label27);
             this.groupBox5.Controls.Add(this.label29);
-            this.groupBox5.Controls.Add(this.textBox9);
+            this.groupBox5.Controls.Add(this.base_movement_M1);
             this.groupBox5.Location = new System.Drawing.Point(70, 105);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(124, 110);
             this.groupBox5.TabIndex = 70;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Motor1";
+            // 
+            // comboBoxM1
+            // 
+            this.comboBoxM1.FormattingEnabled = true;
+            this.comboBoxM1.Items.AddRange(new object[] {
+            "CW",
+            "CCW"});
+            this.comboBoxM1.Location = new System.Drawing.Point(13, 32);
+            this.comboBoxM1.Name = "comboBoxM1";
+            this.comboBoxM1.Size = new System.Drawing.Size(85, 21);
+            this.comboBoxM1.TabIndex = 73;
             // 
             // label27
             // 
@@ -1231,237 +1275,64 @@
             this.label29.TabIndex = 44;
             this.label29.Text = "Speed";
             // 
-            // textBox9
+            // base_movement_M1
             // 
-            this.textBox9.Location = new System.Drawing.Point(13, 71);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(40, 20);
-            this.textBox9.TabIndex = 45;
-            this.textBox9.Text = "0";
+            this.base_movement_M1.Location = new System.Drawing.Point(13, 71);
+            this.base_movement_M1.Name = "base_movement_M1";
+            this.base_movement_M1.Size = new System.Drawing.Size(40, 20);
+            this.base_movement_M1.TabIndex = 45;
+            this.base_movement_M1.Text = "0";
             // 
-            // comboBox1
+            // label20
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "CW",
-            "CCW"});
-            this.comboBox1.Location = new System.Drawing.Point(13, 32);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(85, 21);
-            this.comboBox1.TabIndex = 73;
+            this.label20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(63, 320);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(585, 37);
+            this.label20.TabIndex = 1;
+            this.label20.Text = "Movement Robot Base on Body Velocity";
             // 
-            // comboBox2
+            // label19
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "CW",
-            "CCW"});
-            this.comboBox2.Location = new System.Drawing.Point(13, 32);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(85, 21);
-            this.comboBox2.TabIndex = 74;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "CW",
-            "CCW"});
-            this.comboBox3.Location = new System.Drawing.Point(13, 31);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(85, 21);
-            this.comboBox3.TabIndex = 75;
-            // 
-            // groupBox6
-            // 
-            this.groupBox6.Controls.Add(this.comboBox4);
-            this.groupBox6.Controls.Add(this.label22);
-            this.groupBox6.Controls.Add(this.label25);
-            this.groupBox6.Controls.Add(this.textBox1);
-            this.groupBox6.Location = new System.Drawing.Point(70, 382);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(124, 110);
-            this.groupBox6.TabIndex = 74;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "V on X Axis";
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
-            "Positive",
-            "Negative"});
-            this.comboBox4.Location = new System.Drawing.Point(13, 32);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(85, 21);
-            this.comboBox4.TabIndex = 73;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(14, 16);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(49, 13);
-            this.label22.TabIndex = 42;
-            this.label22.Text = "Direction";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(14, 55);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(38, 13);
-            this.label25.TabIndex = 44;
-            this.label25.Text = "Speed";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(13, 71);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(40, 20);
-            this.textBox1.TabIndex = 45;
-            this.textBox1.Text = "0";
-            // 
-            // groupBox7
-            // 
-            this.groupBox7.Controls.Add(this.comboBox5);
-            this.groupBox7.Controls.Add(this.label28);
-            this.groupBox7.Controls.Add(this.label30);
-            this.groupBox7.Controls.Add(this.textBox2);
-            this.groupBox7.Location = new System.Drawing.Point(237, 382);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(124, 110);
-            this.groupBox7.TabIndex = 74;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "V on Y Axis";
-            // 
-            // comboBox5
-            // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
-            "Positive",
-            "Negative"});
-            this.comboBox5.Location = new System.Drawing.Point(13, 32);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(85, 21);
-            this.comboBox5.TabIndex = 73;
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(14, 16);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(49, 13);
-            this.label28.TabIndex = 42;
-            this.label28.Text = "Direction";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(14, 55);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(38, 13);
-            this.label30.TabIndex = 44;
-            this.label30.Text = "Speed";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(13, 71);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(40, 20);
-            this.textBox2.TabIndex = 45;
-            this.textBox2.Text = "0";
-            // 
-            // button21
-            // 
-            this.button21.Location = new System.Drawing.Point(565, 424);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(69, 39);
-            this.button21.TabIndex = 75;
-            this.button21.Text = "Send";
-            this.button21.UseVisualStyleBackColor = true;
-            // 
-            // groupBox8
-            // 
-            this.groupBox8.Controls.Add(this.comboBox6);
-            this.groupBox8.Controls.Add(this.label31);
-            this.groupBox8.Controls.Add(this.label32);
-            this.groupBox8.Controls.Add(this.textBox4);
-            this.groupBox8.Location = new System.Drawing.Point(406, 382);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(124, 110);
-            this.groupBox8.TabIndex = 75;
-            this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "Angular Velocity";
-            // 
-            // comboBox6
-            // 
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Items.AddRange(new object[] {
-            "Positive",
-            "Negative"});
-            this.comboBox6.Location = new System.Drawing.Point(13, 32);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(85, 21);
-            this.comboBox6.TabIndex = 73;
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(14, 16);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(49, 13);
-            this.label31.TabIndex = 42;
-            this.label31.Text = "Direction";
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(14, 55);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(38, 13);
-            this.label32.TabIndex = 44;
-            this.label32.Text = "Speed";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(13, 71);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(40, 20);
-            this.textBox4.TabIndex = 45;
-            this.textBox4.Text = "0";
-            // 
-            // button22
-            // 
-            this.button22.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button22.Location = new System.Drawing.Point(70, 578);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(246, 111);
-            this.button22.TabIndex = 76;
-            this.button22.Text = "STOP";
-            this.button22.UseVisualStyleBackColor = true;
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(63, 44);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(775, 37);
+            this.label19.TabIndex = 0;
+            this.label19.Text = "Movement Robot Base on Each Motor Linear Velocity";
             // 
             // Point_Movement
             // 
+            this.Point_Movement.Controls.Add(this.label62);
+            this.Point_Movement.Controls.Add(this.label61);
+            this.Point_Movement.Controls.Add(this.label60);
+            this.Point_Movement.Controls.Add(this.label59);
+            this.Point_Movement.Controls.Add(this.label58);
+            this.Point_Movement.Controls.Add(this.label57);
+            this.Point_Movement.Controls.Add(this.button26);
             this.Point_Movement.Controls.Add(this.groupBox9);
             this.Point_Movement.Location = new System.Drawing.Point(4, 22);
             this.Point_Movement.Name = "Point_Movement";
-            this.Point_Movement.Size = new System.Drawing.Size(1401, 939);
+            this.Point_Movement.Size = new System.Drawing.Size(563, 939);
             this.Point_Movement.TabIndex = 3;
             this.Point_Movement.Text = "Point Movement";
             this.Point_Movement.UseVisualStyleBackColor = true;
+            this.Point_Movement.Click += new System.EventHandler(this.Point_Movement_Click);
             // 
             // groupBox9
             // 
             this.groupBox9.Controls.Add(this.label36);
-            this.groupBox9.Controls.Add(this.textBox10);
+            this.groupBox9.Controls.Add(this.Timer_Point_Movement);
             this.groupBox9.Controls.Add(this.label33);
             this.groupBox9.Controls.Add(this.button23);
             this.groupBox9.Controls.Add(this.label34);
-            this.groupBox9.Controls.Add(this.textBox5);
-            this.groupBox9.Controls.Add(this.textBox7);
+            this.groupBox9.Controls.Add(this.Vx);
+            this.groupBox9.Controls.Add(this.W);
             this.groupBox9.Controls.Add(this.label35);
-            this.groupBox9.Controls.Add(this.textBox8);
+            this.groupBox9.Controls.Add(this.Vy);
             this.groupBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox9.Location = new System.Drawing.Point(80, 71);
             this.groupBox9.Name = "groupBox9";
@@ -1469,6 +1340,27 @@
             this.groupBox9.TabIndex = 68;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Body Robot Velocity";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.Location = new System.Drawing.Point(43, 255);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(48, 20);
+            this.label36.TabIndex = 48;
+            this.label36.Text = "Timer";
+            this.label36.Click += new System.EventHandler(this.label36_Click);
+            // 
+            // Timer_Point_Movement
+            // 
+            this.Timer_Point_Movement.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Timer_Point_Movement.Location = new System.Drawing.Point(42, 276);
+            this.Timer_Point_Movement.Name = "Timer_Point_Movement";
+            this.Timer_Point_Movement.Size = new System.Drawing.Size(40, 26);
+            this.Timer_Point_Movement.TabIndex = 49;
+            this.Timer_Point_Movement.Text = "0";
+            this.Timer_Point_Movement.TextChanged += new System.EventHandler(this.textBox10_TextChanged);
             // 
             // label33
             // 
@@ -1489,6 +1381,7 @@
             this.button23.TabIndex = 37;
             this.button23.Text = "Send";
             this.button23.UseVisualStyleBackColor = true;
+            this.button23.Click += new System.EventHandler(this.button23_Click);
             // 
             // label34
             // 
@@ -1501,24 +1394,24 @@
             this.label34.Text = "w (angular velocity)";
             this.label34.Click += new System.EventHandler(this.label34_Click);
             // 
-            // textBox5
+            // Vx
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(42, 63);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(40, 26);
-            this.textBox5.TabIndex = 43;
-            this.textBox5.Text = "0";
+            this.Vx.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Vx.Location = new System.Drawing.Point(42, 63);
+            this.Vx.Name = "Vx";
+            this.Vx.Size = new System.Drawing.Size(40, 26);
+            this.Vx.TabIndex = 43;
+            this.Vx.Text = "0";
             // 
-            // textBox7
+            // W
             // 
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(43, 198);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(40, 26);
-            this.textBox7.TabIndex = 47;
-            this.textBox7.Text = "0";
-            this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
+            this.W.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.W.Location = new System.Drawing.Point(43, 198);
+            this.W.Name = "W";
+            this.W.Size = new System.Drawing.Size(40, 26);
+            this.W.TabIndex = 47;
+            this.W.Text = "0";
+            this.W.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
             // 
             // label35
             // 
@@ -1531,36 +1424,15 @@
             this.label35.Text = "Vy";
             this.label35.Click += new System.EventHandler(this.label35_Click);
             // 
-            // textBox8
+            // Vy
             // 
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(43, 131);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(40, 26);
-            this.textBox8.TabIndex = 45;
-            this.textBox8.Text = "0";
-            this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(43, 255);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(48, 20);
-            this.label36.TabIndex = 48;
-            this.label36.Text = "Timer";
-            this.label36.Click += new System.EventHandler(this.label36_Click);
-            // 
-            // textBox10
-            // 
-            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(42, 276);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(40, 26);
-            this.textBox10.TabIndex = 49;
-            this.textBox10.Text = "0";
-            this.textBox10.TextChanged += new System.EventHandler(this.textBox10_TextChanged);
+            this.Vy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Vy.Location = new System.Drawing.Point(43, 131);
+            this.Vy.Name = "Vy";
+            this.Vy.Size = new System.Drawing.Size(40, 26);
+            this.Vy.TabIndex = 45;
+            this.Vy.Text = "0";
+            this.Vy.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
             // 
             // Simple_Shape_Movement
             // 
@@ -1573,490 +1445,21 @@
             this.Simple_Shape_Movement.Controls.Add(this.button24);
             this.Simple_Shape_Movement.Location = new System.Drawing.Point(4, 22);
             this.Simple_Shape_Movement.Name = "Simple_Shape_Movement";
-            this.Simple_Shape_Movement.Size = new System.Drawing.Size(1401, 939);
+            this.Simple_Shape_Movement.Size = new System.Drawing.Size(580, 939);
             this.Simple_Shape_Movement.TabIndex = 4;
             this.Simple_Shape_Movement.Text = "Simple Shape Movement";
             this.Simple_Shape_Movement.UseVisualStyleBackColor = true;
             // 
-            // Second_Order_Movement
-            // 
-            this.Second_Order_Movement.Location = new System.Drawing.Point(4, 22);
-            this.Second_Order_Movement.Name = "Second_Order_Movement";
-            this.Second_Order_Movement.Size = new System.Drawing.Size(1401, 939);
-            this.Second_Order_Movement.TabIndex = 5;
-            this.Second_Order_Movement.Text = "Second Order Movement";
-            this.Second_Order_Movement.UseVisualStyleBackColor = true;
-            // 
-            // Free_Shape_Movement
-            // 
-            this.Free_Shape_Movement.Location = new System.Drawing.Point(4, 22);
-            this.Free_Shape_Movement.Name = "Free_Shape_Movement";
-            this.Free_Shape_Movement.Size = new System.Drawing.Size(1401, 939);
-            this.Free_Shape_Movement.TabIndex = 6;
-            this.Free_Shape_Movement.Text = "Free Shape Movement";
-            this.Free_Shape_Movement.UseVisualStyleBackColor = true;
-            // 
-            // button24
-            // 
-            this.button24.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button24.Location = new System.Drawing.Point(900, 145);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(103, 58);
-            this.button24.TabIndex = 75;
-            this.button24.Text = "Send";
-            this.button24.UseVisualStyleBackColor = true;
-            // 
-            // textBox14
-            // 
-            this.textBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox14.Location = new System.Drawing.Point(106, 64);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(40, 26);
-            this.textBox14.TabIndex = 45;
-            this.textBox14.Text = "0";
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.Location = new System.Drawing.Point(107, 44);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(27, 20);
-            this.label40.TabIndex = 44;
-            this.label40.Text = "Vy";
-            // 
-            // textBox13
-            // 
-            this.textBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.Location = new System.Drawing.Point(177, 64);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(40, 26);
-            this.textBox13.TabIndex = 47;
-            this.textBox13.Text = "0";
-            // 
-            // textBox12
-            // 
-            this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.Location = new System.Drawing.Point(42, 63);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(40, 26);
-            this.textBox12.TabIndex = 43;
-            this.textBox12.Text = "0";
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.Location = new System.Drawing.Point(178, 44);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(142, 20);
-            this.label39.TabIndex = 46;
-            this.label39.Text = "w (angular velocity)";
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.Location = new System.Drawing.Point(43, 44);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(27, 20);
-            this.label38.TabIndex = 42;
-            this.label38.Text = "Vx";
-            // 
-            // textBox11
-            // 
-            this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(325, 65);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(40, 26);
-            this.textBox11.TabIndex = 49;
-            this.textBox11.Text = "0";
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.Location = new System.Drawing.Point(326, 44);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(48, 20);
-            this.label37.TabIndex = 48;
-            this.label37.Text = "Timer";
-            // 
-            // groupBox10
-            // 
-            this.groupBox10.Controls.Add(this.label37);
-            this.groupBox10.Controls.Add(this.textBox11);
-            this.groupBox10.Controls.Add(this.label38);
-            this.groupBox10.Controls.Add(this.label39);
-            this.groupBox10.Controls.Add(this.textBox12);
-            this.groupBox10.Controls.Add(this.textBox13);
-            this.groupBox10.Controls.Add(this.label40);
-            this.groupBox10.Controls.Add(this.textBox14);
-            this.groupBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox10.Location = new System.Drawing.Point(398, 125);
-            this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(419, 118);
-            this.groupBox10.TabIndex = 76;
-            this.groupBox10.TabStop = false;
-            this.groupBox10.Text = "1st Movement";
-            // 
-            // textBox18
-            // 
-            this.textBox18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox18.Location = new System.Drawing.Point(106, 64);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(40, 26);
-            this.textBox18.TabIndex = 45;
-            this.textBox18.Text = "0";
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.Location = new System.Drawing.Point(107, 44);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(27, 20);
-            this.label44.TabIndex = 44;
-            this.label44.Text = "Vy";
-            // 
-            // textBox17
-            // 
-            this.textBox17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox17.Location = new System.Drawing.Point(177, 64);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(40, 26);
-            this.textBox17.TabIndex = 47;
-            this.textBox17.Text = "0";
-            // 
-            // textBox16
-            // 
-            this.textBox16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox16.Location = new System.Drawing.Point(42, 63);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(40, 26);
-            this.textBox16.TabIndex = 43;
-            this.textBox16.Text = "0";
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.Location = new System.Drawing.Point(178, 44);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(142, 20);
-            this.label43.TabIndex = 46;
-            this.label43.Text = "w (angular velocity)";
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.Location = new System.Drawing.Point(43, 44);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(27, 20);
-            this.label42.TabIndex = 42;
-            this.label42.Text = "Vx";
-            // 
-            // textBox15
-            // 
-            this.textBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox15.Location = new System.Drawing.Point(325, 65);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(40, 26);
-            this.textBox15.TabIndex = 49;
-            this.textBox15.Text = "0";
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.Location = new System.Drawing.Point(326, 44);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(48, 20);
-            this.label41.TabIndex = 48;
-            this.label41.Text = "Timer";
-            // 
-            // groupBox11
-            // 
-            this.groupBox11.Controls.Add(this.label41);
-            this.groupBox11.Controls.Add(this.textBox15);
-            this.groupBox11.Controls.Add(this.label42);
-            this.groupBox11.Controls.Add(this.label43);
-            this.groupBox11.Controls.Add(this.textBox16);
-            this.groupBox11.Controls.Add(this.textBox17);
-            this.groupBox11.Controls.Add(this.label44);
-            this.groupBox11.Controls.Add(this.textBox18);
-            this.groupBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox11.Location = new System.Drawing.Point(398, 265);
-            this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(419, 118);
-            this.groupBox11.TabIndex = 77;
-            this.groupBox11.TabStop = false;
-            this.groupBox11.Text = "2nd Movement";
-            // 
-            // textBox22
-            // 
-            this.textBox22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox22.Location = new System.Drawing.Point(106, 64);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(40, 26);
-            this.textBox22.TabIndex = 45;
-            this.textBox22.Text = "0";
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label48.Location = new System.Drawing.Point(107, 44);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(27, 20);
-            this.label48.TabIndex = 44;
-            this.label48.Text = "Vy";
-            // 
-            // textBox21
-            // 
-            this.textBox21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox21.Location = new System.Drawing.Point(177, 64);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(40, 26);
-            this.textBox21.TabIndex = 47;
-            this.textBox21.Text = "0";
-            // 
-            // textBox20
-            // 
-            this.textBox20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox20.Location = new System.Drawing.Point(42, 63);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(40, 26);
-            this.textBox20.TabIndex = 43;
-            this.textBox20.Text = "0";
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.Location = new System.Drawing.Point(178, 44);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(142, 20);
-            this.label47.TabIndex = 46;
-            this.label47.Text = "w (angular velocity)";
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.Location = new System.Drawing.Point(43, 44);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(27, 20);
-            this.label46.TabIndex = 42;
-            this.label46.Text = "Vx";
-            // 
-            // textBox19
-            // 
-            this.textBox19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox19.Location = new System.Drawing.Point(325, 65);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(40, 26);
-            this.textBox19.TabIndex = 49;
-            this.textBox19.Text = "0";
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.Location = new System.Drawing.Point(326, 44);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(48, 20);
-            this.label45.TabIndex = 48;
-            this.label45.Text = "Timer";
-            // 
-            // groupBox12
-            // 
-            this.groupBox12.Controls.Add(this.label45);
-            this.groupBox12.Controls.Add(this.textBox19);
-            this.groupBox12.Controls.Add(this.label46);
-            this.groupBox12.Controls.Add(this.label47);
-            this.groupBox12.Controls.Add(this.textBox20);
-            this.groupBox12.Controls.Add(this.textBox21);
-            this.groupBox12.Controls.Add(this.label48);
-            this.groupBox12.Controls.Add(this.textBox22);
-            this.groupBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox12.Location = new System.Drawing.Point(398, 406);
-            this.groupBox12.Name = "groupBox12";
-            this.groupBox12.Size = new System.Drawing.Size(419, 118);
-            this.groupBox12.TabIndex = 78;
-            this.groupBox12.TabStop = false;
-            this.groupBox12.Text = "3rd Movement";
-            // 
-            // textBox26
-            // 
-            this.textBox26.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox26.Location = new System.Drawing.Point(106, 64);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(40, 26);
-            this.textBox26.TabIndex = 45;
-            this.textBox26.Text = "0";
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label52.Location = new System.Drawing.Point(107, 44);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(27, 20);
-            this.label52.TabIndex = 44;
-            this.label52.Text = "Vy";
-            // 
-            // textBox25
-            // 
-            this.textBox25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox25.Location = new System.Drawing.Point(177, 64);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(40, 26);
-            this.textBox25.TabIndex = 47;
-            this.textBox25.Text = "0";
-            // 
-            // textBox24
-            // 
-            this.textBox24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox24.Location = new System.Drawing.Point(42, 63);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(40, 26);
-            this.textBox24.TabIndex = 43;
-            this.textBox24.Text = "0";
-            // 
-            // label51
-            // 
-            this.label51.AutoSize = true;
-            this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label51.Location = new System.Drawing.Point(178, 44);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(142, 20);
-            this.label51.TabIndex = 46;
-            this.label51.Text = "w (angular velocity)";
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label50.Location = new System.Drawing.Point(43, 44);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(27, 20);
-            this.label50.TabIndex = 42;
-            this.label50.Text = "Vx";
-            // 
-            // textBox23
-            // 
-            this.textBox23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox23.Location = new System.Drawing.Point(325, 65);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(40, 26);
-            this.textBox23.TabIndex = 49;
-            this.textBox23.Text = "0";
-            // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label49.Location = new System.Drawing.Point(326, 44);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(48, 20);
-            this.label49.TabIndex = 48;
-            this.label49.Text = "Timer";
-            // 
-            // groupBox13
-            // 
-            this.groupBox13.Controls.Add(this.label49);
-            this.groupBox13.Controls.Add(this.textBox23);
-            this.groupBox13.Controls.Add(this.label50);
-            this.groupBox13.Controls.Add(this.label51);
-            this.groupBox13.Controls.Add(this.textBox24);
-            this.groupBox13.Controls.Add(this.textBox25);
-            this.groupBox13.Controls.Add(this.label52);
-            this.groupBox13.Controls.Add(this.textBox26);
-            this.groupBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox13.Location = new System.Drawing.Point(398, 549);
-            this.groupBox13.Name = "groupBox13";
-            this.groupBox13.Size = new System.Drawing.Size(419, 118);
-            this.groupBox13.TabIndex = 79;
-            this.groupBox13.TabStop = false;
-            this.groupBox13.Text = "4th Movement";
-            // 
-            // textBox30
-            // 
-            this.textBox30.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox30.Location = new System.Drawing.Point(106, 64);
-            this.textBox30.Name = "textBox30";
-            this.textBox30.Size = new System.Drawing.Size(40, 26);
-            this.textBox30.TabIndex = 45;
-            this.textBox30.Text = "0";
-            // 
-            // label56
-            // 
-            this.label56.AutoSize = true;
-            this.label56.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label56.Location = new System.Drawing.Point(107, 44);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(27, 20);
-            this.label56.TabIndex = 44;
-            this.label56.Text = "Vy";
-            // 
-            // textBox29
-            // 
-            this.textBox29.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox29.Location = new System.Drawing.Point(177, 64);
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(40, 26);
-            this.textBox29.TabIndex = 47;
-            this.textBox29.Text = "0";
-            // 
-            // textBox28
-            // 
-            this.textBox28.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox28.Location = new System.Drawing.Point(42, 63);
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(40, 26);
-            this.textBox28.TabIndex = 43;
-            this.textBox28.Text = "0";
-            // 
-            // label55
-            // 
-            this.label55.AutoSize = true;
-            this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label55.Location = new System.Drawing.Point(178, 44);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(142, 20);
-            this.label55.TabIndex = 46;
-            this.label55.Text = "w (angular velocity)";
-            // 
-            // label54
-            // 
-            this.label54.AutoSize = true;
-            this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label54.Location = new System.Drawing.Point(43, 44);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(27, 20);
-            this.label54.TabIndex = 42;
-            this.label54.Text = "Vx";
-            // 
-            // textBox27
-            // 
-            this.textBox27.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox27.Location = new System.Drawing.Point(325, 65);
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(40, 26);
-            this.textBox27.TabIndex = 49;
-            this.textBox27.Text = "0";
-            // 
-            // label53
-            // 
-            this.label53.AutoSize = true;
-            this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label53.Location = new System.Drawing.Point(326, 44);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(48, 20);
-            this.label53.TabIndex = 48;
-            this.label53.Text = "Timer";
+            // button25
+            // 
+            this.button25.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button25.Location = new System.Drawing.Point(524, 141);
+            this.button25.Name = "button25";
+            this.button25.Size = new System.Drawing.Size(103, 58);
+            this.button25.TabIndex = 81;
+            this.button25.Text = "Stop";
+            this.button25.UseVisualStyleBackColor = true;
+            this.button25.Click += new System.EventHandler(this.button25_Click);
             // 
             // groupBox14
             // 
@@ -2069,22 +1472,738 @@
             this.groupBox14.Controls.Add(this.label56);
             this.groupBox14.Controls.Add(this.textBox30);
             this.groupBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox14.Location = new System.Drawing.Point(398, 695);
+            this.groupBox14.Location = new System.Drawing.Point(22, 617);
             this.groupBox14.Name = "groupBox14";
             this.groupBox14.Size = new System.Drawing.Size(419, 118);
             this.groupBox14.TabIndex = 80;
             this.groupBox14.TabStop = false;
             this.groupBox14.Text = "5th Movement";
             // 
-            // button25
+            // label53
             // 
-            this.button25.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button25.Location = new System.Drawing.Point(900, 219);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(103, 58);
-            this.button25.TabIndex = 81;
-            this.button25.Text = "Stop";
-            this.button25.UseVisualStyleBackColor = true;
+            this.label53.AutoSize = true;
+            this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label53.Location = new System.Drawing.Point(326, 44);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(48, 20);
+            this.label53.TabIndex = 48;
+            this.label53.Text = "Timer";
+            // 
+            // textBox27
+            // 
+            this.textBox27.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox27.Location = new System.Drawing.Point(325, 65);
+            this.textBox27.Name = "textBox27";
+            this.textBox27.Size = new System.Drawing.Size(40, 26);
+            this.textBox27.TabIndex = 49;
+            this.textBox27.Text = "0";
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label54.Location = new System.Drawing.Point(43, 44);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(27, 20);
+            this.label54.TabIndex = 42;
+            this.label54.Text = "Vx";
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label55.Location = new System.Drawing.Point(178, 44);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(142, 20);
+            this.label55.TabIndex = 46;
+            this.label55.Text = "w (angular velocity)";
+            // 
+            // textBox28
+            // 
+            this.textBox28.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox28.Location = new System.Drawing.Point(42, 63);
+            this.textBox28.Name = "textBox28";
+            this.textBox28.Size = new System.Drawing.Size(40, 26);
+            this.textBox28.TabIndex = 43;
+            this.textBox28.Text = "0";
+            // 
+            // textBox29
+            // 
+            this.textBox29.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox29.Location = new System.Drawing.Point(177, 64);
+            this.textBox29.Name = "textBox29";
+            this.textBox29.Size = new System.Drawing.Size(40, 26);
+            this.textBox29.TabIndex = 47;
+            this.textBox29.Text = "0";
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label56.Location = new System.Drawing.Point(107, 44);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(27, 20);
+            this.label56.TabIndex = 44;
+            this.label56.Text = "Vy";
+            // 
+            // textBox30
+            // 
+            this.textBox30.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox30.Location = new System.Drawing.Point(106, 64);
+            this.textBox30.Name = "textBox30";
+            this.textBox30.Size = new System.Drawing.Size(40, 26);
+            this.textBox30.TabIndex = 45;
+            this.textBox30.Text = "0";
+            // 
+            // groupBox13
+            // 
+            this.groupBox13.Controls.Add(this.label49);
+            this.groupBox13.Controls.Add(this.textBox23);
+            this.groupBox13.Controls.Add(this.label50);
+            this.groupBox13.Controls.Add(this.label51);
+            this.groupBox13.Controls.Add(this.textBox24);
+            this.groupBox13.Controls.Add(this.textBox25);
+            this.groupBox13.Controls.Add(this.label52);
+            this.groupBox13.Controls.Add(this.textBox26);
+            this.groupBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox13.Location = new System.Drawing.Point(22, 471);
+            this.groupBox13.Name = "groupBox13";
+            this.groupBox13.Size = new System.Drawing.Size(419, 118);
+            this.groupBox13.TabIndex = 79;
+            this.groupBox13.TabStop = false;
+            this.groupBox13.Text = "4th Movement";
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label49.Location = new System.Drawing.Point(326, 44);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(48, 20);
+            this.label49.TabIndex = 48;
+            this.label49.Text = "Timer";
+            // 
+            // textBox23
+            // 
+            this.textBox23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox23.Location = new System.Drawing.Point(325, 65);
+            this.textBox23.Name = "textBox23";
+            this.textBox23.Size = new System.Drawing.Size(40, 26);
+            this.textBox23.TabIndex = 49;
+            this.textBox23.Text = "0";
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label50.Location = new System.Drawing.Point(43, 44);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(27, 20);
+            this.label50.TabIndex = 42;
+            this.label50.Text = "Vx";
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label51.Location = new System.Drawing.Point(178, 44);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(142, 20);
+            this.label51.TabIndex = 46;
+            this.label51.Text = "w (angular velocity)";
+            // 
+            // textBox24
+            // 
+            this.textBox24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox24.Location = new System.Drawing.Point(42, 63);
+            this.textBox24.Name = "textBox24";
+            this.textBox24.Size = new System.Drawing.Size(40, 26);
+            this.textBox24.TabIndex = 43;
+            this.textBox24.Text = "0";
+            // 
+            // textBox25
+            // 
+            this.textBox25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox25.Location = new System.Drawing.Point(177, 64);
+            this.textBox25.Name = "textBox25";
+            this.textBox25.Size = new System.Drawing.Size(40, 26);
+            this.textBox25.TabIndex = 47;
+            this.textBox25.Text = "0";
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label52.Location = new System.Drawing.Point(107, 44);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(27, 20);
+            this.label52.TabIndex = 44;
+            this.label52.Text = "Vy";
+            // 
+            // textBox26
+            // 
+            this.textBox26.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox26.Location = new System.Drawing.Point(106, 64);
+            this.textBox26.Name = "textBox26";
+            this.textBox26.Size = new System.Drawing.Size(40, 26);
+            this.textBox26.TabIndex = 45;
+            this.textBox26.Text = "0";
+            // 
+            // groupBox12
+            // 
+            this.groupBox12.Controls.Add(this.label45);
+            this.groupBox12.Controls.Add(this.textBox19);
+            this.groupBox12.Controls.Add(this.label46);
+            this.groupBox12.Controls.Add(this.label47);
+            this.groupBox12.Controls.Add(this.textBox20);
+            this.groupBox12.Controls.Add(this.textBox21);
+            this.groupBox12.Controls.Add(this.label48);
+            this.groupBox12.Controls.Add(this.textBox22);
+            this.groupBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox12.Location = new System.Drawing.Point(22, 328);
+            this.groupBox12.Name = "groupBox12";
+            this.groupBox12.Size = new System.Drawing.Size(419, 118);
+            this.groupBox12.TabIndex = 78;
+            this.groupBox12.TabStop = false;
+            this.groupBox12.Text = "3rd Movement";
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.Location = new System.Drawing.Point(326, 44);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(48, 20);
+            this.label45.TabIndex = 48;
+            this.label45.Text = "Timer";
+            // 
+            // textBox19
+            // 
+            this.textBox19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox19.Location = new System.Drawing.Point(325, 65);
+            this.textBox19.Name = "textBox19";
+            this.textBox19.Size = new System.Drawing.Size(40, 26);
+            this.textBox19.TabIndex = 49;
+            this.textBox19.Text = "0";
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.Location = new System.Drawing.Point(43, 44);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(27, 20);
+            this.label46.TabIndex = 42;
+            this.label46.Text = "Vx";
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label47.Location = new System.Drawing.Point(178, 44);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(142, 20);
+            this.label47.TabIndex = 46;
+            this.label47.Text = "w (angular velocity)";
+            // 
+            // textBox20
+            // 
+            this.textBox20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox20.Location = new System.Drawing.Point(42, 63);
+            this.textBox20.Name = "textBox20";
+            this.textBox20.Size = new System.Drawing.Size(40, 26);
+            this.textBox20.TabIndex = 43;
+            this.textBox20.Text = "0";
+            // 
+            // textBox21
+            // 
+            this.textBox21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox21.Location = new System.Drawing.Point(177, 64);
+            this.textBox21.Name = "textBox21";
+            this.textBox21.Size = new System.Drawing.Size(40, 26);
+            this.textBox21.TabIndex = 47;
+            this.textBox21.Text = "0";
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.Location = new System.Drawing.Point(107, 44);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(27, 20);
+            this.label48.TabIndex = 44;
+            this.label48.Text = "Vy";
+            // 
+            // textBox22
+            // 
+            this.textBox22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox22.Location = new System.Drawing.Point(106, 64);
+            this.textBox22.Name = "textBox22";
+            this.textBox22.Size = new System.Drawing.Size(40, 26);
+            this.textBox22.TabIndex = 45;
+            this.textBox22.Text = "0";
+            // 
+            // groupBox11
+            // 
+            this.groupBox11.Controls.Add(this.label41);
+            this.groupBox11.Controls.Add(this.textBox15);
+            this.groupBox11.Controls.Add(this.label42);
+            this.groupBox11.Controls.Add(this.label43);
+            this.groupBox11.Controls.Add(this.textBox16);
+            this.groupBox11.Controls.Add(this.textBox17);
+            this.groupBox11.Controls.Add(this.label44);
+            this.groupBox11.Controls.Add(this.textBox18);
+            this.groupBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox11.Location = new System.Drawing.Point(22, 187);
+            this.groupBox11.Name = "groupBox11";
+            this.groupBox11.Size = new System.Drawing.Size(419, 118);
+            this.groupBox11.TabIndex = 77;
+            this.groupBox11.TabStop = false;
+            this.groupBox11.Text = "2nd Movement";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.Location = new System.Drawing.Point(326, 44);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(48, 20);
+            this.label41.TabIndex = 48;
+            this.label41.Text = "Timer";
+            // 
+            // textBox15
+            // 
+            this.textBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox15.Location = new System.Drawing.Point(325, 65);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(40, 26);
+            this.textBox15.TabIndex = 49;
+            this.textBox15.Text = "0";
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.Location = new System.Drawing.Point(43, 44);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(27, 20);
+            this.label42.TabIndex = 42;
+            this.label42.Text = "Vx";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.Location = new System.Drawing.Point(178, 44);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(142, 20);
+            this.label43.TabIndex = 46;
+            this.label43.Text = "w (angular velocity)";
+            // 
+            // textBox16
+            // 
+            this.textBox16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox16.Location = new System.Drawing.Point(42, 63);
+            this.textBox16.Name = "textBox16";
+            this.textBox16.Size = new System.Drawing.Size(40, 26);
+            this.textBox16.TabIndex = 43;
+            this.textBox16.Text = "0";
+            // 
+            // textBox17
+            // 
+            this.textBox17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox17.Location = new System.Drawing.Point(177, 64);
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new System.Drawing.Size(40, 26);
+            this.textBox17.TabIndex = 47;
+            this.textBox17.Text = "0";
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.Location = new System.Drawing.Point(107, 44);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(27, 20);
+            this.label44.TabIndex = 44;
+            this.label44.Text = "Vy";
+            // 
+            // textBox18
+            // 
+            this.textBox18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox18.Location = new System.Drawing.Point(106, 64);
+            this.textBox18.Name = "textBox18";
+            this.textBox18.Size = new System.Drawing.Size(40, 26);
+            this.textBox18.TabIndex = 45;
+            this.textBox18.Text = "0";
+            // 
+            // groupBox10
+            // 
+            this.groupBox10.Controls.Add(this.label37);
+            this.groupBox10.Controls.Add(this.textBox11);
+            this.groupBox10.Controls.Add(this.label38);
+            this.groupBox10.Controls.Add(this.label39);
+            this.groupBox10.Controls.Add(this.textBox12);
+            this.groupBox10.Controls.Add(this.textBox13);
+            this.groupBox10.Controls.Add(this.label40);
+            this.groupBox10.Controls.Add(this.textBox14);
+            this.groupBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox10.Location = new System.Drawing.Point(22, 47);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(419, 118);
+            this.groupBox10.TabIndex = 76;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "1st Movement";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.Location = new System.Drawing.Point(326, 44);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(48, 20);
+            this.label37.TabIndex = 48;
+            this.label37.Text = "Timer";
+            // 
+            // textBox11
+            // 
+            this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox11.Location = new System.Drawing.Point(325, 65);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(40, 26);
+            this.textBox11.TabIndex = 49;
+            this.textBox11.Text = "0";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.Location = new System.Drawing.Point(43, 44);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(27, 20);
+            this.label38.TabIndex = 42;
+            this.label38.Text = "Vx";
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.Location = new System.Drawing.Point(178, 44);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(142, 20);
+            this.label39.TabIndex = 46;
+            this.label39.Text = "w (angular velocity)";
+            // 
+            // textBox12
+            // 
+            this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox12.Location = new System.Drawing.Point(42, 63);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(40, 26);
+            this.textBox12.TabIndex = 43;
+            this.textBox12.Text = "0";
+            // 
+            // textBox13
+            // 
+            this.textBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox13.Location = new System.Drawing.Point(177, 64);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(40, 26);
+            this.textBox13.TabIndex = 47;
+            this.textBox13.Text = "0";
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.Location = new System.Drawing.Point(107, 44);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(27, 20);
+            this.label40.TabIndex = 44;
+            this.label40.Text = "Vy";
+            // 
+            // textBox14
+            // 
+            this.textBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox14.Location = new System.Drawing.Point(106, 64);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(40, 26);
+            this.textBox14.TabIndex = 45;
+            this.textBox14.Text = "0";
+            // 
+            // button24
+            // 
+            this.button24.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button24.Location = new System.Drawing.Point(524, 67);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(103, 58);
+            this.button24.TabIndex = 75;
+            this.button24.Text = "Send";
+            this.button24.UseVisualStyleBackColor = true;
+            // 
+            // Second_Order_Movement
+            // 
+            this.Second_Order_Movement.Location = new System.Drawing.Point(4, 22);
+            this.Second_Order_Movement.Name = "Second_Order_Movement";
+            this.Second_Order_Movement.Size = new System.Drawing.Size(709, 939);
+            this.Second_Order_Movement.TabIndex = 5;
+            this.Second_Order_Movement.Text = "Second Order Movement";
+            this.Second_Order_Movement.UseVisualStyleBackColor = true;
+            // 
+            // Free_Shape_Movement
+            // 
+            this.Free_Shape_Movement.Location = new System.Drawing.Point(4, 22);
+            this.Free_Shape_Movement.Name = "Free_Shape_Movement";
+            this.Free_Shape_Movement.Size = new System.Drawing.Size(709, 939);
+            this.Free_Shape_Movement.TabIndex = 6;
+            this.Free_Shape_Movement.Text = "Free Shape Movement";
+            this.Free_Shape_Movement.UseVisualStyleBackColor = true;
+            // 
+            // button26
+            // 
+            this.button26.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button26.Location = new System.Drawing.Point(80, 562);
+            this.button26.Name = "button26";
+            this.button26.Size = new System.Drawing.Size(246, 111);
+            this.button26.TabIndex = 77;
+            this.button26.Text = "STOP";
+            this.button26.UseVisualStyleBackColor = true;
+            this.button26.Click += new System.EventHandler(this.button26_Click);
+            // 
+            // tabControl2
+            // 
+            this.tabControl2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabControl2.Controls.Add(this.tabPage1);
+            this.tabControl2.Controls.Add(this.tabPage2);
+            this.tabControl2.Location = new System.Drawing.Point(602, 7);
+            this.tabControl2.Name = "tabControl2";
+            this.tabControl2.SelectedIndex = 0;
+            this.tabControl2.Size = new System.Drawing.Size(819, 965);
+            this.tabControl2.TabIndex = 56;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.label65);
+            this.tabPage1.Controls.Add(this.label64);
+            this.tabPage1.Controls.Add(this.label63);
+            this.tabPage1.Controls.Add(this.button7);
+            this.tabPage1.Controls.Add(this.chart3);
+            this.tabPage1.Controls.Add(this.checkBox3);
+            this.tabPage1.Controls.Add(this.G3);
+            this.tabPage1.Controls.Add(this.button1);
+            this.tabPage1.Controls.Add(this.button6);
+            this.tabPage1.Controls.Add(this.G2);
+            this.tabPage1.Controls.Add(this.button5);
+            this.tabPage1.Controls.Add(this.G1);
+            this.tabPage1.Controls.Add(this.chart2);
+            this.tabPage1.Controls.Add(this.button10);
+            this.tabPage1.Controls.Add(this.chart1);
+            this.tabPage1.Controls.Add(this.button9);
+            this.tabPage1.Controls.Add(this.exportToTxtButton);
+            this.tabPage1.Controls.Add(this.button8);
+            this.tabPage1.Controls.Add(this.button3);
+            this.tabPage1.Controls.Add(this.button4);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(811, 939);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(678, 733);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Location = new System.Drawing.Point(683, 693);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(122, 54);
+            this.button7.TabIndex = 82;
+            this.button7.Text = "0";
+            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button7.UseVisualStyleBackColor = false;
+            // 
+            // chart3
+            // 
+            this.chart3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            chartArea10.Name = "ChartArea1";
+            this.chart3.ChartAreas.Add(chartArea10);
+            legend10.Name = "Legend1";
+            this.chart3.Legends.Add(legend10);
+            this.chart3.Location = new System.Drawing.Point(178, 637);
+            this.chart3.Name = "chart3";
+            series10.ChartArea = "ChartArea1";
+            series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series10.Legend = "Legend1";
+            series10.Name = "Series1";
+            this.chart3.Series.Add(series10);
+            this.chart3.Size = new System.Drawing.Size(627, 299);
+            this.chart3.TabIndex = 81;
+            this.chart3.Text = "chart3";
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Location = new System.Drawing.Point(683, 370);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(122, 54);
+            this.button6.TabIndex = 80;
+            this.button6.Text = "0";
+            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button6.UseVisualStyleBackColor = false;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(683, 64);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(122, 54);
+            this.button5.TabIndex = 79;
+            this.button5.Text = "0";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // chart2
+            // 
+            this.chart2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            chartArea11.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea11);
+            legend11.Name = "Legend1";
+            this.chart2.Legends.Add(legend11);
+            this.chart2.Location = new System.Drawing.Point(178, 319);
+            this.chart2.Name = "chart2";
+            series11.ChartArea = "ChartArea1";
+            series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series11.Legend = "Legend1";
+            series11.Name = "Series1";
+            this.chart2.Series.Add(series11);
+            this.chart2.Size = new System.Drawing.Size(627, 299);
+            this.chart2.TabIndex = 78;
+            this.chart2.Text = "chart2";
+            // 
+            // chart1
+            // 
+            this.chart1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            chartArea12.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea12);
+            legend12.Name = "Legend1";
+            this.chart1.Legends.Add(legend12);
+            this.chart1.Location = new System.Drawing.Point(178, 11);
+            this.chart1.Name = "chart1";
+            series12.ChartArea = "ChartArea1";
+            series12.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series12.Legend = "Legend1";
+            series12.Name = "Series1";
+            this.chart1.Series.Add(series12);
+            this.chart1.Size = new System.Drawing.Size(627, 299);
+            this.chart1.TabIndex = 77;
+            this.chart1.Text = "chart1";
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label63.Location = new System.Drawing.Point(276, 3);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(73, 24);
+            this.label63.TabIndex = 42;
+            this.label63.Text = "Motor 1";
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label64.Location = new System.Drawing.Point(276, 313);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(73, 24);
+            this.label64.TabIndex = 83;
+            this.label64.Text = "Motor 2";
+            // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label65.Location = new System.Drawing.Point(276, 626);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(73, 24);
+            this.label65.TabIndex = 84;
+            this.label65.Text = "Motor 3";
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label62.Location = new System.Drawing.Point(168, 492);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(18, 20);
+            this.label62.TabIndex = 82;
+            this.label62.Text = "0";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label59.Location = new System.Drawing.Point(118, 492);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(29, 20);
+            this.label59.TabIndex = 79;
+            this.label59.Text = "V3";
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label61.Location = new System.Drawing.Point(168, 457);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(18, 20);
+            this.label61.TabIndex = 81;
+            this.label61.Text = "0";
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label58.Location = new System.Drawing.Point(118, 457);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(29, 20);
+            this.label58.TabIndex = 78;
+            this.label58.Text = "V2";
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label60.Location = new System.Drawing.Point(168, 424);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(18, 20);
+            this.label60.TabIndex = 80;
+            this.label60.Text = "0";
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label57.Location = new System.Drawing.Point(118, 424);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(29, 20);
+            this.label57.TabIndex = 50;
+            this.label57.Text = "V1";
             // 
             // Form1
             // 
@@ -2092,6 +2211,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1433, 984);
             this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.tabControl2);
             this.Name = "Form1";
             this.Text = "Omniwheel Education Platform";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -2100,10 +2220,6 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.Motor_Velocity.ResumeLayout(false);
-            this.Motor_Velocity.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.AllMotor.ResumeLayout(false);
             this.Motor3.ResumeLayout(false);
             this.Motor3.PerformLayout();
@@ -2115,32 +2231,39 @@
             this.groupBox3.PerformLayout();
             this.Base_Movement.ResumeLayout(false);
             this.Base_Movement.PerformLayout();
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox8.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
-            this.groupBox7.ResumeLayout(false);
-            this.groupBox7.PerformLayout();
-            this.groupBox8.ResumeLayout(false);
-            this.groupBox8.PerformLayout();
             this.Point_Movement.ResumeLayout(false);
+            this.Point_Movement.PerformLayout();
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
             this.Simple_Shape_Movement.ResumeLayout(false);
-            this.groupBox10.ResumeLayout(false);
-            this.groupBox10.PerformLayout();
-            this.groupBox11.ResumeLayout(false);
-            this.groupBox11.PerformLayout();
-            this.groupBox12.ResumeLayout(false);
-            this.groupBox12.PerformLayout();
-            this.groupBox13.ResumeLayout(false);
-            this.groupBox13.PerformLayout();
             this.groupBox14.ResumeLayout(false);
             this.groupBox14.PerformLayout();
+            this.groupBox13.ResumeLayout(false);
+            this.groupBox13.PerformLayout();
+            this.groupBox12.ResumeLayout(false);
+            this.groupBox12.PerformLayout();
+            this.groupBox11.ResumeLayout(false);
+            this.groupBox11.PerformLayout();
+            this.groupBox10.ResumeLayout(false);
+            this.groupBox10.PerformLayout();
+            this.tabControl2.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2155,12 +2278,6 @@
         private System.Windows.Forms.ComboBox cBoxBaudrate;
         private System.Windows.Forms.ComboBox cBoxCOMPORT;
         private System.Windows.Forms.TabPage Motor_Velocity;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart3;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.GroupBox AllMotor;
         private System.Windows.Forms.Button button19;
         private System.Windows.Forms.Button button2;
@@ -2233,46 +2350,40 @@
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Button button20;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox base_movement_M3;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox base_movement_M2;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.TextBox base_movement_M1;
+        private System.Windows.Forms.ComboBox comboBoxM1;
+        private System.Windows.Forms.ComboBox comboBoxM3;
+        private System.Windows.Forms.ComboBox comboBoxM2;
         private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox W_Base;
         private System.Windows.Forms.Button button21;
         private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox Vy_Base;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox Vx_Base;
         private System.Windows.Forms.Button button22;
         private System.Windows.Forms.TabPage Point_Movement;
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Button button23;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox Vx;
+        private System.Windows.Forms.TextBox W;
         private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox Vy;
         private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox Timer_Point_Movement;
         private System.Windows.Forms.TabPage Simple_Shape_Movement;
         private System.Windows.Forms.TabPage Second_Order_Movement;
         private System.Windows.Forms.TabPage Free_Shape_Movement;
@@ -2323,6 +2434,25 @@
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.TextBox textBox14;
         private System.Windows.Forms.Button button24;
+        private System.Windows.Forms.Button button26;
+        private System.Windows.Forms.TabControl tabControl2;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart3;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.Label label65;
+        private System.Windows.Forms.Label label64;
+        private System.Windows.Forms.Label label63;
+        private System.Windows.Forms.Label label62;
+        private System.Windows.Forms.Label label61;
+        private System.Windows.Forms.Label label60;
+        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.Label label58;
+        private System.Windows.Forms.Label label57;
     }
 }
 
