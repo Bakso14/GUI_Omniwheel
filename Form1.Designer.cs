@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button4 = new System.Windows.Forms.Button();
@@ -90,12 +90,28 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.GPS = new System.Windows.Forms.TabPage();
             this.Grafik = new System.Windows.Forms.TabPage();
+            this.Kompas = new System.Windows.Forms.TabPage();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.index_kompas = new System.Windows.Forms.GroupBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.index_heading = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.heading = new System.Windows.Forms.Label();
+            this.index_sp_heading = new System.Windows.Forms.Label();
+            this.value_car_heading = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.sp_heading = new System.Windows.Forms.Label();
+            this.value_sp_heading = new System.Windows.Forms.TextBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.label16 = new System.Windows.Forms.Label();
             this.longitude_goal = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
             this.latitude_goal = new System.Windows.Forms.TextBox();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
@@ -106,6 +122,10 @@
             this.tabControl1.SuspendLayout();
             this.GPS.SuspendLayout();
             this.Grafik.SuspendLayout();
+            this.Kompas.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.index_kompas.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -286,22 +306,22 @@
             this.chart1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
             this.chart1.Location = new System.Drawing.Point(0, 0);
             this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series1.Legend = "Legend1";
-            series1.Name = "Data1";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series2.Legend = "Legend1";
-            series2.Name = "Data2";
-            this.chart1.Series.Add(series1);
-            this.chart1.Series.Add(series2);
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series3.Legend = "Legend1";
+            series3.Name = "Data1";
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series4.Legend = "Legend1";
+            series4.Name = "Data2";
+            this.chart1.Series.Add(series3);
+            this.chart1.Series.Add(series4);
             this.chart1.Size = new System.Drawing.Size(962, 433);
             this.chart1.TabIndex = 11;
             this.chart1.Text = "chart1";
@@ -673,6 +693,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.GPS);
             this.tabControl1.Controls.Add(this.Grafik);
+            this.tabControl1.Controls.Add(this.Kompas);
             this.tabControl1.Location = new System.Drawing.Point(327, 152);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -700,6 +721,157 @@
             this.Grafik.TabIndex = 1;
             this.Grafik.Text = "Grafik";
             this.Grafik.UseVisualStyleBackColor = true;
+            // 
+            // Kompas
+            // 
+            this.Kompas.Controls.Add(this.pictureBox3);
+            this.Kompas.Controls.Add(this.pictureBox2);
+            this.Kompas.Controls.Add(this.index_kompas);
+            this.Kompas.Location = new System.Drawing.Point(4, 22);
+            this.Kompas.Name = "Kompas";
+            this.Kompas.Size = new System.Drawing.Size(962, 437);
+            this.Kompas.TabIndex = 2;
+            this.Kompas.Text = "Kompas";
+            this.Kompas.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(569, 118);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(200, 200);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 45;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(464, 13);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(410, 410);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 44;
+            this.pictureBox2.TabStop = false;
+            // 
+            // index_kompas
+            // 
+            this.index_kompas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.index_kompas.Controls.Add(this.checkBox4);
+            this.index_kompas.Controls.Add(this.checkBox5);
+            this.index_kompas.Controls.Add(this.index_heading);
+            this.index_kompas.Controls.Add(this.textBox1);
+            this.index_kompas.Controls.Add(this.heading);
+            this.index_kompas.Controls.Add(this.index_sp_heading);
+            this.index_kompas.Controls.Add(this.value_car_heading);
+            this.index_kompas.Controls.Add(this.textBox3);
+            this.index_kompas.Controls.Add(this.button5);
+            this.index_kompas.Controls.Add(this.sp_heading);
+            this.index_kompas.Controls.Add(this.value_sp_heading);
+            this.index_kompas.Location = new System.Drawing.Point(30, 28);
+            this.index_kompas.Name = "index_kompas";
+            this.index_kompas.Size = new System.Drawing.Size(347, 131);
+            this.index_kompas.TabIndex = 43;
+            this.index_kompas.TabStop = false;
+            this.index_kompas.Text = "Index Kompas";
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(213, 80);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(75, 17);
+            this.checkBox4.TabIndex = 52;
+            this.checkBox4.Text = "Auto Load";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // checkBox5
+            // 
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.Location = new System.Drawing.Point(213, 100);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(100, 17);
+            this.checkBox5.TabIndex = 48;
+            this.checkBox5.Text = "Baca dari Serial";
+            this.checkBox5.UseVisualStyleBackColor = true;
+            // 
+            // index_heading
+            // 
+            this.index_heading.AutoSize = true;
+            this.index_heading.Location = new System.Drawing.Point(9, 103);
+            this.index_heading.Name = "index_heading";
+            this.index_heading.Size = new System.Drawing.Size(76, 13);
+            this.index_heading.TabIndex = 50;
+            this.index_heading.Text = "Index Heading";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(121, 99);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(40, 20);
+            this.textBox1.TabIndex = 51;
+            this.textBox1.Text = "0";
+            // 
+            // heading
+            // 
+            this.heading.AutoSize = true;
+            this.heading.Location = new System.Drawing.Point(9, 55);
+            this.heading.Name = "heading";
+            this.heading.Size = new System.Drawing.Size(47, 13);
+            this.heading.TabIndex = 36;
+            this.heading.Text = "Heading";
+            // 
+            // index_sp_heading
+            // 
+            this.index_sp_heading.AutoSize = true;
+            this.index_sp_heading.Location = new System.Drawing.Point(9, 80);
+            this.index_sp_heading.Name = "index_sp_heading";
+            this.index_sp_heading.Size = new System.Drawing.Size(93, 13);
+            this.index_sp_heading.TabIndex = 48;
+            this.index_sp_heading.Text = "Index SP Heading";
+            // 
+            // value_car_heading
+            // 
+            this.value_car_heading.Location = new System.Drawing.Point(121, 52);
+            this.value_car_heading.Name = "value_car_heading";
+            this.value_car_heading.Size = new System.Drawing.Size(40, 20);
+            this.value_car_heading.TabIndex = 37;
+            this.value_car_heading.Text = "0";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(121, 76);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(40, 20);
+            this.textBox3.TabIndex = 49;
+            this.textBox3.Text = "0";
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(208, 19);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(121, 57);
+            this.button5.TabIndex = 34;
+            this.button5.Text = "LOAD";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // sp_heading
+            // 
+            this.sp_heading.AutoSize = true;
+            this.sp_heading.Location = new System.Drawing.Point(9, 26);
+            this.sp_heading.Name = "sp_heading";
+            this.sp_heading.Size = new System.Drawing.Size(64, 13);
+            this.sp_heading.TabIndex = 34;
+            this.sp_heading.Text = "SP Heading";
+            // 
+            // value_sp_heading
+            // 
+            this.value_sp_heading.Location = new System.Drawing.Point(121, 23);
+            this.value_sp_heading.Name = "value_sp_heading";
+            this.value_sp_heading.Size = new System.Drawing.Size(40, 20);
+            this.value_sp_heading.TabIndex = 35;
+            this.value_sp_heading.Text = "0";
             // 
             // groupBox5
             // 
@@ -759,6 +931,13 @@
             this.latitude_goal.TabIndex = 35;
             this.latitude_goal.Text = "-7.368498012597734";
             // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "Picture1.png");
+            this.imageList1.Images.SetKeyName(1, "Picture3.png");
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -796,6 +975,11 @@
             this.tabControl1.ResumeLayout(false);
             this.GPS.ResumeLayout(false);
             this.Grafik.ResumeLayout(false);
+            this.Kompas.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.index_kompas.ResumeLayout(false);
+            this.index_kompas.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.ResumeLayout(false);
@@ -867,6 +1051,22 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox latitude_goal;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.TabPage Kompas;
+        private System.Windows.Forms.GroupBox index_kompas;
+        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.Label index_heading;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label heading;
+        private System.Windows.Forms.Label index_sp_heading;
+        private System.Windows.Forms.TextBox value_car_heading;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label sp_heading;
+        private System.Windows.Forms.TextBox value_sp_heading;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.ImageList imageList1;
     }
 }
 

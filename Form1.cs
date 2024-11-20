@@ -13,6 +13,7 @@ using System.Windows.Forms.DataVisualization.Charting;
 using System.Net.Sockets;
 using GMap.NET.MapProviders;
 using GMap.NET;
+using System.Drawing;
 
 namespace Penelitian_Push_Up_Counter
 {
@@ -32,6 +33,10 @@ namespace Penelitian_Push_Up_Counter
         string kode = "0";
         string dir = "0";
         string function_code = "0";
+
+        private float currentAngle = 0;
+        private float setpoint_heading = 0;
+        private float mobil_heading = 0;
 
         public Form1()
         {
@@ -302,6 +307,35 @@ namespace Penelitian_Push_Up_Counter
         {
             string[] ports = SerialPort.GetPortNames();
             cBoxCOMPORT.Items.AddRange(ports);
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            
+            pictureBox2.Image = RotateNeedle(0, -Convert.ToInt16(value_sp_heading.Text));
+            pictureBox3.Image = RotateNeedle(1,  Convert.ToInt16(value_car_heading.Text) - Convert.ToInt16(value_sp_heading.Text));
+        }
+
+        private Bitmap RotateNeedle(int index_geser, float angle)
+        {
+            currentAngle = angle;
+            Bitmap needleBitmap = new Bitmap(imageList1.Images[index_geser]);
+            needleBitmap = RotateImage(needleBitmap, currentAngle);
+
+            return needleBitmap;
+        }
+
+        private Bitmap RotateImage(Bitmap image, float angle)
+        {
+            Bitmap rotatedImage = new Bitmap(image.Width, image.Height);
+            using (Graphics g = Graphics.FromImage(rotatedImage))
+            {
+                g.TranslateTransform((float)image.Width / 2, (float)image.Height / 2);
+                g.RotateTransform(angle);
+                g.TranslateTransform(-(float)image.Width / 2, -(float)image.Height / 2);
+                g.DrawImage(image, new Point(0, 0));
+            }
+            return rotatedImage;
         }
     }
 }
