@@ -33,6 +33,7 @@ namespace Penelitian_Push_Up_Counter
         string kode = "0";
         string dir = "0";
         string function_code = "0";
+        char character_pisah_data = ',';
 
         private float currentAngle = 0;
         private float setpoint_heading = 0;
@@ -107,7 +108,7 @@ namespace Penelitian_Push_Up_Counter
 
             try
             {
-                string[] pisah_data = dataIN.Split(character_split.Text[0]);
+                string[] pisah_data = dataIN.Split(character_pisah_data);
 
                 if (checkBox3.Checked)
                 {
@@ -133,6 +134,19 @@ namespace Penelitian_Push_Up_Counter
                     MapUtama.MinZoom = 1;
                     MapUtama.MaxZoom = 100;
                     MapUtama.Zoom = 20;
+                }
+
+                if (kompas_serial.Checked)
+                {
+                    value_sp_heading.Text = pisah_data[Convert.ToInt16(index_sp_heading.Text)];
+                    value_car_heading.Text = pisah_data[Convert.ToInt16(index_heading.Text)];
+
+                }
+
+                if (auto_load_kompas.Checked)
+                {
+                    pictureBox2.Image = RotateNeedle(0, -Convert.ToInt16(value_sp_heading.Text));
+                    pictureBox3.Image = RotateNeedle(1, Convert.ToInt16(value_car_heading.Text) - Convert.ToInt16(value_sp_heading.Text));
                 }
 
 
@@ -311,7 +325,6 @@ namespace Penelitian_Push_Up_Counter
 
         private void button5_Click(object sender, EventArgs e)
         {
-            
             pictureBox2.Image = RotateNeedle(0, -Convert.ToInt16(value_sp_heading.Text));
             pictureBox3.Image = RotateNeedle(1,  Convert.ToInt16(value_car_heading.Text) - Convert.ToInt16(value_sp_heading.Text));
         }
@@ -336,6 +349,11 @@ namespace Penelitian_Push_Up_Counter
                 g.DrawImage(image, new Point(0, 0));
             }
             return rotatedImage;
+        }
+
+        private void change_character_split_Click(object sender, EventArgs e)
+        {
+            character_pisah_data = character_split.Text[0];
         }
     }
 }
