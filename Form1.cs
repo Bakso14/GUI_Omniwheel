@@ -35,9 +35,9 @@ namespace Penelitian_Push_Up_Counter
         string function_code = "0";
         char character_pisah_data = ',';
 
-        private float currentAngle = 0;
-        private float setpoint_heading = 0;
-        private float mobil_heading = 0;
+        private double currentAngle = 0;
+        private double setpoint_heading = 0;
+        private double mobil_heading = 0;
 
         public Form1()
         {
@@ -145,8 +145,8 @@ namespace Penelitian_Push_Up_Counter
 
                 if (auto_load_kompas.Checked)
                 {
-                    pictureBox2.Image = RotateNeedle(0, -Convert.ToInt16(value_sp_heading.Text));
-                    pictureBox3.Image = RotateNeedle(1, Convert.ToInt16(value_car_heading.Text) - Convert.ToInt16(value_sp_heading.Text));
+                    pictureBox2.Image = RotateNeedle(0, -Convert.ToDouble(value_sp_heading.Text));
+                    pictureBox3.Image = RotateNeedle(1, Convert.ToDouble(value_car_heading.Text) - Convert.ToDouble(value_sp_heading.Text));
                 }
 
 
@@ -325,11 +325,11 @@ namespace Penelitian_Push_Up_Counter
 
         private void button5_Click(object sender, EventArgs e)
         {
-            pictureBox2.Image = RotateNeedle(0, -Convert.ToInt16(value_sp_heading.Text));
-            pictureBox3.Image = RotateNeedle(1,  Convert.ToInt16(value_car_heading.Text) - Convert.ToInt16(value_sp_heading.Text));
+            pictureBox2.Image = RotateNeedle(0, -Convert.ToDouble(value_sp_heading.Text));
+            pictureBox3.Image = RotateNeedle(1,  Convert.ToDouble(value_car_heading.Text) - Convert.ToDouble(value_sp_heading.Text));
         }
 
-        private Bitmap RotateNeedle(int index_geser, float angle)
+        private Bitmap RotateNeedle(int index_geser, double angle)
         {
             currentAngle = angle;
             Bitmap needleBitmap = new Bitmap(imageList1.Images[index_geser]);
@@ -338,13 +338,13 @@ namespace Penelitian_Push_Up_Counter
             return needleBitmap;
         }
 
-        private Bitmap RotateImage(Bitmap image, float angle)
+        private Bitmap RotateImage(Bitmap image, double angle)
         {
             Bitmap rotatedImage = new Bitmap(image.Width, image.Height);
             using (Graphics g = Graphics.FromImage(rotatedImage))
             {
                 g.TranslateTransform((float)image.Width / 2, (float)image.Height / 2);
-                g.RotateTransform(angle);
+                g.RotateTransform((float)angle);
                 g.TranslateTransform(-(float)image.Width / 2, -(float)image.Height / 2);
                 g.DrawImage(image, new Point(0, 0));
             }
