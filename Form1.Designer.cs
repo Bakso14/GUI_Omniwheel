@@ -72,6 +72,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.index_data1 = new System.Windows.Forms.TextBox();
             this.graph_control = new System.Windows.Forms.GroupBox();
+            this.change_character_split = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.index_data2 = new System.Windows.Forms.TextBox();
             this.MapUtama = new GMap.NET.WindowsForms.GMapControl();
@@ -112,7 +113,6 @@
             this.label17 = new System.Windows.Forms.Label();
             this.latitude_goal = new System.Windows.Forms.TextBox();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.change_character_split = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
@@ -183,7 +183,7 @@
             this.cBoxBaudrate.Name = "cBoxBaudrate";
             this.cBoxBaudrate.Size = new System.Drawing.Size(121, 21);
             this.cBoxBaudrate.TabIndex = 6;
-            this.cBoxBaudrate.Text = "9600";
+            this.cBoxBaudrate.Text = "115200";
             // 
             // cBoxCOMPORT
             // 
@@ -520,6 +520,16 @@
             this.graph_control.TabIndex = 46;
             this.graph_control.TabStop = false;
             this.graph_control.Text = "Graph Control";
+            // 
+            // change_character_split
+            // 
+            this.change_character_split.Location = new System.Drawing.Point(134, 13);
+            this.change_character_split.Name = "change_character_split";
+            this.change_character_split.Size = new System.Drawing.Size(80, 30);
+            this.change_character_split.TabIndex = 48;
+            this.change_character_split.Text = "Change Char";
+            this.change_character_split.UseVisualStyleBackColor = true;
+            this.change_character_split.Click += new System.EventHandler(this.change_character_split_Click);
             // 
             // label11
             // 
@@ -938,16 +948,6 @@
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             this.imageList1.Images.SetKeyName(0, "Picture1.png");
             this.imageList1.Images.SetKeyName(1, "Picture3.png");
-            // 
-            // change_character_split
-            // 
-            this.change_character_split.Location = new System.Drawing.Point(134, 13);
-            this.change_character_split.Name = "change_character_split";
-            this.change_character_split.Size = new System.Drawing.Size(80, 30);
-            this.change_character_split.TabIndex = 48;
-            this.change_character_split.Text = "Change Char";
-            this.change_character_split.UseVisualStyleBackColor = true;
-            this.change_character_split.Click += new System.EventHandler(this.change_character_split_Click);
             // 
             // Form1
             // 
