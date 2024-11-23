@@ -13,7 +13,6 @@ using System.Windows.Forms.DataVisualization.Charting;
 using System.Net.Sockets;
 using GMap.NET.MapProviders;
 using GMap.NET;
-using System.Drawing;
 
 namespace Penelitian_Push_Up_Counter
 {
@@ -276,7 +275,7 @@ namespace Penelitian_Push_Up_Counter
                 ki = ki_textbox.Text;
                 kd = kd_textbox.Text;
                 //serialPort1.Write(kp + "," + ki + "," + kd + "," + setpoint);
-                serialPort1.Write(setpoint + "," + kp + "," + ki + "," + kd);
+                serialPort1.Write(kp + "," + ki + "," + kd + "," + setpoint);
                 
             }
         }
