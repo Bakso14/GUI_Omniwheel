@@ -18,3 +18,13 @@ C:\Users\sayyi\Source\Repos\Bakso14\GUI_Omniwheel\obj\Debug\GUI_Omniwheel.csproj
 C:\Users\sayyi\Source\Repos\Bakso14\GUI_Omniwheel\obj\Debug\GUI_Omniwheel.csproj.CoreCompileInputs.cache
 C:\Users\sayyi\Source\Repos\Bakso14\GUI_Omniwheel\obj\Debug\GUI_Omniwheel.exe
 C:\Users\sayyi\Source\Repos\Bakso14\GUI_Omniwheel\obj\Debug\GUI_Omniwheel.pdb
+C:\project\omni wheel\GUI_Omniwheel\bin\Debug\GUI_Omniwheel.exe.config
+C:\project\omni wheel\GUI_Omniwheel\bin\Debug\GUI_Omniwheel.exe
+C:\project\omni wheel\GUI_Omniwheel\bin\Debug\GUI_Omniwheel.pdb
+C:\project\omni wheel\GUI_Omniwheel\obj\Debug\GUI_Omniwheel.csproj.AssemblyReference.cache
+C:\project\omni wheel\GUI_Omniwheel\obj\Debug\Penelitian_Push_Up_Counter.Form1.resources
+C:\project\omni wheel\GUI_Omniwheel\obj\Debug\GUI_Omniwheel.Properties.Resources.resources
+C:\project\omni wheel\GUI_Omniwheel\obj\Debug\GUI_Omniwheel.csproj.GenerateResource.cache
+C:\project\omni wheel\GUI_Omniwheel\obj\Debug\GUI_Omniwheel.csproj.CoreCompileInputs.cache
+C:\project\omni wheel\GUI_Omniwheel\obj\Debug\GUI_Omniwheel.exe
+C:\project\omni wheel\GUI_Omniwheel\obj\Debug\GUI_Omniwheel.pdb

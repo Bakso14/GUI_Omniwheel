@@ -534,31 +534,29 @@ namespace Penelitian_Push_Up_Counter
 
             if (comboBoxM1.Text == "CW")
             {
-                arah_motor[0] = 0;
-            }else if (comboBoxM1.Text == "CCW")
-            {
                 arah_motor[0] = 1;
-
+            }
+            else if (comboBoxM1.Text == "CCW")
+            {
+                arah_motor[0] = 0;
             }
 
             if (comboBoxM2.Text == "CW")
             {
-                arah_motor[0] = 0;
+                arah_motor[1] = 1;
             }
             else if (comboBoxM2.Text == "CCW")
             {
-                arah_motor[0] = 1;
-
+                arah_motor[1] = 0;
             }
 
             if (comboBoxM3.Text == "CW")
             {
-                arah_motor[0] = 0;
+                arah_motor[2] = 1;
             }
             else if (comboBoxM3.Text == "CCW")
             {
-                arah_motor[0] = 1;
-
+                arah_motor[2] = 0;
             }
 
 
@@ -604,6 +602,11 @@ namespace Penelitian_Push_Up_Counter
         }
 
         private void Motor_Velocity_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBoxM1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
