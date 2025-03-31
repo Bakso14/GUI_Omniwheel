@@ -31,6 +31,17 @@ namespace Penelitian_Push_Up_Counter
         string dir = "0";
         string function_code = "0";
 
+        private const int SIZE = 3;
+        double[,] inverse_kinematik = new double[SIZE, SIZE];
+        double v_x = 0;
+        double v_y = 0;
+        double v_w = 0;
+
+        double v_motor1 = 0;
+        double v_motor2 = 0;
+        double v_motor3 = 0;
+
+
         public Form1()
         {
             InitializeComponent();
@@ -484,7 +495,8 @@ namespace Penelitian_Push_Up_Counter
 
         private void button23_Click(object sender, EventArgs e)
         {
-            double[] matrix_kecepatan = { -0.3333, 0.5774, 0.0317, -0.3333, -0.5774, 0.0317, 0.6667, 0, 0.0317 };
+            //double[] matrix_kecepatan = { -0.3333, 0.5774, 0.0317, -0.3333, -0.5774, 0.0317, 0.6667, 0, 0.0317 };
+            double[] matrix_kecepatan = { inverse_kinematik[0, 0], inverse_kinematik[0, 1], inverse_kinematik[0, 2], inverse_kinematik[1, 0], inverse_kinematik[1, 1], inverse_kinematik[1, 2], inverse_kinematik[2, 0], inverse_kinematik[2, 1], inverse_kinematik[2, 2]};
             double V1, V2, V3;
             V3 = matrix_kecepatan[0] * Convert.ToDouble(Vx.Text) + matrix_kecepatan[1] * Convert.ToDouble(Vy.Text) + matrix_kecepatan[2] * Convert.ToDouble(W.Text);
             V2 = matrix_kecepatan[3] * Convert.ToDouble(Vx.Text) + matrix_kecepatan[4] * Convert.ToDouble(Vy.Text) + matrix_kecepatan[5] * Convert.ToDouble(W.Text);
@@ -610,5 +622,113 @@ namespace Penelitian_Push_Up_Counter
         {
 
         }
+
+        private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Connection_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label19_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button24_Click(object sender, EventArgs e)
+        {
+            label40.Text = (-Math.Sin((Convert.ToDouble(sudutM1M3.Text) - 90) * (Math.PI / 180.0))).ToString("F4");
+            label41.Text = (-Math.Sin((Convert.ToDouble(sudutM2M3.Text) - 90) * (Math.PI / 180.0))).ToString("F4");
+            label42.Text = (1).ToString();
+            label43.Text = (Math.Cos((Convert.ToDouble(sudutM1M3.Text) - 90) * (Math.PI / 180.0))).ToString("F4");
+            label44.Text = (-Math.Cos((Convert.ToDouble(sudutM2M3.Text) - 90) * (Math.PI / 180.0))).ToString("F4");
+            label45.Text = (0).ToString();
+            label46.Text = (Convert.ToDouble(panjang_lengan.Text)).ToString();
+            label47.Text = (Convert.ToDouble(panjang_lengan.Text)).ToString();
+            label48.Text = (Convert.ToDouble(panjang_lengan.Text)).ToString();
+
+            double[,] matrix = {
+                { Convert.ToDouble(label40.Text), Convert.ToDouble(label41.Text), Convert.ToDouble(label42.Text) },
+                { Convert.ToDouble(label43.Text), Convert.ToDouble(label44.Text), Convert.ToDouble(label45.Text) },
+                { Convert.ToDouble(label46.Text), Convert.ToDouble(label47.Text), Convert.ToDouble(label48.Text) }
+            };
+
+            if (InverseMatrix(matrix, out double[,] inverse))
+            {
+                Console.WriteLine("\nMatriks Invers:");
+                label66.Text = inverse[0, 0].ToString("F4");
+                label56.Text = inverse[0, 1].ToString("F4");
+                label55.Text = inverse[0, 2].ToString("F4");
+                label54.Text = inverse[1, 0].ToString("F4");
+                label53.Text = inverse[1, 1].ToString("F4");
+                label52.Text = inverse[1, 2].ToString("F4");
+                label51.Text = inverse[2, 0].ToString("F4");
+                label50.Text = inverse[2, 1].ToString("F4");
+                label49.Text = inverse[2, 2].ToString("F4");
+
+                for (int i = 0; i < SIZE; i++)
+                    for (int j = 0; j < SIZE; j++)
+                        inverse_kinematik[i,j] = inverse[i,j];
+            }
+            else
+            {
+                Console.WriteLine("Matriks tidak memiliki invers.");
+            }
+        }
+
+        private void Input_Kinematics_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        static double Determinant(double[,] matrix)
+        {
+            return matrix[0, 0] * (matrix[1, 1] * matrix[2, 2] - matrix[1, 2] * matrix[2, 1])
+                 - matrix[0, 1] * (matrix[1, 0] * matrix[2, 2] - matrix[1, 2] * matrix[2, 0])
+                 + matrix[0, 2] * (matrix[1, 0] * matrix[2, 1] - matrix[1, 1] * matrix[2, 0]);
+        }
+
+        static bool InverseMatrix(double[,] matrix, out double[,] inverse)
+        {
+            inverse = new double[SIZE, SIZE];
+            double det = Determinant(matrix);
+
+            if (det == 0)
+            {
+                return false; // Tidak memiliki invers
+            }
+
+            double[,] adj = {
+                {  (matrix[1,1] * matrix[2,2] - matrix[1,2] * matrix[2,1]), -(matrix[1,0] * matrix[2,2] - matrix[1,2] * matrix[2,0]),  (matrix[1,0] * matrix[2,1] - matrix[1,1] * matrix[2,0]) },
+                { -(matrix[0,1] * matrix[2,2] - matrix[0,2] * matrix[2,1]),  (matrix[0,0] * matrix[2,2] - matrix[0,2] * matrix[2,0]), -(matrix[0,0] * matrix[2,1] - matrix[0,1] * matrix[2,0]) },
+                {  (matrix[0,1] * matrix[1,2] - matrix[0,2] * matrix[1,1]), -(matrix[0,0] * matrix[1,2] - matrix[0,2] * matrix[1,0]),  (matrix[0,0] * matrix[1,1] - matrix[0,1] * matrix[1,0]) }
+             };
+
+            for (int i = 0; i < SIZE; i++)
+                for (int j = 0; j < SIZE; j++)
+                    inverse[i, j] = adj[j, i] / det;
+
+            return true;
+        }
+
+        
     }
 }

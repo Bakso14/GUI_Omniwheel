@@ -28,3 +28,23 @@ C:\project\omni wheel\GUI_Omniwheel\obj\Debug\GUI_Omniwheel.csproj.GenerateResou
 C:\project\omni wheel\GUI_Omniwheel\obj\Debug\GUI_Omniwheel.csproj.CoreCompileInputs.cache
 C:\project\omni wheel\GUI_Omniwheel\obj\Debug\GUI_Omniwheel.exe
 C:\project\omni wheel\GUI_Omniwheel\obj\Debug\GUI_Omniwheel.pdb
+E:\Github\GUI_Omniwheel\bin\Debug\GUI_Omniwheel.exe.config
+E:\Github\GUI_Omniwheel\bin\Debug\GUI_Omniwheel.exe
+E:\Github\GUI_Omniwheel\bin\Debug\GUI_Omniwheel.pdb
+E:\Github\GUI_Omniwheel\obj\Debug\GUI_Omniwheel.csproj.AssemblyReference.cache
+E:\Github\GUI_Omniwheel\obj\Debug\Penelitian_Push_Up_Counter.Form1.resources
+E:\Github\GUI_Omniwheel\obj\Debug\GUI_Omniwheel.Properties.Resources.resources
+E:\Github\GUI_Omniwheel\obj\Debug\GUI_Omniwheel.csproj.GenerateResource.cache
+E:\Github\GUI_Omniwheel\obj\Debug\GUI_Omniwheel.csproj.CoreCompileInputs.cache
+E:\Github\GUI_Omniwheel\obj\Debug\GUI_Omniwheel.exe
+E:\Github\GUI_Omniwheel\obj\Debug\GUI_Omniwheel.pdb
+F:\Github\GUI_Omniwheel\bin\Debug\GUI_Omniwheel.exe.config
+F:\Github\GUI_Omniwheel\bin\Debug\GUI_Omniwheel.exe
+F:\Github\GUI_Omniwheel\bin\Debug\GUI_Omniwheel.pdb
+F:\Github\GUI_Omniwheel\obj\Debug\GUI_Omniwheel.csproj.AssemblyReference.cache
+F:\Github\GUI_Omniwheel\obj\Debug\Penelitian_Push_Up_Counter.Form1.resources
+F:\Github\GUI_Omniwheel\obj\Debug\GUI_Omniwheel.Properties.Resources.resources
+F:\Github\GUI_Omniwheel\obj\Debug\GUI_Omniwheel.csproj.GenerateResource.cache
+F:\Github\GUI_Omniwheel\obj\Debug\GUI_Omniwheel.csproj.CoreCompileInputs.cache
+F:\Github\GUI_Omniwheel\obj\Debug\GUI_Omniwheel.exe
+F:\Github\GUI_Omniwheel\obj\Debug\GUI_Omniwheel.pdb
