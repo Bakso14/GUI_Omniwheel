@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "F:\\Github\\GUI_Omniwheel\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0996A686-5EF4-4392-A421-20BFF92E1CE0}|GUI_Omniwheel.csproj|F:\\Github\\GUI_Omniwheel\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{0996A686-5EF4-4392-A421-20BFF92E1CE0}|GUI_Omniwheel.csproj|f:\\github\\gui_omniwheel\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{0996A686-5EF4-4392-A421-20BFF92E1CE0}|GUI_Omniwheel.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0996A686-5EF4-4392-A421-20BFF92E1CE0}|GUI_Omniwheel.csproj|f:\\github\\gui_omniwheel\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0996A686-5EF4-4392-A421-20BFF92E1CE0}|GUI_Omniwheel.csproj|F:\\Github\\GUI_Omniwheel\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0996A686-5EF4-4392-A421-20BFF92E1CE0}|GUI_Omniwheel.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -30,9 +30,9 @@
               "Title": "Form1.cs",
               "DocumentMoniker": "F:\\Github\\GUI_Omniwheel\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "F:\\Github\\GUI_Omniwheel\\Form1.cs*",
-              "RelativeToolTip": "Form1.cs*",
-              "ViewState": "AgIAAI8CAAAAAAAAAAAQwKMCAAA3AAAAAAAAAA==",
+              "ToolTip": "F:\\Github\\GUI_Omniwheel\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AgIAALYBAAAAAAAAAAAYwM4BAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-15T11:28:38.524Z",
               "EditorCaption": ""
@@ -43,8 +43,8 @@
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "F:\\Github\\GUI_Omniwheel\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "F:\\Github\\GUI_Omniwheel\\Form1.cs [Design]*",
-              "RelativeToolTip": "Form1.cs [Design]*",
+              "ToolTip": "F:\\Github\\GUI_Omniwheel\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-15T11:26:46.421Z",
               "EditorCaption": " [Design]"
