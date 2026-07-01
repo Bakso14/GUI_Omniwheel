@@ -11,6 +11,7 @@ using System.IO.Ports;
 using System.IO;
 using System.Windows.Forms.DataVisualization.Charting;
 using System.Net.Sockets;
+using System.Threading;
 
 namespace Penelitian_Push_Up_Counter
 {
@@ -33,6 +34,7 @@ namespace Penelitian_Push_Up_Counter
 
         private const int SIZE = 3;
         double[,] inverse_kinematik = new double[SIZE, SIZE];
+        double[,] forward_kinematik = new double[SIZE, SIZE];
         double v_x = 0;
         double v_y = 0;
         double v_w = 0;
@@ -41,6 +43,7 @@ namespace Penelitian_Push_Up_Counter
         double v_motor2 = 0;
         double v_motor3 = 0;
 
+        static bool _shouldStop = true;
 
         public Form1()
         {
@@ -77,6 +80,8 @@ namespace Penelitian_Push_Up_Counter
             {
                 MessageBox.Show(err.Message,"Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
+
+            button24_Click(sender, e);
         }
 
         private void btnClose_Click_1(object sender, EventArgs e)
@@ -112,6 +117,42 @@ namespace Penelitian_Push_Up_Counter
                 button5.Text = pisah_data[0];
                 button6.Text = pisah_data[1];
                 button7.Text = pisah_data[2];
+
+                label111.Text = pisah_data[4];
+                label110.Text = pisah_data[5];
+                label109.Text = pisah_data[6];
+
+                if(cek_sistem_aktif.Checked)
+                {
+                    //button32_Click(sender, e);
+
+                    if (Math.Abs(Convert.ToDouble(pisah_data[4])) > Math.Abs(Convert.ToDouble(label117.Text)))
+                    {
+                        
+                    }
+
+                    if (Math.Abs(Convert.ToDouble(pisah_data[5])) > Math.Abs(Convert.ToDouble(label116.Text)))
+                    {
+                        
+                    }
+
+                    if (Math.Abs(Convert.ToDouble(pisah_data[6])) > Math.Abs(Convert.ToDouble(label115.Text)))
+                    {
+                        
+                    }
+
+
+                }
+
+                if (checkBox4.Checked)
+                {
+                    double pos_x,pos_y;
+                    pos_x = forward_kinematik[0, 0] * Convert.ToDouble(label109.Text) + forward_kinematik[0, 1] * Convert.ToDouble(label110.Text) + forward_kinematik[0, 2] * Convert.ToDouble(label111.Text);
+                    pos_y = forward_kinematik[1, 0] * Convert.ToDouble(label109.Text) + forward_kinematik[1, 1] * Convert.ToDouble(label110.Text) + forward_kinematik[1, 2] * Convert.ToDouble(label111.Text);
+                    x_robot.Text = (pos_x* 0.01111).ToString();
+                    y_robot.Text = (pos_y* 0.01111).ToString();
+                }
+
                 if (checkBox3.Checked)
                 {
                     i++;
@@ -671,6 +712,8 @@ namespace Penelitian_Push_Up_Counter
                 { Convert.ToDouble(label46.Text), Convert.ToDouble(label47.Text), Convert.ToDouble(label48.Text) }
             };
 
+            forward_kinematik = matrix;
+
             if (InverseMatrix(matrix, out double[,] inverse))
             {
                 Console.WriteLine("\nMatriks Invers:");
@@ -729,6 +772,261 @@ namespace Penelitian_Push_Up_Counter
             return true;
         }
 
-        
+        private void button29_Click(object sender, EventArgs e)
+        {
+            //double[] matrix_kecepatan = { -0.3333, 0.5774, 0.0317, -0.3333, -0.5774, 0.0317, 0.6667, 0, 0.0317 };
+            double[] matrix_kecepatan = { inverse_kinematik[0, 0], inverse_kinematik[0, 1], inverse_kinematik[0, 2], inverse_kinematik[1, 0], inverse_kinematik[1, 1], inverse_kinematik[1, 2], inverse_kinematik[2, 0], inverse_kinematik[2, 1], inverse_kinematik[2, 2] };
+            double V1, V2, V3, Vmax, V_limit, S1, S2, S3;
+            V_limit = 25;
+            V3 = matrix_kecepatan[0] * Convert.ToDouble(Jarak_X.Text) + matrix_kecepatan[1] * Convert.ToDouble(Jarak_Y.Text) + matrix_kecepatan[2] * 0;
+            V2 = matrix_kecepatan[3] * Convert.ToDouble(Jarak_X.Text) + matrix_kecepatan[4] * Convert.ToDouble(Jarak_Y.Text) + matrix_kecepatan[5] * 0;
+            V1 = matrix_kecepatan[6] * Convert.ToDouble(Jarak_X.Text) + matrix_kecepatan[7] * Convert.ToDouble(Jarak_Y.Text) + matrix_kecepatan[8] * 0;
+
+            Vmax = Math.Max(Math.Abs(V1), Math.Max(Math.Abs(V2), Math.Abs(V3)));
+
+            //S1 = Convert.ToDouble(label111.Text) * 0.01111 + V1;
+            //S2 = Convert.ToDouble(label110.Text) * 0.01111 + V2;
+            //S3 = Convert.ToDouble(label109.Text) * 0.01111 + V3;
+
+            S1 = V1;
+            S2 = V2;
+            S3 = V3;
+
+            S1 = Math.Abs(S1);
+            S2 = Math.Abs(S2);
+            S3 = Math.Abs(S3);
+
+            label130.Text = (V1).ToString();
+            label129.Text = (V2).ToString();
+            label128.Text = (V3).ToString();
+
+            V1 = V1 * (V_limit / Vmax);
+            V2 = V2 * (V_limit / Vmax);
+            V3 = V3 * (V_limit / Vmax);
+
+            label105.Text = V1.ToString();
+            label104.Text = V2.ToString();
+            label102.Text = V3.ToString();
+
+            label117.Text = (S1 / 0.01111).ToString();
+            label116.Text = (S2 / 0.01111).ToString();
+            label115.Text = (S3 / 0.01111).ToString();
+
+
+            int[] arah_motor = { 1, 1, 1 };
+
+            if (V1 < 0)
+            {
+                arah_motor[0] = 0;
+                V1 = Math.Abs(V1);
+            }
+
+            if (V2 < 0)
+            {
+                arah_motor[1] = 0;
+                V2 = Math.Abs(V2);
+            }
+
+            if (V3 < 0)
+            {
+                arah_motor[2] = 0;
+                V3 = Math.Abs(V3);
+            }
+
+            
+            function_code = "4";
+            if (serialPort1.IsOpen)
+            {
+                serialPort1.Write(function_code + "," + arah_motor[0].ToString() + "," + arah_motor[1].ToString() + "," + arah_motor[2].ToString() + "," + V1.ToString() + "," + V2.ToString() + "," + V3.ToString() + "," + S1.ToString() + "," + S2.ToString() + "," + S3.ToString());
+            }
+        }
+
+        private void button30_Click(object sender, EventArgs e)
+        {
+            _shouldStop = false;
+            fungsi_semua_motor_berhenti();
+        }
+
+        private void button31_Click(object sender, EventArgs e)
+        {
+            function_code = "5";
+            if (serialPort1.IsOpen)
+            {
+                serialPort1.Write(function_code + ",78,0,0,0,0,0");
+            }
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void pictureBox2_MouseClick(object sender, MouseEventArgs e)
+        {
+            //global_x.Text = (e.X).ToString();
+            //global_y.Text = (e.Y).ToString();
+            int x_maksimal = 500;
+            int y_maksimal = 500;
+
+            int koordinatglobal_x = ((e.X) - pictureBox2.Width / 2)*x_maksimal/(pictureBox2.Width/2);
+            int koordinatglobal_y = (0 - ((e.Y) - pictureBox2.Height / 2)) * y_maksimal / (pictureBox2.Height/ 2);
+
+            global_x.Text = koordinatglobal_x.ToString();
+            global_y.Text = koordinatglobal_y.ToString();
+
+        }
+
+        private void button32_Click(object sender, EventArgs e)
+        {
+            //double[] matrix_kecepatan = { -0.3333, 0.5774, 0.0317, -0.3333, -0.5774, 0.0317, 0.6667, 0, 0.0317 };
+            double[] matrix_kecepatan = { inverse_kinematik[0, 0], inverse_kinematik[0, 1], inverse_kinematik[0, 2], inverse_kinematik[1, 0], inverse_kinematik[1, 1], inverse_kinematik[1, 2], inverse_kinematik[2, 0], inverse_kinematik[2, 1], inverse_kinematik[2, 2] };
+            double V1, V2, V3, Vmax, V_limit, S1, S2, S3;
+            V_limit = 25;
+            V3 = matrix_kecepatan[0] * (Convert.ToDouble(global_x_input.Text) - Convert.ToDouble(x_robot.Text)) + matrix_kecepatan[1] * (Convert.ToDouble(global_y_input.Text) - Convert.ToDouble(y_robot.Text)) + matrix_kecepatan[2] * 0;
+            V2 = matrix_kecepatan[3] * (Convert.ToDouble(global_x_input.Text) - Convert.ToDouble(x_robot.Text)) + matrix_kecepatan[4] * (Convert.ToDouble(global_y_input.Text) - Convert.ToDouble(y_robot.Text)) + matrix_kecepatan[5] * 0;
+            V1 = matrix_kecepatan[6] * (Convert.ToDouble(global_x_input.Text) - Convert.ToDouble(x_robot.Text)) + matrix_kecepatan[7] * (Convert.ToDouble(global_y_input.Text) - Convert.ToDouble(y_robot.Text)) + matrix_kecepatan[8] * 0;
+
+            Vmax = Math.Max(Math.Abs(V1), Math.Max(Math.Abs(V2), Math.Abs(V3)));
+
+            //S1 = Convert.ToDouble(label111.Text) * 0.01111 + V1;
+            //S2 = Convert.ToDouble(label110.Text) * 0.01111 + V2;
+            //S3 = Convert.ToDouble(label109.Text) * 0.01111 + V3;
+
+            S1 = V1;
+            S2 = V2;
+            S3 = V3;
+
+            S1 = Math.Abs(S1);
+            S2 = Math.Abs(S2);
+            S3 = Math.Abs(S3);
+
+            label130.Text = (V1).ToString();
+            label129.Text = (V2).ToString();
+            label128.Text = (V3).ToString();
+
+            V1 = V1 * (V_limit / Vmax);
+            V2 = V2 * (V_limit / Vmax);
+            V3 = V3 * (V_limit / Vmax);
+
+            label105.Text = V1.ToString();
+            label104.Text = V2.ToString();
+            label102.Text = V3.ToString();
+
+            label117.Text = (S1 / 0.01111).ToString();
+            label116.Text = (S2 / 0.01111).ToString();
+            label115.Text = (S3 / 0.01111).ToString();
+
+
+            int[] arah_motor = { 1, 1, 1 };
+
+            if (V1 < 0)
+            {
+                arah_motor[0] = 0;
+                V1 = Math.Abs(V1);
+            }
+
+            if (V2 < 0)
+            {
+                arah_motor[1] = 0;
+                V2 = Math.Abs(V2);
+            }
+
+            if (V3 < 0)
+            {
+                arah_motor[2] = 0;
+                V3 = Math.Abs(V3);
+            }
+
+
+            function_code = "4";
+            if (serialPort1.IsOpen)
+            {
+                serialPort1.Write(function_code + "," + arah_motor[0].ToString() + "," + arah_motor[1].ToString() + "," + arah_motor[2].ToString() + "," + V1.ToString() + "," + V2.ToString() + "," + V3.ToString() + "," + S1.ToString() + "," + S2.ToString() + "," + S3.ToString());
+            }
+        }
+
+        private void button33_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Movement_Coordinate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button34_Click(object sender, EventArgs e)
+        {
+            Thread coba_cek = new Thread(coba_cek_motor);
+            _shouldStop = true;
+            coba_cek.Start();
+        }
+
+        private void coba_cek_motor()
+        {
+            this.Invoke(new Action(() =>
+            {
+                label141.Text = "Thread Start!";
+            }));
+
+            while(_shouldStop)
+            {
+                kode = "94";
+                function_code = "1";
+                if (serialPort1.IsOpen)
+                {
+                    serialPort1.Write(function_code + "," + kode + "," + "20" + "," + "0" + "," + "0" + ",0,0" + ",0,0,0");
+                }
+                Thread.Sleep(5000);
+
+                kode = "94";
+                function_code = "1";
+                if (serialPort1.IsOpen)
+                {
+                    serialPort1.Write(function_code + "," + kode + "," + "0" + "," + "0" + "," + "0" + ",0,0" + ",0,0,0");
+                }
+                Thread.Sleep(1000);
+
+                kode = "7";
+                function_code = "1";
+                if (serialPort1.IsOpen)
+                {
+                    serialPort1.Write(function_code + "," + kode + "," + "20" + "," + "0" + "," + "0" + ",0,0" + ",0,0,0");
+                }
+                Thread.Sleep(5000);
+
+                kode = "7";
+                function_code = "1";
+                if (serialPort1.IsOpen)
+                {
+                    serialPort1.Write(function_code + "," + kode + "," + "0" + "," + "0" + "," + "0" + ",0,0" + ",0,0,0");
+                }
+                Thread.Sleep(1000);
+
+                kode = "10";
+                function_code = "1";
+                if (serialPort1.IsOpen)
+                {
+                    serialPort1.Write(function_code + "," + kode + "," + "20" + "," + "0" + "," + "0" + ",0,0" + ",0,0,0");
+                }
+                Thread.Sleep(5000);
+
+                kode = "10";
+                function_code = "1";
+                if (serialPort1.IsOpen)
+                {
+                    serialPort1.Write(function_code + "," + kode + "," + "0" + "," + "0" + "," + "0" + ",0,0" + ",0,0,0");
+                }
+                Thread.Sleep(1000);
+                
+            }
+
+            this.Invoke(new Action(() =>
+            {
+                label141.Text = "Thread selesai!";
+            }));
+
+        }
+
     }
 }

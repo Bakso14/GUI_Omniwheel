@@ -59,5 +59,15 @@ namespace GUI_Omniwheel.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot__8_ {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot (8)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

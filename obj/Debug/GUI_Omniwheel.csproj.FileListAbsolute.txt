@@ -48,3 +48,4 @@ F:\Github\GUI_Omniwheel\obj\Debug\GUI_Omniwheel.csproj.GenerateResource.cache
 F:\Github\GUI_Omniwheel\obj\Debug\GUI_Omniwheel.csproj.CoreCompileInputs.cache
 F:\Github\GUI_Omniwheel\obj\Debug\GUI_Omniwheel.exe
 F:\Github\GUI_Omniwheel\obj\Debug\GUI_Omniwheel.pdb
+F:\Github\GUI_Omniwheel\obj\Debug\GUI_Omniwheel.exe.config
